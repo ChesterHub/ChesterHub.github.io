@@ -1,0 +1,76 @@
+body {
+	background:  black;
+	background-image: url("http://images-cdn.moviepilot.com/images/c_scale,h_1080,w_1920/t_mp_quality/vqagyn8bkhogtxobaxtn/the-one-big-problem-with-marvel-s-mcu-which-can-t-be-ignored-the-mcu-rogues-703569.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	color: #c2c2d6;
+	position: absolute;
+	vertical-align: middle;
+	text-align: center;
+	
+}
+
+.intro {
+	padding-bottom: 10px;
+	display: inline-block;
+
+
+}
+
+.intro > h1 {
+	border-style: solid;
+	border-radius: 15px;
+	border-color: #2e004d;
+	color: #9900ff;
+	text-shadow: 2px 2px 8px #0000b3;
+	width: 500px;
+	margin: 10px 475px;
+	font-size: 200%;
+
+
+}
+
+.phases {
+	background-image: url("http://cdn.mos.cms.futurecdn.net/7af6d7ea1c1ce54e9a5f317b11899550.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	color: #884dff;
+	text-shadow: 2px 2px 8px #0000b3;
+}
+th {
+	font-size: 150%;
+	color: #9999ff;
+}
+img:hover {
+	opacity: 0.25;
+	background-color: #666699;
+}
+a:link {
+	color: #009999;
+}
+
+a:visited {
+	color: #00ace6;
+}
+
+#writing {
+	display: inline-block;
+	vertical-align: middle;
+	border-style: solid;
+	width: 50%;
+	margin-bottom: 10px;
+	border-color: #000066;
+	border-radius: 30px;
+
+}
+
+.reflect {
+	font-style: italic;
+	color: #6666ff;
+	margin: 50px;
+	font-family: Arial, Sans-serif;
+
+
+}
