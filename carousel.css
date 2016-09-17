@@ -65,6 +65,11 @@ body {
 -------------------------------------------------- */
 
 /* Center align the text within the three columns below the carousel */
+.marketing .row {
+  flex-direction: row;
+  margin-left: 0 auto;
+  margin-right: 0 auto;
+}
 .marketing .col-lg-4 {
   margin-bottom: 20px;
   text-align: center;
@@ -77,6 +82,9 @@ body {
   margin-left: 10px;
 }
 
+.btn-default {
+  width: 200px;
+}
 
 /* Featurettes
 ------------------------- */
