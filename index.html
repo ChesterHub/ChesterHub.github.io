@@ -9,7 +9,7 @@
   <meta name="author" content="">
   <link rel="icon" href="favicon.ico">
 
-  <title>Chester's Portfolio</title>
+  <title>Chester L. Hoang</title>
 
   <!-- Bootstrap core CSS -->
   <link href="dist/css/bootstrap.min.css" rel="stylesheet">
@@ -32,6 +32,17 @@
 
       <!-- Custom styles for this template -->
       <link href="carousel.css" rel="stylesheet">
+
+      <!-- Phaser Game -->
+      <script type="text/javascript" src="dotChomp/js/lib/phaser.min.js"></script>
+      <script type="text/javascript" src="dotChomp/js/boot.js"></script>
+      <script type="text/javascript" src="dotChomp/js/load.js"></script>
+      <script type="text/javascript" src="dotChomp/js/menu.js"></script>
+      <script type="text/javascript" src="dotChomp/js/play.js"></script>
+      <script type="text/javascript" src="dotChomp/js/win.js"></script>
+      <script type="text/javascript" src="dotChomp/js/game.js"></script>
+
+
     </head>
 <!-- NAVBAR
   ================================================== -->
@@ -53,16 +64,16 @@
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
                 <li class="active"><a href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a class="scroll-to" href="#about">About</a></li>
+                <li><a href="#about">Contact</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Portfolio <span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="#">RFLCT</a></li>
+                    <li><a href="#RFLCT">RFLCT</a></li>
                     <li role="separator" class="divider"></li>
-                    <li><a href="#">dotCHOMP</a></li>
+                    <li><a href="#dot">dotCHOMP</a></li>
                     <li role="separator" class="divider"></li>
-                    <li><a href="#">Application Database</a></li>
+                    <li><a href="#database">Application Database</a></li>
                   </ul>
                 </li>
               </ul>
@@ -90,7 +101,7 @@
             <div class="carousel-caption">
               <h1>RFLCT</h1>
               <p>The Smartest Smart Mirror ever Created.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">View Project</a></p>
+              <p><a class="btn btn-lg btn-primary" href="#RFLCT" role="button">View Project</a></p>
             </div>
           </div>
         </div>
@@ -100,7 +111,7 @@
             <div class="carousel-caption">
               <h1>.CHOMP</h1>
               <p>A simple 2d game built on HTML5 and Phaser.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Play Now</a></p>
+              <p><a class="btn btn-lg btn-primary" href="#dot" role="button">Play Now</a></p>
             </div>
           </div>
         </div>
@@ -110,7 +121,7 @@
             <div class="carousel-caption">
               <h1>Application Database</h1>
               <p>A real-world database. Created with Microsoft Access and Visual Basic, this generic named database is still used today for applications that have a total value of over $5 million.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">View Project</a></p>
+              <p><a class="btn btn-lg btn-primary" href="#database" role="button">View Project</a></p>
             </div>
           </div>
         </div>
@@ -133,63 +144,69 @@
     <div class="container marketing">
 
       <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="col-lg-4">
-          <h2>About Me</h2>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="assets/img/headshot.jpg" width="210" height="210">
-          <h2>Chester Hoang</h2>
-          <p><i class="fa fa-envelope fa-lg" aria-hidden="true"></i> <a href="mailto:ChesterLHoang@gmail.com">chesterlhoang@gmail.com</a></p>
-          <p><i class="fa fa-snapchat-square fa-lg" aria-hidden="true"></i> chestuhr</p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <h2>Let's Chat</h2>
-          <p><a class="btn btn-default" href="#" role="button"><i class="fa fa-cloud-download fa-2x" aria-hidden="true"></i> Resume</a></p>
-          <p><a class="btn btn-default" href="#" role="button"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i> LinkedIn</a></p>
-          <p><a class="btn btn-default" href="#" role="button"><i class="fa fa-github fa-2x" aria-hidden="true"></i> GitHub</a></p>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
+      <section id="about">
+        <div class="row">
+          <div class="col-lg-4">
+            <h2>About Me</h2>
+            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="img-circle" src="assets/img/headshot.jpg" width="210" height="210">
+            <h2>Chester Hoang</h2>
+            <p><i class="fa fa-envelope fa-lg" aria-hidden="true"></i> <a href="mailto:ChesterLHoang@gmail.com">chesterlhoang@gmail.com</a></p>
+            <p><i class="fa fa-snapchat-square fa-lg" aria-hidden="true"></i> chestuhr</p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <h2>Let's Chat</h2>
+            <p><a class="btn btn-default" href="#" role="button"><i class="fa fa-cloud-download fa-2x" aria-hidden="true"></i> Resume</a></p>
+            <p><a class="btn btn-default" href="#" role="button"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i> LinkedIn</a></p>
+            <p><a class="btn btn-default" href="#" role="button"><i class="fa fa-github fa-2x" aria-hidden="true"></i> GitHub</a></p>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+      </section>
 
 
       <!-- START THE FEATURETTES -->
 
       <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">RFLCT - <span class="text-muted">An Intelligent Reflection.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      <section id="RFLCT">
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">RFLCT - <span class="text-muted">An Intelligent Reflection.</span></h2>
+            <p class="lead">A smart mirror utilizing voice detection and facial recognition to display real-time, customizable information based on who you are. Your personal profile will have weather, news feeds from any website, a personal calendar, and Amazon Alexa ready to answer any question you may have.</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          </div>
         </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7 col-md-push-5">
-          <h2 class="featurette-heading">dotCHOMP - <span class="text-muted">I'm Hungry.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5 col-md-pull-7">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-        </div>
-      </div>
+      </section>
 
       <hr class="featurette-divider">
+      <section id="dot">
+        <div class="row featurette">
+          <div class="col-md-7 col-md-push-5">
+            <h2 class="featurette-heading">dotCHOMP - <span class="text-muted">I'm Hungry.</span></h2>
+            <p class="lead">You are a young mushroom trying to live in a famished environment. How long can you survive my voracious appetite? Press "spacebar" to begin.</p>
+          </div>
+          <div class="col-md-5 col-md-pull-7">
+            <div id="gameDiv"></div>
+<!--             <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image"> -->
+          </div>
+        </div>
+      </section>
 
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Application Database - <span class="text-muted">Keep on Track. </span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      <hr class="featurette-divider">
+      <section id="database">
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Application Database - <span class="text-muted">Keep on Track. </span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          </div>
         </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-        </div>
-      </div>
+      </section>
 
       <hr class="featurette-divider">
 
@@ -199,7 +216,7 @@
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2016 Chester Hoang. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <p>&copy; 2016 Chester Hoang &middot; <a href="#">Home</a> &middot; <a href="#about">Contact Me</a></p>
       </footer>
 
     </div><!-- /.container -->
