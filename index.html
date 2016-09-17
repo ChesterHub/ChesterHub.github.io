@@ -32,6 +32,17 @@
 
       <!-- Custom styles for this template -->
       <link href="carousel.css" rel="stylesheet">
+
+      <!-- Phaser Game -->
+      <script type="text/javascript" src="dotChomp/js/lib/phaser.min.js"></script>
+      <script type="text/javascript" src="dotChomp/js/boot.js"></script>
+      <script type="text/javascript" src="dotChomp/js/load.js"></script>
+      <script type="text/javascript" src="dotChomp/js/menu.js"></script>
+      <script type="text/javascript" src="dotChomp/js/play.js"></script>
+      <script type="text/javascript" src="dotChomp/js/win.js"></script>
+      <script type="text/javascript" src="dotChomp/js/game.js"></script>
+
+
     </head>
 <!-- NAVBAR
   ================================================== -->
@@ -178,7 +189,8 @@
             <p class="lead">You are a young mushroom trying to live in a famished environment. How long can you survive my voracious appetite? Press "spacebar" to begin.</p>
           </div>
           <div class="col-md-5 col-md-pull-7">
-            <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+            <div id="gameDiv"></div>
+<!--             <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image"> -->
           </div>
         </div>
       </section>
