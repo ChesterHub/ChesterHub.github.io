@@ -82,15 +82,15 @@ var playState = {
 			gameover = true;
 			// Win function doesn't work. So i start gameover here
 			game.state.start('win');
-			handleEndOfGame();
+			// handleEndOfGame();
 		}
 	}
 }
 
-function handleEndOfGame(){
-	$.post('/add_score_to_user', {score: score})
-	.done(function(res){
-		$("#scores").html();
-	})
-	.fail(function(){alert('You fucked up')})
+// function handleEndOfGame(){
+// 	$.post('/add_score_to_user', {score: score})
+// 	.done(function(res){
+// 		$("#scores").html();
+// 	})
+// 	.fail(function(){alert('Score did not update')})
 }
