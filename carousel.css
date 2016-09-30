@@ -5,6 +5,9 @@
 body {
   padding-bottom: 40px;
   color: #DEE2E2;
+  background-image: url("assets/img/blue-background.jpg");
+/*  background-repeat: no-repeat;*/
+  background-attachment: fixed;
   background-color: #34495e;
 }
 
@@ -38,11 +41,16 @@ body {
 .navbar-brand {
   color: #BEE5E2;
 }
-/*Change text color of navbar*/
-/*#navbar li a {
-  color: white;
-}*/
 
+.dropdown > .dropdown-menu {
+  background-color: #031C2B;
+}
+.dropdown > .dropdown-menu a {
+  color: #DEE2E2;
+}
+.dropdown > .dropdown-menu a:hover {
+  background-color: #9E9E9E;
+}
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -115,7 +123,7 @@ body {
 
 .btn-default {
   width: 200px;
-  background-color: #ecf0f1;
+  background-color: #DEE2E2;
 }
 
 /* Featurettes
@@ -139,9 +147,20 @@ body {
 }
 
 .text-primary {
-  font-size: 90%;
+  font-size: 85%;
 }
 
+/*LINK COLORS*/
+a.links:link {
+  color: #2D8CBF;
+}
+a.links:visited {
+  color: #2D8CBF;
+}
+a.links:hover {
+  color: #38B8E2;
+  text-decoration: none;
+}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
