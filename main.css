@@ -81,6 +81,12 @@ body {
 .carousel-inner > .item > .first-slide {
   height: 700px;
 }
+.carousel-inner > .item > .third-slide {
+  height: 500px;
+}
+.carousel-inner > .item > .fourth-slide {
+  height: 800px;
+}
 
 /*Image Hover*/
 .item img 
