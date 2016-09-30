@@ -4,7 +4,11 @@
 
 body {
   padding-bottom: 40px;
-  color: #5a5a5a;
+  color: #DEE2E2;
+  background-image: url("assets/img/blue-background.jpg");
+/*  background-repeat: no-repeat;*/
+  background-attachment: fixed;
+  background-color: #34495e;
 }
 
 
@@ -28,11 +32,25 @@ body {
 .navbar-wrapper .navbar {
   padding-right: 15px;
   padding-left: 15px;
+  background-color: #031C2B;
 }
 .navbar-wrapper .navbar .container {
   width: auto;
 }
 
+.navbar-brand {
+  color: #BEE5E2;
+}
+
+.dropdown > .dropdown-menu {
+  background-color: #031C2B;
+}
+.dropdown > .dropdown-menu a {
+  color: #DEE2E2;
+}
+.dropdown > .dropdown-menu a:hover {
+  background-color: #9E9E9E;
+}
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -50,7 +68,7 @@ body {
 /* Declare heights because of positioning of img element */
 .carousel .item {
   height: 500px;
-  background-color: #777;
+  background-color: #34495e;
 }
 .carousel-inner > .item > img {
   position: absolute;
@@ -58,6 +76,27 @@ body {
   left: 0;
   min-width: 100%;
   height: 500px;
+}
+
+.carousel-inner > .item > .first-slide {
+  height: 700px;
+}
+
+/*Image Hover*/
+.item img 
+{
+  max-width: 100%;
+  -moz-transition: all 2.5s;
+  -webkit-transition: all 2.5s;
+  transition: all 2.5s;
+/*  width:250px;
+  height:220px;*/
+}
+.item:hover img 
+{
+ -moz-transform: scale(1.3);
+ -webkit-transform: scale(1.3);
+ transform: scale(1.3);
 }
 
 
@@ -84,6 +123,7 @@ body {
 
 .btn-default {
   width: 200px;
+  background-color: #DEE2E2;
 }
 
 /* Featurettes
@@ -100,6 +140,27 @@ body {
   letter-spacing: -1px;
 } 
 
+#gameDiv {
+  height: 500px;
+  width: 500px;
+  background-color: red;
+}
+
+.text-primary {
+  font-size: 85%;
+}
+
+/*LINK COLORS*/
+a.links:link {
+  color: #2D8CBF;
+}
+a.links:visited {
+  color: #2D8CBF;
+}
+a.links:hover {
+  color: #38B8E2;
+  text-decoration: none;
+}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
