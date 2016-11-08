@@ -81,6 +81,9 @@ body {
 .carousel-inner > .item > .first-slide {
   height: 700px;
 }
+.carousel-inner > .item > .second-slide {
+  height: 600px;
+}
 .carousel-inner > .item > .third-slide {
   height: 500px;
 }
@@ -144,7 +147,15 @@ body {
   font-weight: 300;
   line-height: 1;
   letter-spacing: -1px;
-} 
+}
+
+/*borders for featurette images*/
+.featurette-image {
+  border-style: groove;
+  border-width: 5px;
+  border-color: black;
+  border-radius: 10px;
+}
 
 #gameDiv {
   height: 500px;
