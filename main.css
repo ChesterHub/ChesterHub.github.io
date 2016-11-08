@@ -12,6 +12,9 @@ body {
 }
 
 
+
+
+
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 
@@ -40,6 +43,10 @@ body {
 
 .navbar-brand {
   color: #BEE5E2;
+}
+
+.navbar {
+
 }
 
 .dropdown > .dropdown-menu {
@@ -151,8 +158,8 @@ body {
 
 /*borders for featurette images*/
 .featurette-image {
-  border-style: groove;
-  border-width: 5px;
+  border-style: solid;
+  border-width: 4px;
   border-color: black;
   border-radius: 10px;
 }
