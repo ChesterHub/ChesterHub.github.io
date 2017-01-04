@@ -1,8 +1,29 @@
-#footer {
-   position:fixed;
-   left:0px;
-   bottom:0px;
-   height:30px;
-   width:100%;
-   background:#999;
+.center-content {
+  justify-content: center;
+  position: relative;
+}
+
+.header-color {
+	background: url("assets/img/blue-background.jpg")  center no-repeat;
+}
+
+.about-me{
+    position: relative;
+    /*background: url("assets/img/blue-background.jpg")center top no-repeat;*/
+    background-color: #e5e5e5;
+    background-size: cover;
+    height: 700px;
+}
+
+
+.intro-card.mdl-card {
+	width: 512px;
+}
+.intro-card > .mdl-card__title {
+	color: #fff;
+	height: 352px;
+	background: url('assets/img/epic.JPG') center / cover;
+}
+.intro-card > .mdl-card__menu {
+	color: #fff;
 }
