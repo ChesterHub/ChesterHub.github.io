@@ -3,11 +3,14 @@
 	position: relative;
 }
 
+.font-roboto { font-family: 'Roboto', sans-serif; }
+.font-wendy {	font-family: 'Wendy One', sans-serif; }
+
 /*Ripple effects for a*/
 a.mdl-js-ripple-effect { position: relative; }
 
 .header-color {
-	background: url("assets/img/blue-background.jpg") center no-repeat;
+	background: url("assets/img/blue-background.jpg") center ;
 }
 
 .about-me{
@@ -15,7 +18,7 @@ a.mdl-js-ripple-effect { position: relative; }
 	background: url("assets/img/sky.jpeg") bottom center no-repeat;
 	/*    background-color: #8C9EFF;*/
 	background-size: cover;
-	height: 850px;
+	height: 910px;
 }
 
 #profile-picture {
@@ -25,6 +28,12 @@ a.mdl-js-ripple-effect { position: relative; }
 }
 
 .img-circle { border-radius: 60% }
+
+h1 {
+	padding-top: 200px;
+	color: #1A237E;
+	font-size: 700%
+	}
 
 
 .intro-card.mdl-card {
