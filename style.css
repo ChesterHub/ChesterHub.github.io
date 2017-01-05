@@ -1,19 +1,30 @@
 .center-content {
-  justify-content: center;
-  position: relative;
+	justify-content: center;
+	position: relative;
 }
 
+/*Ripple effects for a*/
+a.mdl-js-ripple-effect { position: relative; }
+
 .header-color {
-	background: url("assets/img/blue-background.jpg")  center no-repeat;
+	background: url("assets/img/blue-background.jpg") center no-repeat;
 }
 
 .about-me{
-    position: relative;
-    /*background: url("assets/img/blue-background.jpg")center top no-repeat;*/
-    background-color: #e5e5e5;
-    background-size: cover;
-    height: 700px;
+	position: relative;
+	background: url("assets/img/sky.jpeg") bottom center no-repeat;
+	/*    background-color: #8C9EFF;*/
+	background-size: cover;
+	height: 850px;
 }
+
+#profile-picture {
+	width: 15%;
+	height: 15%;
+	padding-top: 50px;
+}
+
+.img-circle { border-radius: 60% }
 
 
 .intro-card.mdl-card {

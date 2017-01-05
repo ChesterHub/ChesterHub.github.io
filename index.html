@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Revamp</title>
+	<title>Chester Hoang</title>
 
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-yellow.min.css" />
 	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+	rel="stylesheet">
 	<link href="style.css" rel="stylesheet" type="text/css">
 
 </head>
@@ -21,11 +21,10 @@
 	</style>
 
 	<div class="demo-layout-waterfall mdl-layout mdl-js-layout">
-		<header class="mdl-layout__header mdl-layout__header--waterfall header-color">
+		<header class="mdl-layout__header mdl-layout__header--waterfall header-color mdl-shadow--8dp mdl-layout__header--waterfall-hide-top">
 			<!-- Top row, always visible -->
 			<div class="mdl-layout__header-row">
 				<!-- Title -->
-				<span class="mdl-layout-title">Chester Hoang <i class="material-icons">sentiment_very_satisfied</i></span>
 				<div class="mdl-layout-spacer"></div>
 				<div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
 				mdl-textfield--floating-label mdl-textfield--align-right">
@@ -41,23 +40,24 @@
 	</div>
 	<!-- Bottom row, not visible on scroll -->
 	<div class="mdl-layout__header-row">
+		<span class="mdl-layout-title">Chester Hoang <i class="material-icons">sentiment_very_satisfied</i></span>
 		<div class="mdl-layout-spacer"></div>
 		<!-- Navigation -->
 		<nav class="mdl-navigation">
-			<a class="mdl-navigation__link" href="">Link</a>
-			<a class="mdl-navigation__link" href="">Link</a>
-			<a class="mdl-navigation__link" href="">Link</a>
-			<a class="mdl-navigation__link" href="">Link</a>
+			<a class="mdl-navigation__link mdl-js-button mdl-js-ripple-effect" href="">About Me</a>
+			<a class="mdl-navigation__link mdl-js-button mdl-js-ripple-effect" href="">Portfolio</a>
+			<a class="mdl-navigation__link mdl-js-button mdl-js-ripple-effect" href="">Résumé</a>
+			<a class="mdl-navigation__link mdl-js-button mdl-js-ripple-effect" href="">Contact</a>
 		</nav>
 	</div>
 </header>
 <div class="mdl-layout__drawer">
 	<span class="mdl-layout-title">Navigation</span>
 	<nav class="mdl-navigation">
-		<a class="mdl-navigation__link" href="">Link</a>
-		<a class="mdl-navigation__link" href="">Link</a>
-		<a class="mdl-navigation__link" href="">Link</a>
-		<a class="mdl-navigation__link" href="">Link</a>
+		<a class="mdl-navigation__link" href="">About Me</a>
+		<a class="mdl-navigation__link" href="">Portfolio</a>
+		<a class="mdl-navigation__link" href="">Résumé</a>
+		<a class="mdl-navigation__link" href="">Contact</a>
 	</nav>
 </div>
 <main class="mdl-layout__content">
@@ -65,7 +65,16 @@
 
 		<div class="mdl-typography--text-center about-me">
 
-			<button id="demo-show-snackbar" class="mdl-button mdl-js-button mdl-button--raised" type="button">Snackbar Message</button>
+			<div class="mdl-grid center-content"> 
+			<img src="assets/img/linkedin.JPG" id="profile-picture" class="img-circle">
+			</div>
+
+<!-- 
+			<div>
+				<h1>Hi I'm Chester</h1>
+			</div> -->
+
+<!-- 			<button id="demo-show-snackbar" class="mdl-button mdl-js-button mdl-button--raised" type="button">Snackbar Message</button>
 			<div id="demo-snackbar-example" class="mdl-js-snackbar mdl-snackbar">
 				<div class="mdl-snackbar__text"></div>
 				<button class="mdl-snackbar__action" type="button"></button>
@@ -91,14 +100,14 @@
 						snackbarContainer.MaterialSnackbar.showSnackbar(data);
 					});
 				}());
-			</script>
+			</script> -->
 <!-- 			<div class="mdl-grid center-content">
 				<div class="mdl-card mdl-shadow--2dp mdl-cell--6-col">
 					<div class="mdl-card__title">
 						<h2 class="mdl-card__title-text">Welcome!</h2>
 					</div>
 					<div class="mdl-card__media">
-						<img src="assets/img/RFLCT.JPG" width="173" height="157" border="0" alt="" style="padding:10px;">
+						<img src="assets/img/linkedin.JPG" width="173" height="157" border="1" alt="" style="padding:10px;">
 					</div>
 					<div class="mdl-card__actions mdl-card--border">
 						<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
@@ -107,45 +116,28 @@
 					</div>
 				</div>
 
-			</div> -->
-			
+			</div>
+		-->
+	</div>
+
+	<!-- Wide card with share menu button -->
+	<div class="mdl-grid center-content">
+		<div class="intro-card mdl-card mdl-shadow--2dp mdl-cell--6-col">
+			<div class="mdl-card__title">
+				<h2 class="mdl-card__title-text">Welcome!</h2>
+			</div>
+			<div class="mdl-card__supporting-text">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				Mauris sagittis pellentesque lacus eleifend lacinia...
+			</div>
+			<div class="mdl-card__actions mdl-card--border">
+				<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+					More About Me
+				</a>
+			</div>
 		</div>
 
-		<!-- Wide card with share menu button -->
-		<div class="mdl-grid center-content">
-			<div class="intro-card mdl-card mdl-shadow--2dp mdl-cell--6-col">
-				<div class="mdl-card__title">
-					<h2 class="mdl-card__title-text">Welcome!</h2>
-				</div>
-				<div class="mdl-card__supporting-text">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-					Mauris sagittis pellentesque lacus eleifend lacinia...
-				</div>
-				<div class="mdl-card__actions mdl-card--border">
-					<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-						More About Me
-					</a>
-				</div>
-			</div>
-
-			<div class="mdl-card mdl-shadow--2dp mdl-cell--6-col">
-				<div class="mdl-card__title">
-					<h2>Title</h2>
-				</div>
-				<div class="mdl-card__supporting-text">
-					We are setting this card up
-				</div>
-				<div class="mdl-card__actions mdl-card--border">
-					<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-						The Button
-					</a>
-				</div>
-			</div>
-
-
-		</div>
-
-		<div class="mdl-card mdl-shadow--2dp">
+		<div class="mdl-card mdl-shadow--2dp mdl-cell--6-col">
 			<div class="mdl-card__title">
 				<h2>Title</h2>
 			</div>
@@ -160,19 +152,36 @@
 		</div>
 
 
-
-
-		<footer class="mdl-mini-footer"">
-			<div class="mdl-mini-footer__left-section">
-				<div class="mdl-logo">Chester Hoang 2017</div>
-				<ul class="mdl-mini-footer__link-list">
-					<li><a href="#">Help</a></li>
-					<li><a href="#">Privacy & Terms</a></li>
-				</ul>
-			</div>
-		</footer>
-
 	</div>
+
+	<div class="mdl-card mdl-shadow--2dp">
+		<div class="mdl-card__title">
+			<h2>Title</h2>
+		</div>
+		<div class="mdl-card__supporting-text">
+			We are setting this card up
+		</div>
+		<div class="mdl-card__actions mdl-card--border">
+			<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+				The Button
+			</a>
+		</div>
+	</div>
+
+
+
+
+	<footer class="mdl-mini-footer"">
+		<div class="mdl-mini-footer__left-section">
+			<div class="mdl-logo">Chester Hoang 2017</div>
+			<ul class="mdl-mini-footer__link-list">
+				<li><a href="#">Help</a></li>
+				<li><a href="#">Privacy & Terms</a></li>
+			</ul>
+		</div>
+	</footer>
+
+</div>
 </main>
 </div>
 
