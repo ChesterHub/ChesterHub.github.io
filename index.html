@@ -4,7 +4,7 @@
 	<title>Chester Hoang</title>
 
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-yellow.min.css" />
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-blue.min.css" />
 	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
 	rel="stylesheet">
@@ -17,96 +17,59 @@
 
 	<!-- Always shows a header, even in smaller screens. -->
 	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-		<header class="mdl-layout__header mdl-shadow--6dp header-color">
+		<header class="mdl-layout__header mdl-shadow--8dp header-color">
 			<div class="mdl-layout__header-row">
 				<!-- Title -->
-				<span class="mdl-layout-title"><i class="material-icons">sentiment_very_satisfied</i></span>
+				<span class="mdl-layout-title"><i class="material-icons">sentiment_very_satisfied</i> Chester Hoang</span>
 				<!-- Add spacer, to align navigation to the right -->
 				<div class="mdl-layout-spacer"></div>
-				<!-- Navigation. We hide it in small screens. -->
+				<!-- Header Navigtaion. Disappeared in smaller screens -->
 				<nav class="mdl-navigation mdl-layout--large-screen-only font-wendy">
-					<a class="mdl-navigation__link" href="">About Me</a>
-					<a class="mdl-navigation__link" href="">Portfolio</a>
-					<a class="mdl-navigation__link" href="">Résumé</a>
-					<a class="mdl-navigation__link" href="">Contact</a>
+					<a class="mdl-navigation__link mdl-js-button mdl-js-ripple-effect" href="#">About Me</a>
+					<a class="mdl-navigation__link mdl-js-button mdl-js-ripple-effect" href="#">Portfolio</a>
+					<a class="mdl-navigation__link mdl-js-button mdl-js-ripple-effect" href="#">Résumé</a>
+					<a class="mdl-navigation__link mdl-js-button mdl-js-ripple-effect" href="#">Contact</a>
 				</nav>
 			</div>
 		</header>
-		<div class="mdl-layout__drawer font-wendy">
+		<div class="mdl-layout__drawer mdl-layout--small-screen-only font-wendy">
 			<span class="mdl-layout-title font-wendy">Navigation</span>
 			<nav class="mdl-navigation">
-				<a class="mdl-navigation__link" href="">About Me</a>
-				<a class="mdl-navigation__link" href="">Portfolio</a>
-				<a class="mdl-navigation__link" href="">Résumé</a>
-				<a class="mdl-navigation__link" href="">Contact</a>
+				<a class="mdl-navigation__link mdl-js-button mdl-js-ripple-effect" href="">About Me</a>
+				<a class="mdl-navigation__link mdl-js-button mdl-js-ripple-effect" href="">Portfolio</a>
+				<a class="mdl-navigation__link mdl-js-button mdl-js-ripple-effect" href="">Résumé</a>
+				<a class="mdl-navigation__link mdl-js-button mdl-js-ripple-effect" href="">Contact</a>
 			</nav>
 		</div>
 		<main class="mdl-layout__content">
 			<div class="page-content"><!-- Your content goes here -->
 
-				<div class="mdl-typography--text-center about-me font-wendy">
+				<div class="mdl-typography--text-center font-wendy intro">
 
-<!-- 			<div class="mdl-grid center-content"> 
-			<img src="assets/img/linkedin.JPG" id="profile-picture" class="img-circle">
-		</div> -->
 
-		<div class="mdl-grid center-content">
-			<div class="mdl-cell--6-col">
-			<h1 class="font-wendy">Chester Hoang</h1>
-			<h2 class="font-wendy">Software Engineer</h2>
-			</div>
-		</div>
 
-<!-- 
-			<div>
-				<h1>Hi I'm Chester</h1>
-			</div> -->
-
-<!-- 			<button id="demo-show-snackbar" class="mdl-button mdl-js-button mdl-button--raised" type="button">Snackbar Message</button>
-			<div id="demo-snackbar-example" class="mdl-js-snackbar mdl-snackbar">
-				<div class="mdl-snackbar__text"></div>
-				<button class="mdl-snackbar__action" type="button"></button>
-			</div>
-			<script>
-				(function() {
-					'use strict';
-					var snackbarContainer = document.querySelector('#demo-snackbar-example');
-					var showSnackbarButton = document.querySelector('#demo-show-snackbar');
-					var handler = function(event) {
-						showSnackbarButton.style.backgroundColor = '';
-					};
-					showSnackbarButton.addEventListener('click', function() {
-						'use strict';
-						showSnackbarButton.style.backgroundColor = '#' +
-						Math.floor(Math.random() * 0xFFFFFF).toString(16);
-						var data = {
-							message: 'You have changed the color.',
-							timeout: 3000,
-							actionHandler: handler,
-							actionText: 'Undo'
-						};
-						snackbarContainer.MaterialSnackbar.showSnackbar(data);
-					});
-				}());
-			</script> -->
-<!-- 			<div class="mdl-grid center-content">
-				<div class="mdl-card mdl-shadow--2dp mdl-cell--6-col">
-					<div class="mdl-card__title">
-						<h2 class="mdl-card__title-text">Welcome!</h2>
-					</div>
-					<div class="mdl-card__media">
-						<img src="assets/img/linkedin.JPG" width="173" height="157" border="1" alt="" style="padding:10px;">
-					</div>
-					<div class="mdl-card__actions mdl-card--border">
-						<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-							More About Me
-						</a>
+					<div class="mdl-grid center-content">
+						<div class="mdl-cell--10-col">
+							<h1 class="font-wendy">Chester Hoang</h1>
+							<h2 class="font-wendy">Software Engineer</h2>
+							<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">About Me</button>
+						</div>
 					</div>
 				</div>
 
-			</div>
-		-->
-	</div>
+				<div class="mdl-typography--text-center about-me font-wendy">
+					<div class="mdl-grid center-content">
+						<img src="assets/img/snapchat.jpg" id="profile-picture" class="img-circle">
+						<div class="mdl-cell--12-col">
+							<h3 class="font-wendy">About Me</h3> 	
+							<p id="about-text">
+								Accomplished Software Engineer with hands-on experience in Ruby on Rails, JavaScript, Visual Basic, and SQL. Proficient at writing code in various languages, Test-Driven development (TDD), and Version Control software. With a strong management background, I have consistently excelled in teams and have lead to the success of various industry projects.
+							</p>					
+						</div>
+					</div>
+
+				</div>
+
 
 	<!-- Wide card with share menu button -->
 	<div class="mdl-grid center-content">
@@ -163,7 +126,7 @@
 		<div class="mdl-mini-footer__left-section">
 			<div class="mdl-logo">Chester Hoang 2017</div>
 			<ul class="mdl-mini-footer__link-list">
-				<li><a href="#">Help</a></li>
+				<li><a href="#">Back to Top</a></li>
 				<li><a href="#">Privacy & Terms</a></li>
 			</ul>
 		</div>
