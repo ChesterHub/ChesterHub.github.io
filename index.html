@@ -8,8 +8,9 @@
 	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
 	rel="stylesheet">
-	<link href="style.css" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto|Wendy+One" rel="stylesheet">
+	<script src="https://use.fontawesome.com/9d86c204c6.js"></script>
+	<link href="style.css" rel="stylesheet" type="text/css">
 
 </head>
 <body>
@@ -18,11 +19,9 @@
 	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
 		<header class="mdl-layout__header mdl-shadow--8dp header-color">
 			<div class="mdl-layout__header-row">
-				<!-- Title -->
-				<span class="mdl-layout-title"><i class="material-icons">sentiment_very_satisfied</i> Chester Hoang</span>
-				<!-- Add spacer, to align navigation to the right -->
+				<span class="mdl-layout-title"><i class="fa fa-superpowers fa-lg" aria-hidden="true"></i> Chester Hoang</span>
 				<div class="mdl-layout-spacer"></div>
-				<!-- Header Navigtaion. Disappeared in smaller screens -->
+				<!-- Header Navigtaion. Disappears in smaller screens -->
 				<nav class="mdl-navigation mdl-layout--large-screen-only font-wendy">
 					<a class="mdl-navigation__link mdl-js-button mdl-js-ripple-effect" href="#">About Me</a>
 					<a class="mdl-navigation__link mdl-js-button mdl-js-ripple-effect" href="#">Portfolio</a>
@@ -32,7 +31,7 @@
 			</div>
 		</header>
 		<div class="mdl-layout__drawer mdl-layout--small-screen-only font-wendy">
-			<span class="mdl-layout-title font-wendy">Navigation</span>
+			<span class="mdl-layout-title font-wendy header-color">Navigation</span>
 			<nav class="mdl-navigation">
 				<a class="mdl-navigation__link mdl-js-button mdl-js-ripple-effect" href="">About Me</a>
 				<a class="mdl-navigation__link mdl-js-button mdl-js-ripple-effect" href="">Portfolio</a>
@@ -41,7 +40,7 @@
 			</nav>
 		</div>
 		<main class="mdl-layout__content">
-			<div class="page-content"><!-- Your content goes here -->
+			<div class="page-content"><!-- Content-->
 
 				<div class="mdl-typography--text-center font-wendy intro">
 
@@ -50,7 +49,7 @@
 					<div class="mdl-grid center-content">
 						<div class="mdl-cell--10-col">
 							<h1 class="font-wendy">Chester Hoang</h1>
-							<h2 class="font-wendy">Software Developer</h2>
+							<p class="font-wendy" style="font-size:300%">Software Developer</p>
 							<button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="down-arrow"><i class="material-icons" style="font-size:48px;">keyboard_arrow_down</i></button>
 						</div>
 					</div>
@@ -62,82 +61,121 @@
 						<div class="mdl-cell--12-col">
 							<h3 class="font-wendy">About Me</h3> 	
 							<p id="about-text">
-								Accomplished Software Engineer with hands-on experience in Ruby on Rails, JavaScript, Visual Basic, and SQL. Proficient at writing code in various languages, Test-Driven development (TDD), and Version Control software. With a strong management background, I have consistently excelled in teams and have lead to the success of various industry projects.
+								Accomplished Software Engineer with hands-on experience in Ruby on Rails, JavaScript, Visual Basic, and SQL. Proficient at writing code in various languages, Test-Driven development (TDD), and Version Control software. With a strong management background, I have consistently excelled in teams and have lead to the success of various industry projects. Accomplished Software Engineer with hands-on experience in Ruby on Rails, JavaScript, Visual Basic, and SQL. Proficient at writing code in various languages, Test-Driven development (TDD), and Version Control software. With a strong management background, I have consistently excelled in teams and have lead to the success of various industry projects. 
 							</p>					
 						</div>
 						<div class="mdl-cell--12-col">
-							<h3 class="font-wendy">Skillset</h3>
+							<h3 class="font-wendy">Process</h3>
 						</div>
-						<div class="mdl-cell--4-col">	
-							<div class="meter animate" id="bar1">
+						<div class="mdl-cell--4-col">
+							<i class="fa fa-users big-icon" aria-hidden="true"></i>
+							<p class="icon-text"> UI/UX</p>
+						</div>
+						<div class="mdl-cell--4-col">
+							<i class="fa fa-id-card  big-icon" aria-hidden="true"></i>
+							<p class="icon-text"> Front End</p>
+						</div>
+						<div class="mdl-cell--4-col">
+							<i class="fa fa-database big-icon" aria-hidden="true"></i>
+							<p class="icon-text"> Back End</p>
+						</div>
+						<div class="mdl-cell--12-col">
+							<h3 class="font-wendy">Technologies</h3>
+						</div>
+						<div class="mdl-cell--4-col tech-meter">	
+							<div class="meter animate " id="bar1">
 								<span style="width: 97%">HTML5/CSS3, SASS<span></span></span>
 							</div>
 							<div class="mdl-tooltip mdl-tooltip--large mdl-tooltip--top font-roboto" data-mdl-for="bar1">
 								97%
 							</div>
 						</div>
-						<div class="mdl-cell--4-col">	
-							<div class="meter animate" id="bar2">
-								<span style="width: 90%">SQL, postgreSQL, SQLite<span></span></span>
+						<div class="mdl-cell--4-col tech-meter">	
+							<div class="meter animate " id="bar2">
+								<span style="width: 90%">Version Control (Git)<span></span></span>
 							</div>
 							<div class="mdl-tooltip mdl-tooltip--large mdl-tooltip--top font-roboto" data-mdl-for="bar2">
 								90%
 							</div>
 						</div>
-						<div class="mdl-cell--4-col">	
-							<div class="meter animate yellow" id="bar3">
-								<span style="width: 74%">TDD (Jasmine, Rspec)<span></span></span>
+						<div class="mdl-cell--4-col tech-meter">	
+							<div class="meter animate  yellow" id="bar3">
+								<span style="width: 78%">Python<span></span></span>
 							</div>
 							<div class="mdl-tooltip mdl-tooltip--large mdl-tooltip--top font-roboto" data-mdl-for="bar3">
-								74%
+								78%
 							</div>
 						</div>
-						<div class="mdl-cell--4-col">	
-							<div class="meter animate" id="bar4">
+						<div class="mdl-cell--4-col tech-meter">	
+							<div class="meter animate " id="bar4">
 								<span style="width: 94%">Ruby on Rails, Sinatra<span></span></span>
 							</div>
 							<div class="mdl-tooltip mdl-tooltip--large font-roboto" data-mdl-for="bar4">
 								94%
 							</div>
 						</div>
-						<div class="mdl-cell--4-col">	
-							<div class="meter animate light-green" id="bar5">
-								<span style="width: 86%">React.js<span></span></span>
+						<div class="mdl-cell--4-col tech-meter">	
+							<div class="meter animate  light-green" id="bar5">
+								<span style="width: 89%">Visual Basic (VBA)<span></span></span>
 							</div>
 							<div class="mdl-tooltip mdl-tooltip--large font-roboto" data-mdl-for="bar5">
-								86%
+								89%
 							</div>
 						</div>
-						<div class="mdl-cell--4-col">	
-							<div class="meter animate yellow" id="bar6">
+						<div class="mdl-cell--4-col tech-meter">	
+							<div class="meter animate  yellow" id="bar6">
 								<span style="width: 71%">C#, Unity 5<span></span></span>
 							</div>
 							<div class="mdl-tooltip mdl-tooltip--large font-roboto" data-mdl-for="bar6">
 								71%
 							</div>
 						</div>
-						<div class="mdl-cell--4-col">	
-							<div class="meter animate" id="bar7">
+						<div class="mdl-cell--4-col tech-meter">	
+							<div class="meter animate " id="bar7">
 								<span style="width: 92%">JavaScript, jQuery/AJAX<span></span></span>
 							</div>
 							<div class="mdl-tooltip mdl-tooltip--large mdl-tooltip--bottom font-roboto" data-mdl-for="bar7">
 								92%
 							</div>
 						</div>
-						<div class="mdl-cell--4-col">	
-							<div class="meter animate light-green" id="bar8">
-								<span style="width: 81%">Python<span></span></span>
+						<div class="mdl-cell--4-col tech-meter">	
+							<div class="meter animate  light-green" id="bar8">
+								<span style="width: 85%">React.js<span></span></span>
 							</div>
 							<div class="mdl-tooltip mdl-tooltip--large mdl-tooltip--bottom font-roboto" data-mdl-for="bar8">
-								81%
+								85%
 							</div>
 						</div>
-						<div class="mdl-cell--4-col">	
-							<div class="meter animate orange" id="bar9">
+						<div class="mdl-cell--4-col tech-meter">	
+							<div class="meter animate  orange" id="bar9">
 								<span style="width: 67%">Amazon Web Services<span></span></span>
 							</div>
 							<div class="mdl-tooltip mdl-tooltip--large mdl-tooltip--bottom font-roboto" data-mdl-for="bar9">
 								67%
+							</div>
+						</div>
+						<div class="mdl-cell--4-col tech-meter">	
+							<div class="meter animate " id="bar10">
+								<span style="width: 90%">SQL, postgreSQL, SQLite<span></span></span>
+							</div>
+							<div class="mdl-tooltip mdl-tooltip--large mdl-tooltip--bottom font-roboto" data-mdl-for="bar10">
+								90%
+							</div>
+						</div>
+						<div class="mdl-cell--4-col tech-meter">	
+							<div class="meter animate  light-green" id="bar11">
+								<span style="width: 81%">TDD (Jasmine, Rspec)<span></span></span>
+							</div>
+							<div class="mdl-tooltip mdl-tooltip--large mdl-tooltip--bottom font-roboto" data-mdl-for="bar11">
+								81%
+							</div>
+						</div>
+						<div class="mdl-cell--4-col tech-meter">	
+							<div class="meter animate  red" id="bar12">
+								<span style="width: 44%">Golang<span></span></span>
+							</div>
+							<div class="mdl-tooltip mdl-tooltip--large mdl-tooltip--bottom font-roboto" data-mdl-for="bar12">
+								44%
 							</div>
 						</div>
 					</div>

@@ -12,6 +12,7 @@ a.mdl-js-ripple-effect { position: relative; }
 
 .header-color {
 	background: url("assets/img/blue-background.jpg") center ;
+	color: white;
 }
 
 .intro{
@@ -44,7 +45,7 @@ h1 {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	height: 900px;
+
 
 }
 
@@ -59,7 +60,30 @@ h1 {
 #about-text {
 	font-size: 130%;
 	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
 	color: black;
+}
+
+.big-icon {
+	font-size: 16em;
+	color: #5C6BC0;
+	padding-bottom: 20px;
+}
+
+.big-icon:hover {
+	color: #4527A0;
+}
+
+.icon-text {
+	font-size: 150%;
+	font-weight: bold;
+	padding-bottom: 40px; 
+}
+
+.tech-meter {
+	padding: 4px;
+	font-size: 135%;
+	font-weight: bold;
 }
 
 .intro-card.mdl-card {
@@ -147,7 +171,7 @@ h1 {
 }
 
 .meter > span:after, .animate > span > span {
-  animation: move 2.5s linear infinite;
+  animation: move 3s linear infinite;
 }
 
 @keyframes expandWidth {
