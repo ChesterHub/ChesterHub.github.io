@@ -3,15 +3,21 @@
 	position: relative;
 }
 
-.font-roboto { font-family: 'Roboto', sans-serif; }
+.font-open { font-family: 'Open Sans', sans-serif Helvetica, Arial, sans-serif; }
 .font-wendy {	font-family: 'Wendy One', sans-serif; }
-p { font-family: 'Roboto', sans-serif; }
+
+
+p { 
+  font-family: 'Open Sans', sans-serif;
+  color: #212121;
+ }
 
 /*Ripple effects for a*/
 a.mdl-js-ripple-effect { position: relative; }
 
 .header-color {
-	background: url("assets/img/blue-background.jpg") center ;
+/*	background: url("assets/img/blue-background.jpg") center ;*/
+  background-color: #212121;
 	color: white;
 }
 
@@ -26,10 +32,19 @@ a.mdl-js-ripple-effect { position: relative; }
 	height: 910px;
 }
 
+
 h1 {
 	padding-top: 200px;
-	color: #1A237E;
+	color: #212121;
 	font-size: 650%
+}
+
+#lastname-header {
+  color: #607D8B;
+}
+
+#lastname {
+  color: #546E7A;
 }
 
 #down-arrow {
@@ -59,7 +74,7 @@ h1 {
 
 #about-text {
 	font-size: 130%;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	color: black;
   padding-bottom: 25px;
 }
@@ -70,7 +85,7 @@ h1 {
 
 .big-icon {
 	font-size: 16em;
-	color: #0D47A1;
+	color: #546E7A;
 	padding-bottom: 50px;
   padding-top: 50px;
 }
@@ -87,6 +102,7 @@ h1 {
 
 .tech {
   background: url("assets/img/blue-background.jpg") center center no-repeat;
+  background-color: #212121;
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 90px;
@@ -102,7 +118,7 @@ h1 {
   padding-right: 5px;
   padding-bottom: 15px;
   padding-top: 15px;
-	font-size: 150%;
+	font-size: 140%;
 	font-weight: bold;
 }
 
@@ -123,7 +139,7 @@ h1 {
 
 /*------------------METER PROGRESS BARS-------------------------*/
 .meter { 
-	height: 20px;
+	height: 22px;
 	position: relative;
 	background: #212121;
 	-moz-border-radius: 25px;
