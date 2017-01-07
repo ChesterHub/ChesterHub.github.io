@@ -40,12 +40,12 @@ h1 {
 .about-me {
 	position: relative;
 	/*	background: url("assets/img/blue-background.jpg") top center no-repeat;*/
-	background-color: #FAFAFA;
+	background-color: #EEEEEE;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-
+  padding-bottom: 150px;
 
 }
 
@@ -60,29 +60,49 @@ h1 {
 #about-text {
 	font-size: 130%;
 	font-family: 'Roboto', sans-serif;
-	font-weight: bold;
 	color: black;
+  padding-bottom: 25px;
+}
+
+.icon-cell:hover {
+  background-color: #212121; 
 }
 
 .big-icon {
 	font-size: 16em;
-	color: #5C6BC0;
-	padding-bottom: 20px;
+	color: #0D47A1;
+	padding-bottom: 50px;
+  padding-top: 50px;
 }
 
-.big-icon:hover {
-	color: #4527A0;
-}
+/*.big-icon:hover {
+	color: #1565C0;
+}*/
 
 .icon-text {
-	font-size: 150%;
+	font-size: 180%;
 	font-weight: bold;
-	padding-bottom: 40px; 
+  color: #EEEEEE; 
+}
+
+.tech {
+  background: url("assets/img/blue-background.jpg") center center no-repeat;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 90px;
+  padding-top: 60px;
+}
+
+#tech-title {
+  color: #EEEEEE;
 }
 
 .tech-meter {
-	padding: 4px;
-	font-size: 135%;
+	padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+	font-size: 150%;
 	font-weight: bold;
 }
 
