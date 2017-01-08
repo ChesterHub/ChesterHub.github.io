@@ -10,15 +10,15 @@
 p { 
   font-family: 'Open Sans', sans-serif;
   color: #212121;
- }
+}
 
 /*Ripple effects for a*/
 a.mdl-js-ripple-effect { position: relative; }
 
 .header-color {
-/*	background: url("assets/img/blue-background.jpg") center ;*/
+  /*	background: url("assets/img/blue-background.jpg") center ;*/
   background-color: #212121;
-	color: white;
+  color: white;
 }
 
 .intro{
@@ -92,15 +92,15 @@ h1 {
 
 /*.big-icon:hover {
 	color: #1565C0;
-}*/
+  }*/
 
-.icon-text {
-	font-size: 180%;
-	font-weight: bold;
-  color: #EEEEEE; 
-}
+  .icon-text {
+   font-size: 180%;
+   font-weight: bold;
+   color: #EEEEEE; 
+ }
 
-.tech {
+ .tech {
   background: url("assets/img/blue-background.jpg") center center no-repeat;
   background-color: #212121;
   padding-left: 30px;
@@ -118,38 +118,83 @@ h1 {
   padding-right: 5px;
   padding-bottom: 15px;
   padding-top: 15px;
-	font-size: 140%;
-	font-weight: bold;
+  font-size: 140%;
+  font-weight: bold;
 }
 
-.intro-card.mdl-card {
+.portfolio {
+  position: relative;
+  background-color: #EEEEEE;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 30px;
+
+}
+
+.project-cards {
+  width: 500px;
+  height: 500px; 
+  max-width:100%;
+  max-height:100%;
+  font-size:200%;
+  margin: 10px;
+}
+
+.project-cards:hover {
+  transform: scale(1.03);
+}
+
+#project-one {
+  background: url('assets/img/RFLCT.JPG') center;
+  background-size: cover;
+  background-repeat:   no-repeat;
+  background-position: center center;  
+}
+
+#project-two {
+  background: url('assets/img/Database1.PNG') center;
+  background-size: cover;
+  background-repeat:   no-repeat;
+  background-position: center;  
+}
+
+#project-three {
+  background: url('assets/img/chompMenu2.jpg') center;
+  background-size: cover;
+  background-repeat:   no-repeat;
+  background-position: center center;  
+}
+
+/*.intro-card.mdl-card {
+  background: url('assets/img/epic.JPG') center / cover;
 	width: 512px;
 }
 .intro-card > .mdl-card__title {
 	color: #fff;
 	height: 352px;
-	background: url('assets/img/epic.JPG') center / cover;
 }
 .intro-card > .mdl-card__menu {
 	color: #fff;
-}
+  }*/
 
 
 
 
-/*------------------METER PROGRESS BARS-------------------------*/
-.meter { 
-	height: 22px;
-	position: relative;
-	background: #212121;
-	-moz-border-radius: 25px;
-	-webkit-border-radius: 25px;
-	border-radius: 25px;
-	padding: 7px;
-	box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
-}
+  /*------------------METER PROGRESS BARS-------------------------*/
+  .meter { 
+   height: 22px;
+   position: relative;
+   background: #212121;
+   -moz-border-radius: 25px;
+   -webkit-border-radius: 25px;
+   border-radius: 25px;
+   padding: 7px;
+   box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+ }
 
-.meter > span {
+ .meter > span {
   display: block;
   height: 100%;
   border-top-right-radius: 8px;
@@ -161,10 +206,10 @@ h1 {
     center bottom,
     rgb(43,194,83) 37%,
     rgb(84,240,84) 69%
-  );
+    );
   box-shadow: 
-    inset 0 2px 9px  rgba(255,255,255,0.3),
-    inset 0 -2px 6px rgba(0,0,0,0.4);
+  inset 0 2px 9px  rgba(255,255,255,0.3),
+  inset 0 -2px 6px rgba(0,0,0,0.4);
   position: relative;
   overflow: hidden;
 }
@@ -182,7 +227,7 @@ h1 {
     rgba(255, 255, 255, .2) 75%, 
     transparent 75%, 
     transparent
-  );
+    );
   z-index: 1;
   background-size: 50px 50px;
   animation: move 2s linear infinite;
@@ -211,8 +256,8 @@ h1 {
 }
 
 @keyframes expandWidth {
-   0% { width: 0; }
-   { width: auto; }
+ 0% { width: 0; }
+ { width: auto; }
 }
 
 .light-green > span {
