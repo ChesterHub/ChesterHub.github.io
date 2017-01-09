@@ -146,6 +146,7 @@ h1 {
   max-height:100%;
   font-size:150%;
   margin: 13px;
+  cursor: pointer;
 }
 
 .project-cards-big {
@@ -155,6 +156,7 @@ h1 {
   max-height:100%;
   font-size:200%;
   margin: 13px;
+  cursor: pointer;
 }
 
 .project-cards:hover {
@@ -200,6 +202,14 @@ h1 {
   background-repeat:   no-repeat;
   background-position: center center;  
 }
+
+.portfolio-dialog {
+  height: 900px;
+  width: 900px;
+  background-color: #212121;
+  color: white;
+}
+
 
 /*.intro-card.mdl-card {
   background: url('assets/img/epic.JPG') center / cover;
