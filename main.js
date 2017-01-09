@@ -65,6 +65,30 @@ dialogFive.querySelector('.close').addEventListener('click', function() {
 	dialogFive.close();
 });
 
+// ----- Buttons -----
+document.querySelector("#down-arrow").onclick = function () {
+	document.querySelector('#about').scrollIntoView({ 
+		behavior: 'smooth' 
+	});
+};
+
+document.querySelector("#linkedin").onclick = function () {
+	location.href = "https://www.linkedin.com/in/chesterlhoang";
+};
+
+document.querySelector("#github").onclick = function () {
+	location.href = "https://www.github.com/chesterhub";
+};
+
+document.querySelector("#email").onclick = function () {
+	location.href = "mailto:ChesterLHoang@gmail.com";
+};
+
+document.querySelector("#resume").onclick = function () {
+	location.href = "https://drive.google.com/uc?export=download&id=0B80U73I4ZN1YQUpMaXZxTFJxaDQ";
+};
+
+
 
 
 

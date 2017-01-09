@@ -22,37 +22,36 @@
 				<div class="mdl-layout-spacer"></div>
 				<!-- Header Navigtaion. Disappears in smaller screens -->
 				<nav class="mdl-navigation mdl-layout--large-screen-only font-wendy">
-					<a class="mdl-navigation__link mdl-js-button mdl-js-ripple-effect" href="#">About Me</a>
-					<a class="mdl-navigation__link mdl-js-button mdl-js-ripple-effect" href="#">Portfolio</a>
-					<a class="mdl-navigation__link mdl-js-button mdl-js-ripple-effect" href="#">Résumé</a>
-					<a class="mdl-navigation__link mdl-js-button mdl-js-ripple-effect" href="#">Contact</a>
+					<a class="mdl-navigation__link mdl-js-button mdl-js-ripple-effect" href="#about">About Me</a>
+					<a class="mdl-navigation__link mdl-js-button mdl-js-ripple-effect" href="#portfolio">Portfolio</a>
+					<a class="mdl-navigation__link mdl-js-button mdl-js-ripple-effect" href="#resume">Résumé</a>
+					<a class="mdl-navigation__link mdl-js-button mdl-js-ripple-effect" href="#contact">Contact</a>
 				</nav>
 			</div>
 		</header>
 		<div class="mdl-layout__drawer mdl-layout--small-screen-only font-wendy">
 			<span class="mdl-layout-title font-wendy header-color">Navigation</span>
 			<nav class="mdl-navigation">
-				<a class="mdl-navigation__link mdl-js-button mdl-js-ripple-effect" href="">About Me</a>
-				<a class="mdl-navigation__link mdl-js-button mdl-js-ripple-effect" href="">Portfolio</a>
-				<a class="mdl-navigation__link mdl-js-button mdl-js-ripple-effect" href="">Résumé</a>
-				<a class="mdl-navigation__link mdl-js-button mdl-js-ripple-effect" href="">Contact</a>
+				<a class="mdl-navigation__link mdl-js-button mdl-js-ripple-effect" href="#about">About Me</a>
+				<a class="mdl-navigation__link mdl-js-button mdl-js-ripple-effect" href="#portfolio">Portfolio</a>
+				<a class="mdl-navigation__link mdl-js-button mdl-js-ripple-effect" href="#resume">Résumé</a>
+				<a class="mdl-navigation__link mdl-js-button mdl-js-ripple-effect" href="#contact">Contact</a>
 			</nav>
 		</div>
 		<main class="mdl-layout__content">
 			<div class="page-content"><!-- Content-->
 
-				<div class="mdl-typography--text-center font-wendy intro mdl-shadow--2dp">
-
+				<div class="mdl-typography--text-center font-wendy intro mdl-shadow--2dp" id="home">
 					<div class="mdl-grid center-content">
 						<div class="mdl-cell--10-col">
 							<h1 class="font-wendy">Chester<i class="fa fa-superpowers" aria-hidden="true"></i><span id="lastname">Hoang</span></h1>
 							<p class="font-open" style="font-size:230%">Web Developer & UI/UX Designer</p>
-							<button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="down-arrow"><i class="material-icons" style="font-size:48px;">keyboard_arrow_down</i></button>
+							<button class="mdl-button mdl-js-button" id="down-arrow"><i class="material-icons" style="font-size:48px;">keyboard_arrow_down</i></button>
 						</div>
 					</div>
 				</div>
 
-				<div class="mdl-typography--text-center about-me font-wendy">
+				<div class="mdl-typography--text-center about-me font-wendy" id="about">
 					<div class="mdl-grid center-content">
 						<!-- 						<img src="assets/img/snapchat.jpg" id="profile-picture" class="img-circle"> -->
 						<div class="mdl-cell--10-col">
@@ -67,28 +66,28 @@
 							<!-- Prevents icon cells from shifting -->
 						</div>
 						<div class="mdl-cell--4-col mdl-shadow--4dp icon-cell">
-							<i class="fa fa-users big-icon" aria-hidden="true"></i>
-							<p class="icon-text"> UI/UX</p>
+							<i class="fa fa-id-card  big-icon" aria-hidden="true"></i>
+							<p class="icon-text">Front-End Web Development</p>
 						</div>
 						<div class="mdl-cell--4-col mdl-shadow--4dp icon-cell">
-							<i class="fa fa-id-card  big-icon" aria-hidden="true"></i>
-							<p class="icon-text"> Front End</p>
+							<i class="fa fa-users big-icon" aria-hidden="true"></i>
+							<p class="icon-text">User Interface & User Experience</p>
 						</div>
 						<div class="mdl-cell--4-col mdl-shadow--4dp icon-cell">
 							<i class="fa fa-database big-icon" aria-hidden="true"></i>
-							<p class="icon-text"> Back End</p>
+							<p class="icon-text">Back-end Engineering</p>
 						</div>
 					</div>
 				</div>
 
 				<div class="mdl-typography--text-center font-open tech mdl-shadow--2dp">
-					<div class="mdl-grid center-content mdl-shadow--2dp" id="tech-box">
+					<div class="mdl-grid center-content" id="tech-box">
 						<div class="mdl-cell--11-col">
-							<h3 class="font-wendy" id="tech-title">Technologies</h3>
+							<h3 class="font-wendy" id="tech-title">Technological Skills</h3>
 						</div>
 						<div class="mdl-cell--5-col tech-meter mdl-cell--order-0">	
 							<div class="meter animate " id="bar1">
-								<span style="width: 97%">HTML5/CSS3, SASS<span></span></span>
+								<span style="width: 97%">HTML & CSS<span></span></span>
 							</div>
 							<div class="mdl-tooltip mdl-tooltip--large mdl-tooltip--left font-open" data-mdl-for="bar1">
 								97%
@@ -112,7 +111,7 @@
 						</div>
 						<div class="mdl-cell--5-col tech-meter mdl-cell--order-2">	
 							<div class="meter animate " id="bar4">
-								<span style="width: 94%">Ruby on Rails, Sinatra<span></span></span>
+								<span style="width: 94%">Ruby on Rails<span></span></span>
 							</div>
 							<div class="mdl-tooltip mdl-tooltip--large mdl-tooltip--left font-open" data-mdl-for="bar4">
 								94%
@@ -120,7 +119,7 @@
 						</div>
 						<div class="mdl-cell--5-col tech-meter mdl-cell--order-10">	
 							<div class="meter animate  light-green" id="bar5">
-								<span style="width: 89%">Visual Basic (VBA)<span></span></span>
+								<span style="width: 89%">Visual Basic<span></span></span>
 							</div>
 							<div class="mdl-tooltip mdl-tooltip--large mdl-tooltip--left font-open" data-mdl-for="bar5">
 								89%
@@ -128,7 +127,7 @@
 						</div>
 						<div class="mdl-cell--5-col tech-meter mdl-cell--order-7">	
 							<div class="meter animate  yellow" id="bar6">
-								<span style="width: 71%">C#, Unity 5<span></span></span>
+								<span style="width: 71%">C#<span></span></span>
 							</div>
 							<div class="mdl-tooltip mdl-tooltip--large mdl-tooltip--right font-open" data-mdl-for="bar6">
 								71%
@@ -136,7 +135,7 @@
 						</div>
 						<div class="mdl-cell--5-col tech-meter mdl-cell--order-4">	
 							<div class="meter animate " id="bar7">
-								<span style="width: 92%">JavaScript, jQuery/AJAX<span></span></span>
+								<span style="width: 92%">JavaScript<span></span></span>
 							</div>
 							<div class="mdl-tooltip mdl-tooltip--large mdl-tooltip--left font-open" data-mdl-for="bar7">
 								92%
@@ -144,7 +143,7 @@
 						</div>
 						<div class="mdl-cell--5-col tech-meter mdl-cell--order-1">	
 							<div class="meter animate  light-green" id="bar8">
-								<span style="width: 85%">React.js<span></span></span>
+								<span style="width: 85%">React<span></span></span>
 							</div>
 							<div class="mdl-tooltip mdl-tooltip--large mdl-tooltip--right font-open" data-mdl-for="bar8">
 								85%
@@ -160,7 +159,7 @@
 						</div>
 						<div class="mdl-cell--5-col tech-meter mdl-cell--order-6">	
 							<div class="meter animate " id="bar10">
-								<span style="width: 90%">SQL, postgreSQL, SQLite<span></span></span>
+								<span style="width: 90%">SQL<span></span></span>
 							</div>
 							<div class="mdl-tooltip mdl-tooltip--large mdl-tooltip--left font-open" data-mdl-for="bar10">
 								90%
@@ -168,7 +167,7 @@
 						</div>
 						<div class="mdl-cell--5-col tech-meter mdl-cell--order-3">	
 							<div class="meter animate  light-green" id="bar11">
-								<span style="width: 81%">TDD (Jasmine, Rspec)<span></span></span>
+								<span style="width: 81%">Adobe Illustrator<span></span></span>
 							</div>
 							<div class="mdl-tooltip mdl-tooltip--large mdl-tooltip--right font-open" data-mdl-for="bar11">
 								81%
@@ -186,10 +185,10 @@
 				</div>
 
 				<!-- Wide card with share menu button -->
-				<div class="mdl-typography--text-center font-wendy portfolio">
+				<div class="mdl-typography--text-center font-wendy portfolio" id="portfolio">
 					<div class="mdl-grid center-content">
 						<div class="mdl-cell--12-col">
-							<h3 class="font-wendy">Recent Projects<br></h3>					
+							<h3 class="font-wendy" id="portfolio-title">My Portfolio<br></h3>					
 						</div>
 						<!-- Card for Project One -->
 						<div class="mdl-card mdl-shadow--6dp mdl-cell--6-col project-cards-big mdl-card__actions" id="project-one">
@@ -236,7 +235,7 @@
 								.Chomp
 							</div>
 						</div>
-							<!-- Dialog for Project Three -->
+						<!-- Dialog for Project Three -->
 						<dialog class="mdl-dialog portfolio-dialog" id="dialog-three">
 							<h4 class="mdl-dialog__title font-wendy">dotChomp</h4>
 							<div class="mdl-dialog__content">
@@ -289,68 +288,43 @@
 					</div>
 				</div>
 			</div>
-<!-- 
-				<div class="intro-card mdl-card mdl-shadow--2dp mdl-cell--6-col">
-					<div class="mdl-card__title">
-						<h2 class="mdl-card__title-text">Welcome!</h2>
+			<div class="mdl-typography--text-center contact-info font-wendy mdl-shadow--2dp" id="contact">
+				<div class="mdl-grid center-content">
+					<div class="mdl-cell--11-col">
+						<h3 class="font-wendy" id="info-title">Contact  &  Links</h3>
 					</div>
-					<div class="mdl-card__supporting-text">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-						Mauris sagittis pellentesque lacus eleifend lacinia...
+					<div class="mdl-cell--3-col info-cell">
+						<button class="mdl-button mdl-js-button mdl-button--icon info-button" id="linkedin"><i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i></button>
+						<p>LinkedIn</p>
 					</div>
-					<div class="mdl-card__actions mdl-card--border">
-						<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-							More About Me
-						</a>
+					<div class="mdl-cell--3-col info-cell">
+						<button class="mdl-button mdl-js-button mdl-button--icon info-button" id="github"><i class="fa fa-github fa-4x" aria-hidden="true"></i></button>
+						<p>Github</p>
 					</div>
-				</div> -->
-
-<!-- 					<div class="mdl-card mdl-shadow--2dp mdl-cell--6-col">
-						<div class="mdl-card__title">
-							<h2>Title</h2>
-						</div>
-						<div class="mdl-card__supporting-text">
-							We are setting this card up
-						</div>
-						<div class="mdl-card__actions mdl-card--border">
-							<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-								The Button
-							</a>
-						</div>
+					<div class="mdl-cell--3-col info-cell">
+						<button class="mdl-button mdl-js-button mdl-button--icon info-button" id="email"><i class="fa fa-envelope-o fa-4x" aria-hidden="true"></i></button>
+						<p>Email</p>
 					</div>
-
-
+					<div class="mdl-cell--3-col info-cell">
+						<button class="mdl-button mdl-js-button mdl-button--icon info-button" id="resume"><i class="fa fa-download fa-4x" aria-hidden="true"></i></button>
+						<p>Résumé</p>
+					</div>
 				</div>
-
-				<div class="mdl-card mdl-shadow--2dp">
-					<div class="mdl-card__title">
-						<h2>Title</h2>
-					</div>
-					<div class="mdl-card__supporting-text">
-						We are setting this card up
-					</div>
-					<div class="mdl-card__actions mdl-card--border">
-						<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-							The Button
-						</a>
-					</div>
-				</div> -->
-
-
-<!-- 				<footer class="mdl-mini-footer">
-					<div class="mdl-mini-footer__left-section">
-						<div class="mdl-logo">Chester Hoang 2017</div>
-						<ul class="mdl-mini-footer__link-list">
-							<li><a href="#">Back to Top</a></li>
-							<li><a href="#">Privacy & Terms</a></li>
-						</ul>
-					</div>
-				</footer> -->
-
 			</div>
-		</main>
-	</div>
+			<!-- </i><a href="Resume_2017.pdf" download> -->
+			<footer class="mdl-mini-footer footer">
+				<div class="mdl-mini-footer__left-section">
+					<div class="mdl-logo">Chester Hoang 2017</div>
+					<ul class="mdl-mini-footer__link-list">
+						<li><a href="#home">Back to Top</a></li>
+					</ul>
+				</div>
+			</footer>
+		</div>
 
-	<script src="main.js"></script>
+	</main>
+</div>
+
+<script src="main.js"></script>
 </body>
 </html>
