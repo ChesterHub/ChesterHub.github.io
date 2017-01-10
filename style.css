@@ -287,7 +287,7 @@ h1 {
   overflow: hidden;
 }
 
-.meter > span:after, .animate > span > span {
+/*.meter > span:after, .animate > span > span {
   content: "";
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
@@ -303,7 +303,7 @@ h1 {
     );
   z-index: 1;
   background-size: 50px 50px;
-  animation: move 2s linear infinite;
+  animation: move 3s linear infinite;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
   border-top-left-radius: 20px;
@@ -322,16 +322,16 @@ h1 {
   100% {
     background-position: 50px 50px;
   }
-}
+}*/
 
-.meter > span:after, .animate > span > span {
+/*.meter > span:after, .animate > span > span {
   animation: move 3s linear infinite;
-}
+}*/
 
-@keyframes expandWidth {
+/*@keyframes expandWidth {
  0% { width: 0; }
  { width: auto; }
-}
+}*/
 
 .light-green > span {
   background-color: #8BC34A;
