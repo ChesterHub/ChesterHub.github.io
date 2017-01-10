@@ -67,15 +67,15 @@
 						</div>
 						<div class="mdl-cell--4-col mdl-shadow--4dp icon-cell">
 							<i class="fa fa-id-card  big-icon" aria-hidden="true"></i>
-							<p class="icon-text">Front-End Web Development</p>
+							<p class="icon-text font-open">Front-End Web Development</p>
 						</div>
 						<div class="mdl-cell--4-col mdl-shadow--4dp icon-cell">
 							<i class="fa fa-users big-icon" aria-hidden="true"></i>
-							<p class="icon-text">User Interface & User Experience</p>
+							<p class="icon-text font-open">User Interface & User Experience</p>
 						</div>
 						<div class="mdl-cell--4-col mdl-shadow--4dp icon-cell">
 							<i class="fa fa-database big-icon" aria-hidden="true"></i>
-							<p class="icon-text">Back-end Engineering</p>
+							<p class="icon-text font-open">Back-end Engineering</p>
 						</div>
 					</div>
 				</div>
@@ -85,7 +85,7 @@
 						<div class="mdl-cell--11-col">
 							<h3 class="font-wendy" id="tech-title">Technological Skills</h3>
 						</div>
-<!-- 						<button onclick="move()">Click Me</button>  -->
+						<!-- 						<button onclick="move()">Click Me</button>  -->
 						<div class="mdl-cell--5-col tech-meter mdl-cell--order-0">	
 							<div class="meter animate green">
 								<span id="bar1" style="width: 40%">HTML & CSS<span></span></span>
@@ -202,50 +202,65 @@
 						<dialog class="mdl-dialog portfolio-dialog" id="dialog-one">
 							<h4 class="mdl-dialog__title font-wendy">RFLCT - Smart Mirror</h4>
 							<div class="mdl-dialog__content">
+								<img src="assets/img/rflctFace.JPG" class="dialog-pictures">
 								<p>
-									REFLECT
+									A smart mirror utilizing voice detection and facial recognition to display real-time, customizable information based on who you are. Your personal profile will have weather, news feeds from any website, a personal calendar, and Amazon Alexa ready to answer any question you may have.
+									<br>
+									<br>
+									<a href="https://github.com/ChesterHub/RFLCTT" class="mdl-button mdl-js-button mdl-button--icon"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+									<br>
+									<br>
+									<strong>Tech Stack:</strong> Python, Node.js, Electron.js, Amazon Alexa, Raspberry Pi, AWS
 								</p>
 							</div>
 							<div class="mdl-dialog__actions--full-width">
-								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect close">Close</button>
+								<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored close">Close</button>
 							</div>
 						</dialog>
 						<!-- Card for Project Two -->
 						<div class="mdl-card mdl-shadow--6dp mdl-cell--6-col project-cards mdl-card__actions" id="project-two">
 							<div class="mdl-card__title mdl-card--expand portfolio-trigger"></div>
-							<div class="mdl-card__title">
-								Access Database 
+							<div class="mdl-card__title" style="color:black">
+								
 							</div>
 						</div>
 						<!-- Dialog for Project Two -->
 						<dialog class="mdl-dialog portfolio-dialog" id="dialog-two">
-							<h4 class="mdl-dialog__title font-wendy">CDSS Access</h4>
+							<h4 class="mdl-dialog__title font-wendy">Case Database</h4>
 							<div class="mdl-dialog__content">
+								<img src="assets/img/DatabaseFront.jpg" class="dialog-pictures">
 								<p>
-									DATABASE
+									The state Departments are not a fan of elaborate design, but rather love efficiency and clarity. I engineered the UI and UX of this Application to be as systematic as possible. Created with SQL and Visual Basic, this database is still used today to track important applications and simply querying for the internal RDBMS.
+									<br>
+									<br>
+									<strong>Tech Stack:</strong> SQL, Visual Basic, Microsoft Access
 								</p>
 							</div>
 							<div class="mdl-dialog__actions--full-width">
-								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect close">Close</button>
+								<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored close">Close</button>
 							</div>
 						</dialog>
 						<!-- Card for Project Three -->
 						<div class="mdl-card mdl-shadow--6dp mdl-cell--4-col project-cards mdl-card__actions" id="project-three">
 							<div class="mdl-card__title mdl-card--expand"></div>
-							<div class="mdl-card__title">
-								.Chomp
-							</div>
 						</div>
 						<!-- Dialog for Project Three -->
 						<dialog class="mdl-dialog portfolio-dialog" id="dialog-three">
 							<h4 class="mdl-dialog__title font-wendy">dotChomp</h4>
 							<div class="mdl-dialog__content">
+								<img src="assets/img/chompPlay.png" class="dialog-pictures">
 								<p>
-									Phaser Framework
+									During our time at Dev Bootcamp, each student was to build a project that was meaningful to them. This was my personal project... a HTML5 web-browser game that utilizes a MVC framework to run the game and track all players' scores. This web-browser game was deployed on Heroku where it generated a ton of hilarious entertainment.
+									<br>
+									<br>
+									<a href="https://github.com/ChesterHub/devbootcamp.CHOMP" class="mdl-button mdl-js-button mdl-button--icon"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+									<br>
+									<br>
+									<strong>Tech Stack:</strong> JavaScript, Ruby, Sinatra, Heroku, Phaser.io 
 								</p>
 							</div>
 							<div class="mdl-dialog__actions--full-width">
-								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect close">Close</button>
+								<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored close">Close</button>
 							</div>
 						</dialog>
 						<!-- Card for Project Four -->
@@ -257,33 +272,44 @@
 						</div>
 						<!-- Dialog for Project Four -->
 						<dialog class="mdl-dialog portfolio-dialog" id="dialog-four">
-							<h4 class="mdl-dialog__title font-wendy">Portfolio</h4>
+							<h4 class="mdl-dialog__title font-wendy">Material Design Portfolio</h4>
 							<div class="mdl-dialog__content">
 								<p>
-									Material Design Portfolio
+									This portfolio you are currently looking at! This Website is constantly being reiterated as my knowledge of technologies expand. 
+									<br>
+									<br>
+									<a href="https://github.com/ChesterHub/Chesterhub.github.io" class="mdl-button mdl-js-button mdl-button--icon"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+									<br>
+									<br>
+									<strong>Tech Stack:</strong> HTML5, CSS3, JavaScript, Material Design 
 								</p>
 							</div>
 							<div class="mdl-dialog__actions--full-width">
-								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect close">Close</button>
+								<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored close">Close</button>
 							</div>
 						</dialog>
 						<!-- Card for Project Five -->
 						<div class="mdl-card mdl-shadow--6dp mdl-cell--4-col project-cards mdl-card__actions" id="project-five">
 							<div class="mdl-card__title mdl-card--expand"></div>
 							<div class="mdl-card__title">
-								Roller Ball
+								Fast Ball
 							</div>
 						</div>
 						<!-- Dialog for Project Five -->
 						<dialog class="mdl-dialog portfolio-dialog" id="dialog-five">
-							<h4 class="mdl-dialog__title font-wendy">RollerBALL</h4>
+							<h4 class="mdl-dialog__title font-wendy">FastBall</h4>
 							<div class="mdl-dialog__content">
+							<img src="assets/img/FastBallMockup.jpg" class="dialog-pictures">
 								<p>
-									Roller Ball
+									An Android game that utilizes mobile accelerometers to tilt the ball in a direction to either dodge obstacles or obtain items. Note: This project is in early development.
+									<br>
+									<br>
+
+									<strong>Tech Stack:</strong> C#, Unity 5, Android SDK 
 								</p>
 							</div>
 							<div class="mdl-dialog__actions--full-width">
-								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect close">Close</button>
+								<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored close">Close</button>
 							</div>
 						</dialog>
 					</div>
@@ -292,7 +318,7 @@
 			<div class="mdl-typography--text-center contact-info font-wendy mdl-shadow--2dp" id="contact">
 				<div class="mdl-grid center-content">
 					<div class="mdl-cell--11-col">
-						<h3 class="font-wendy" id="info-title">Contact  &  Links</h3>
+						<h3 class="font-wendy" id="info-title">Contact & Links</h3>
 					</div>
 					<div class="mdl-cell--3-col info-cell">
 						<button class="mdl-button mdl-js-button mdl-button--icon info-button" id="linkedin"><i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i></button>

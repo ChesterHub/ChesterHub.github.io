@@ -6,7 +6,6 @@
 .font-open { font-family: 'Open Sans', sans-serif, Helvetica, Arial, sans-serif; }
 .font-wendy {	font-family: 'Wendy One', sans-serif, Helvetica, Arial, sans-serif; }
 
-
 p { 
   font-family: 'Open Sans', sans-serif, Helvetica, Arial, sans-serif;
   color: #212121;
@@ -83,6 +82,10 @@ h1 {
   padding-bottom: 25px;
 }
 
+.icon-cell {
+  margin: 5px;
+}
+
 .icon-cell:hover {
   background-color: #212121; 
 }
@@ -147,7 +150,7 @@ h1 {
   height: 400px; 
   max-width: 100%;
   max-height: 100%;
-  font-size: 150%;
+  font-size: 200%;
   margin: 10px;
   cursor: pointer;
 }
@@ -161,7 +164,7 @@ h1 {
   height: 400px; 
   max-width:100%;
   max-height:100%;
-  font-size:200%;
+  font-size:300%;
   margin: 10px;
   cursor: pointer;
 }
@@ -182,7 +185,7 @@ h1 {
 }
 
 #project-two {
-  background: url('assets/img/Database1.PNG') center;
+  background: url('assets/img/DatabaseCDRW.jpg') center;
   background-size: cover;
   background-repeat:   no-repeat;
   background-position: center;  
@@ -204,7 +207,7 @@ h1 {
 }
 
 #project-five {
-  background: url('assets/img/Pier7.jpg') center;
+  background: url('assets/img/FastBall1.jpg') center;
   background-size: cover;
   background-repeat:   no-repeat;
   background-position: center center;  
@@ -217,6 +220,18 @@ h1 {
   color: white;
 }
 
+.mdl-dialog__content > p {
+  color: white;
+  font-family: 'Open Sans', sans-serif, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+
+.dialog-pictures {
+  max-width: 80%;
+  max-height: 80%;
+  padding: 20px;
+}
+
 .contact-info {
   position: relative;
   -webkit-background-size: cover;
@@ -224,7 +239,7 @@ h1 {
   -o-background-size: cover;
   background-size: cover;
   background-color: #212121;
-  padding-bottom: 170px;
+  padding-bottom: 140px;
 }
 
 #info-title {
@@ -326,18 +341,18 @@ h1 {
   100% {
     background-position: 50px 50px;
   }
-}*/
+  }*/
 
 /*.meter > span:after, .animate > span > span {
   animation: move 3s linear infinite;
-}*/
+  }*/
 
 /*@keyframes expandWidth {
  0% { width: 0; }
  { width: auto; }
-}*/
+ }*/
 
-.green > span {
+ .green > span {
   background-color: #4CAF50;
   background-image: linear-gradient(to bottom, #A5D6A7, #388E3C);
 }

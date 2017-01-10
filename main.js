@@ -133,7 +133,6 @@ function moveAll() {
 	}
 
 }
-
 function moveBar(bar, percentage) {
 	var elem = bar;   
 	var width = 40;
