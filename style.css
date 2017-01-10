@@ -143,22 +143,26 @@ h1 {
 }
 
 .project-cards {
-  width: 500px;
-  height: 500px; 
-  max-width:100%;
-  max-height:100%;
-  font-size:150%;
-  margin: 13px;
+  width: 400px;
+  height: 400px; 
+  max-width: 100%;
+  max-height: 100%;
+  font-size: 150%;
+  margin: 10px;
   cursor: pointer;
 }
 
+.project-cards > .mdl-card__title {
+  color: white;
+}
+
 .project-cards-big {
-  width: 1026px;
-  height: 500px; 
+  width: 820px;
+  height: 400px; 
   max-width:100%;
   max-height:100%;
   font-size:200%;
-  margin: 13px;
+  margin: 10px;
   cursor: pointer;
 }
 
@@ -235,14 +239,14 @@ h1 {
 }
 
 .info-button {
-  font-size: 3em;
+  font-size: 2.5em;
   height: 100%;
   width: 100%;
   color: #EEEEEE;
 }
 
 .info-cell > p {
-  font-size: 18pt;
+  font-size: 16pt;
   color: #EEEEEE;
   font-weight: bold;
 }
@@ -332,6 +336,11 @@ h1 {
  0% { width: 0; }
  { width: auto; }
 }*/
+
+.green > span {
+  background-color: #4CAF50;
+  background-image: linear-gradient(to bottom, #A5D6A7, #388E3C);
+}
 
 .light-green > span {
   background-color: #8BC34A;

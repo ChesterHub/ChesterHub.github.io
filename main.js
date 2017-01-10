@@ -3,65 +3,6 @@ function init() {
 }
 
 init();
-// -------- Make bars move ----------
-barsMoved = false;
-function moveAll() {
-	if (barsMoved === false) {
-		barOne = document.querySelector("#bar1");
-		moveBar(barOne, 97);
-
-		barTwo = document.querySelector("#bar2");
-		moveBar(barTwo, 90);
-
-		barThree = document.querySelector("#bar3");
-		moveBar(barThree, 78);
-
-		barFour = document.querySelector("#bar4");
-		moveBar(barFour, 94);
-
-		barFive = document.querySelector("#bar5");
-		moveBar(barFive, 89);
-
-		barSix = document.querySelector("#bar6");
-		moveBar(barSix, 71);
-
-		barSeven = document.querySelector("#bar7");
-		moveBar(barSeven, 92);
-
-		barEight = document.querySelector("#bar8");
-		moveBar(barEight, 85);
-
-		barNine = document.querySelector("#bar9");
-		moveBar(barNine, 67);
-
-		barTen = document.querySelector("#bar10");
-		moveBar(barTen, 90);
-
-		barEleven = document.querySelector("#bar11");
-		moveBar(barEleven, 81);
-
-		barTwelve = document.querySelector("#bar12");
-		moveBar(barTwelve, 57);
-
-
-		barsMoved = true;
-	}
-
-}
-
-function moveBar(bar, percentage) {
-	var elem = bar;   
-	var width = 1;
-	var id = setInterval(frame, 20);
-	function frame() {
-		if (width >= percentage) {
-			clearInterval(id);
-		} else {
-			width++; 
-			elem.style.width = width + '%'; 
-		}
-	}
-}
 
 //--------- PROJECT PORTFOLIO EVENT LISTENERS --------------
 var projectOne = document.querySelector('#project-one');
@@ -146,6 +87,67 @@ document.querySelector("#email").onclick = function () {
 document.querySelector("#resume").onclick = function () {
 	location.href = "https://drive.google.com/uc?export=download&id=0B80U73I4ZN1YQUpMaXZxTFJxaDQ";
 };
+
+
+// -------- Make bars move ----------
+barsMoved = false;
+function moveAll() {
+	if (barsMoved === false) {
+		barOne = document.querySelector("#bar1");
+		moveBar(barOne, 97);
+
+		barTwo = document.querySelector("#bar2");
+		moveBar(barTwo, 90);
+
+		barThree = document.querySelector("#bar3");
+		moveBar(barThree, 78);
+
+		barFour = document.querySelector("#bar4");
+		moveBar(barFour, 94);
+
+		barFive = document.querySelector("#bar5");
+		moveBar(barFive, 89);
+
+		barSix = document.querySelector("#bar6");
+		moveBar(barSix, 71);
+
+		barSeven = document.querySelector("#bar7");
+		moveBar(barSeven, 92);
+
+		barEight = document.querySelector("#bar8");
+		moveBar(barEight, 85);
+
+		barNine = document.querySelector("#bar9");
+		moveBar(barNine, 67);
+
+		barTen = document.querySelector("#bar10");
+		moveBar(barTen, 90);
+
+		barEleven = document.querySelector("#bar11");
+		moveBar(barEleven, 81);
+
+		barTwelve = document.querySelector("#bar12");
+		moveBar(barTwelve, 57);
+
+		barsMoved = true;
+	}
+
+}
+
+function moveBar(bar, percentage) {
+	var elem = bar;   
+	var width = 40;
+	var id = setInterval(frame, 32);
+	function frame() {
+		if (width >= percentage) {
+			clearInterval(id);
+		} else {
+			width++; 
+			elem.style.width = width + '%'; 
+		}
+	}
+}
+
 
 
 
