@@ -6,7 +6,6 @@
 .font-open { font-family: 'Open Sans', sans-serif, Helvetica, Arial, sans-serif; }
 .font-wendy {	font-family: 'Wendy One', sans-serif, Helvetica, Arial, sans-serif; }
 
-
 p { 
   font-family: 'Open Sans', sans-serif, Helvetica, Arial, sans-serif;
   color: #212121;
@@ -83,6 +82,10 @@ h1 {
   padding-bottom: 25px;
 }
 
+.icon-cell {
+  margin: 5px;
+}
+
 .icon-cell:hover {
   background-color: #212121; 
 }
@@ -143,22 +146,26 @@ h1 {
 }
 
 .project-cards {
-  width: 500px;
-  height: 500px; 
-  max-width:100%;
-  max-height:100%;
-  font-size:150%;
-  margin: 13px;
+  width: 400px;
+  height: 400px; 
+  max-width: 100%;
+  max-height: 100%;
+  font-size: 200%;
+  margin: 10px;
   cursor: pointer;
 }
 
+.project-cards > .mdl-card__title {
+  color: white;
+}
+
 .project-cards-big {
-  width: 1026px;
-  height: 500px; 
+  width: 820px;
+  height: 400px; 
   max-width:100%;
   max-height:100%;
-  font-size:200%;
-  margin: 13px;
+  font-size:300%;
+  margin: 10px;
   cursor: pointer;
 }
 
@@ -178,7 +185,7 @@ h1 {
 }
 
 #project-two {
-  background: url('assets/img/Database1.PNG') center;
+  background: url('assets/img/DatabaseCDRW.jpg') center;
   background-size: cover;
   background-repeat:   no-repeat;
   background-position: center;  
@@ -200,7 +207,7 @@ h1 {
 }
 
 #project-five {
-  background: url('assets/img/Pier7.jpg') center;
+  background: url('assets/img/FastBall1.jpg') center;
   background-size: cover;
   background-repeat:   no-repeat;
   background-position: center center;  
@@ -213,6 +220,18 @@ h1 {
   color: white;
 }
 
+.mdl-dialog__content > p {
+  color: white;
+  font-family: 'Open Sans', sans-serif, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+
+.dialog-pictures {
+  max-width: 80%;
+  max-height: 80%;
+  padding: 20px;
+}
+
 .contact-info {
   position: relative;
   -webkit-background-size: cover;
@@ -220,7 +239,7 @@ h1 {
   -o-background-size: cover;
   background-size: cover;
   background-color: #212121;
-  padding-bottom: 170px;
+  padding-bottom: 140px;
 }
 
 #info-title {
@@ -235,14 +254,14 @@ h1 {
 }
 
 .info-button {
-  font-size: 3em;
+  font-size: 2.5em;
   height: 100%;
   width: 100%;
   color: #EEEEEE;
 }
 
 .info-cell > p {
-  font-size: 18pt;
+  font-size: 16pt;
   color: #EEEEEE;
   font-weight: bold;
 }
@@ -287,7 +306,7 @@ h1 {
   overflow: hidden;
 }
 
-.meter > span:after, .animate > span > span {
+/*.meter > span:after, .animate > span > span {
   content: "";
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
@@ -303,7 +322,7 @@ h1 {
     );
   z-index: 1;
   background-size: 50px 50px;
-  animation: move 2s linear infinite;
+  animation: move 3s linear infinite;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
   border-top-left-radius: 20px;
@@ -322,15 +341,20 @@ h1 {
   100% {
     background-position: 50px 50px;
   }
-}
+  }*/
 
-.meter > span:after, .animate > span > span {
+/*.meter > span:after, .animate > span > span {
   animation: move 3s linear infinite;
-}
+  }*/
 
-@keyframes expandWidth {
+/*@keyframes expandWidth {
  0% { width: 0; }
  { width: auto; }
+ }*/
+
+ .green > span {
+  background-color: #4CAF50;
+  background-image: linear-gradient(to bottom, #A5D6A7, #388E3C);
 }
 
 .light-green > span {
