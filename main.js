@@ -85,7 +85,7 @@ document.querySelector("#email").onclick = function () {
 };
 
 document.querySelector("#resume").onclick = function () {
-	location.href = "https://drive.google.com/uc?export=download&id=0B80U73I4ZN1YQUpMaXZxTFJxaDQ";
+	location.href = "https://drive.google.com/uc?export=download&id=0B80U73I4ZN1YakYxdHpJa3VyTTg";
 };
 
 
