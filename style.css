@@ -3,6 +3,8 @@
 	position: relative;
 }
 
+body  { background:url("assets/img/beach.jpg")  bottom center no-repeat; background-attachment:fixed; }
+
 .font-open { font-family: 'Open Sans', sans-serif, Helvetica, Arial, sans-serif; }
 .font-wendy {	font-family: 'Wendy One', sans-serif, Helvetica, Arial, sans-serif; }
 
@@ -66,13 +68,19 @@ h1 {
 .about-me {
 	position: relative;
 	/*	background: url("assets/img/blue-background.jpg") top center no-repeat;*/
-	background-color: #EEEEEE;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+	/*background-color: #EEEEEE;*/
+  background:     linear-gradient(
+    rgba(0, 0, 0, 0.1), 
+    rgba(0, 0, 0, 0.1)
+    );
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   padding-bottom: 100px;
+}
 
+.about-me:hover {
 }
 
 #profile-picture {
@@ -86,29 +94,39 @@ h1 {
 #about-text {
 	font-size: 150%;
 	font-family: 'Open Sans', sans-serif;
-	color: black;
-  padding-bottom: 25px;
+	color: #CFD8DC;
+  padding-bottom: 15px;
+}
+
+#about-text-cell {
+  background-color:rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  border-radius: 40px;
 }
 
 .icon-cell {
-  margin: 2px;
+  padding-top: 25px;
+  border-radius: 10px;
 }
 
-.icon-cell:hover {
-  background-color: #212121; 
+.icon-cell > p {
+  background-color:rgba(0, 0, 0, 0.3);
 }
+
 
 .big-icon {
-	font-size: 19em;
+	font-size: 22em;
 	color: #546E7A;
 	padding-bottom: 40px;
   padding-top: 40px;
 }
 
+
 .icon-text {
- font-size: 180%;
- font-weight: bold;
- color: #EEEEEE; 
+  font-family: 'Wendy One', sans-serif, Helvetica, Arial, sans-serif;
+  font-size: 180%;
+  color: black; 
+  border-radius: 8px;
 }
 
 .tech {
@@ -139,7 +157,7 @@ h1 {
 
 .portfolio {
   position: relative;
-  background-color: #EEEEEE;
+  background-color:rgba(0, 0, 0, .2);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -161,7 +179,9 @@ h1 {
   font-size: 200%;
   margin: 10px;
   cursor: pointer;
+  border-radius: 20px;
 }
+
 
 .project-cards > .mdl-card__title {
   color: white;
@@ -177,13 +197,31 @@ h1 {
   cursor: pointer;
 }
 
-.project-cards:hover {
+/*.project-cards:hover {
+  background-color:rgba(0, 0, 0, 0.8);
   transform: scale(1.03);
 }
 
 .project-cards-big:hover {
   transform: scale(1.03);
 }
+*/
+.project-cards {
+    -webkit-transition: all .75s ease; /* Safari and Chrome */
+    -moz-transition: all .75s ease; /* Firefox */
+    -ms-transition: all .75s ease; /* IE 9 */
+    -o-transition: all .75s ease; /* Opera */
+    transition: all .75s ease;
+}
+
+.project-cards:hover {
+    -webkit-transform:scale(1.05); /* Safari and Chrome */
+    -moz-transform:scale(1.05); /* Firefox */
+    -ms-transform:scale(1.05); /* IE 9 */
+    -o-transform:scale(1.05); /* Opera */
+     transform:scale(1.05);
+}
+
 
 #project-one {
   background: url('assets/img/RFLCT.JPG') center;
@@ -226,6 +264,7 @@ h1 {
   width: 900px;
   background-color: #212121;
   color: white;
+  opacity: .99;
 }
 
 .mdl-dialog__content > p {
@@ -281,7 +320,8 @@ h1 {
 
 
 .footer {
-  background-color: black; 
+  background-color: black;
+  opacity: .97; 
 }
 
 
