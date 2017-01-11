@@ -29,13 +29,13 @@
 				</nav>
 			</div>
 		</header>
-		<div class="mdl-layout__drawer mdl-layout--small-screen-only font-wendy">
-			<span class="mdl-layout-title font-wendy header-color">Navigation</span>
+		<div class="mdl-layout__drawer mdl-layout--small-screen-only font-wendy" id="mobile-bar">
+			<span class="mdl-layout-title font-wendy header-color mobile-nav">Navigation</span>
 			<nav class="mdl-navigation">
-				<a class="mdl-navigation__link mdl-js-button mdl-js-ripple-effect" href="#about">About Me</a>
-				<a class="mdl-navigation__link mdl-js-button mdl-js-ripple-effect" href="#portfolio">Portfolio</a>
-				<a class="mdl-navigation__link mdl-js-button mdl-js-ripple-effect" href="#resume">Résumé</a>
-				<a class="mdl-navigation__link mdl-js-button mdl-js-ripple-effect" href="#contact">Contact</a>
+				<a class="mdl-navigation__link mdl-js-button mdl-js-ripple-effect mobile-nav" href="#about">About Me</a>
+				<a class="mdl-navigation__link mdl-js-button mdl-js-ripple-effect mobile-nav" href="#portfolio">Portfolio</a>
+				<a class="mdl-navigation__link mdl-js-button mdl-js-ripple-effect mobile-nav" href="#resume">Résumé</a>
+				<a class="mdl-navigation__link mdl-js-button mdl-js-ripple-effect mobile-nav" href="#contact">Contact</a>
 			</nav>
 		</div>
 		<main class="mdl-layout__content">
@@ -45,7 +45,7 @@
 					<div class="mdl-grid center-content">
 						<div class="mdl-cell--10-col">
 							<h1 class="font-wendy">Chester<i class="fa fa-superpowers" aria-hidden="true"></i><span id="lastname">Hoang</span></h1>
-							<p class="font-open" style="font-size:230%">Web Developer & UI/UX Designer</p>
+							<p class="font-open" style="font-size:230%">Front-End Engineer & UI/UX Developer</p>
 							<button class="mdl-button mdl-js-button" id="down-arrow"><i class="material-icons" style="font-size:48px;">keyboard_arrow_down</i></button>
 						</div>
 					</div>
@@ -53,24 +53,23 @@
 
 				<div class="mdl-typography--text-center about-me font-wendy" id="about">
 					<div class="mdl-grid center-content">
-						<!-- 						<img src="assets/img/snapchat.jpg" id="profile-picture" class="img-circle"> -->
 						<div class="mdl-cell--10-col">
 							<h3 class="font-wendy">About Me</h3>
 						</div>
 						<div class="mdl-cell--7-col"> 	
 							<p id="about-text">
-								Accomplished Software Engineer with hands-on experience in Ruby on Rails, JavaScript, Visual Basic, and SQL. Proficient at writing code in various languages, Test-Driven development (TDD), and Version Control software. With a strong management background, I have consistently excelled in teams and have lead to the success of various industry projects.
+								I am a front-end engineer who specializes in web development and UI/UX design. I always approach a problem through methodical research, statistical forecasting, and utmost curiousity. Coming from an Economics background, I understand the importance of data analysis and the ability to reveal trends. Recently, I have been augmenting my design knowledge while perpetuating my overall mastery in engineering. 
 							</p>					
 						</div>
 						<div class="mdl-cell--12-col">
-							<!-- Prevents icon cells from shifting -->
+							<!-- 							Prevents icon cells from shifting -->
 						</div>
 						<div class="mdl-cell--4-col mdl-shadow--4dp icon-cell">
-							<i class="fa fa-id-card  big-icon" aria-hidden="true"></i>
+							<i class="fa fa-ravelry  big-icon" aria-hidden="true"></i>
 							<p class="icon-text font-open">Front-End Web Development</p>
 						</div>
 						<div class="mdl-cell--4-col mdl-shadow--4dp icon-cell">
-							<i class="fa fa-users big-icon" aria-hidden="true"></i>
+							<i class="fa fa-id-badge big-icon" aria-hidden="true"></i>
 							<p class="icon-text font-open">User Interface & User Experience</p>
 						</div>
 						<div class="mdl-cell--4-col mdl-shadow--4dp icon-cell">
@@ -85,7 +84,6 @@
 						<div class="mdl-cell--11-col">
 							<h3 class="font-wendy" id="tech-title">Technological Skills</h3>
 						</div>
-						<!-- 						<button onclick="move()">Click Me</button>  -->
 						<div class="mdl-cell--5-col tech-meter mdl-cell--order-0">	
 							<div class="meter animate green">
 								<span id="bar1" style="width: 40%">HTML & CSS<span></span></span>
@@ -230,7 +228,7 @@
 							<div class="mdl-dialog__content">
 								<img src="assets/img/DatabaseFront.jpg" class="dialog-pictures">
 								<p>
-									The state Departments are not a fan of elaborate design, but rather love efficiency and clarity. I engineered the UI and UX of this Application to be as systematic as possible. Created with SQL and Visual Basic, this database is still used today to track important applications and simply querying for the internal RDBMS.
+									The state Departments are not a fan of elaborate design, but rather love efficiency and clarity. I engineered the UI and UX of this Application to be as systematic as possible. Created with SQL and Visual Basic, this database is still used today to track important applications and simplify querying for the internal RDBMS.
 									<br>
 									<br>
 									<strong>Tech Stack:</strong> SQL, Visual Basic, Microsoft Access
@@ -299,7 +297,7 @@
 						<dialog class="mdl-dialog portfolio-dialog" id="dialog-five">
 							<h4 class="mdl-dialog__title font-wendy">FastBall</h4>
 							<div class="mdl-dialog__content">
-							<img src="assets/img/FastBallMockup.jpg" class="dialog-pictures">
+								<img src="assets/img/FastBallMockup.jpg" class="dialog-pictures">
 								<p>
 									An Android game that utilizes mobile accelerometers to tilt the ball in a direction to either dodge obstacles or obtain items. Note: This project is in early development.
 									<br>

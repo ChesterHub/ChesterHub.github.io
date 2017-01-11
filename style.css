@@ -23,6 +23,14 @@ a.mdl-js-ripple-effect { position: relative; }
   color: white;
 }
 
+#mobile-bar {
+  background-color: #EEEEEE;
+}
+
+.mobile-nav {
+  font-size: 200%;
+}
+
 
 .intro{
 	position: relative;
@@ -32,7 +40,7 @@ a.mdl-js-ripple-effect { position: relative; }
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	height: 910px;
+  height: 100vh;
 }
 
 
@@ -63,7 +71,7 @@ h1 {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-  padding-bottom: 150px;
+  padding-bottom: 100px;
 
 }
 
@@ -76,14 +84,14 @@ h1 {
 .img-circle { border-radius: 50% }
 
 #about-text {
-	font-size: 130%;
+	font-size: 150%;
 	font-family: 'Open Sans', sans-serif;
 	color: black;
   padding-bottom: 25px;
 }
 
 .icon-cell {
-  margin: 5px;
+  margin: 2px;
 }
 
 .icon-cell:hover {
@@ -91,10 +99,10 @@ h1 {
 }
 
 .big-icon {
-	font-size: 16em;
+	font-size: 19em;
 	color: #546E7A;
-	padding-bottom: 50px;
-  padding-top: 50px;
+	padding-bottom: 40px;
+  padding-top: 40px;
 }
 
 .icon-text {
