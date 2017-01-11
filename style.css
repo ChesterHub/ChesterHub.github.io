@@ -106,6 +106,7 @@ h1 {
 
 .icon-cell {
   padding-top: 25px;
+  padding: 25px;
   border-radius: 10px;
 }
 
@@ -119,6 +120,7 @@ h1 {
 	color: #546E7A;
 	padding-bottom: 40px;
   padding-top: 40px;
+
 }
 
 
@@ -324,6 +326,10 @@ h1 {
   opacity: .97; 
 }
 
+
+@-ms-viewport{
+  width: device-width;
+}
 
 
 
