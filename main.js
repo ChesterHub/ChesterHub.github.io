@@ -3,6 +3,12 @@ function init() {
 }
 
 init();
+// QUICK CHIP
+var chip = document.querySelector('#chip-cell');
+document.querySelector('#chip').addEventListener('click', function() {
+	chip.style.display = 'block'; 
+	chip.style.display = 'none'
+});
 
 //--------- PROJECT PORTFOLIO EVENT LISTENERS --------------
 var projectOne = document.querySelector('#project-one');
