@@ -4,17 +4,17 @@ function init() {
 
 init();
 // QUICK CHIP
-var chip = document.querySelector('#chip-cell');
-document.querySelector('#chip').addEventListener('click', function() {
-	chip.style.display = 'block'; 
-	chip.style.display = 'none'
-});
+// var chip = document.querySelector('#chip-cell');
+// document.querySelector('#chip').addEventListener('click', function() {
+// 	chip.style.display = 'block'; 
+// 	chip.style.display = 'none'
+// });
 
 //--------- PROJECT PORTFOLIO EVENT LISTENERS --------------
 var projectOne = document.querySelector('#project-one');
 var dialogOne = document.querySelector('#dialog-one');
 if (! dialogOne.showModal) {
-	dialogPolyfill.registerDialog(dialog);
+	dialogPolyfill.registerDialog(dialogOne);
 }
 projectOne.addEventListener('click', function() {
 	dialogOne.showModal();
@@ -26,7 +26,7 @@ dialogOne.querySelector('.close').addEventListener('click', function() {
 var projectTwo = document.querySelector('#project-two');
 var dialogTwo = document.querySelector('#dialog-two');
 if (! dialogTwo.showModal) {
-	dialogPolyfill.registerDialog(dialog);
+	dialogPolyfill.registerDialog(dialogTwo);
 }
 projectTwo.addEventListener('click', function() {
 	dialogTwo.showModal();
@@ -38,7 +38,7 @@ dialogTwo.querySelector('.close').addEventListener('click', function() {
 var projectThree = document.querySelector('#project-three');
 var dialogThree = document.querySelector('#dialog-three');
 if (! dialogThree.showModal) {
-	dialogPolyfill.registerDialog(dialog);
+	dialogPolyfill.registerDialog(dialogThree);
 }
 projectThree.addEventListener('click', function() {
 	dialogThree.showModal();
@@ -50,7 +50,7 @@ dialogThree.querySelector('.close').addEventListener('click', function() {
 var projectFour = document.querySelector('#project-four');
 var dialogFour = document.querySelector('#dialog-four');
 if (! dialogFour.showModal) {
-	dialogPolyfill.registerDialog(dialog);
+	dialogPolyfill.registerDialog(dialogFour);
 }
 projectFour.addEventListener('click', function() {
 	dialogFour.showModal();
@@ -62,7 +62,7 @@ dialogFour.querySelector('.close').addEventListener('click', function() {
 var projectFive = document.querySelector('#project-five');
 var dialogFive = document.querySelector('#dialog-five');
 if (! dialogFive.showModal) {
-	dialogPolyfill.registerDialog(dialog);
+	dialogPolyfill.registerDialog(dialogFive);
 }
 projectFive.addEventListener('click', function() {
 	dialogFive.showModal();

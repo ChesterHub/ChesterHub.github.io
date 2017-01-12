@@ -227,11 +227,19 @@ h1 {
   transform:scale(1.05);
 }
 
+dialog {
+  position: fixed;
+  top: 50%;
+  transform: translate(0, -50%);
+    justify-content: center;
+
+}
+
 
 #project-one {
   background: url('assets/img/RFLCT.JPG');
   background-size: cover;
-  background-repeat:   no-repeat;
+  background-repeat: no-repeat;
   background-position: center center;  
 }
 
@@ -265,11 +273,12 @@ h1 {
 }
 
 .portfolio-dialog {
-  height: 900px;
-  width: 900px;
+  height: 100vh;
+  width: 100vh;
   background-color: #212121;
   color: white;
-  opacity: .99;
+  opacity: .95;
+  text-align: center;
 }
 
 .mdl-dialog__content > p {

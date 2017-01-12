@@ -16,6 +16,9 @@
 	<script src="https://use.fontawesome.com/9d86c204c6.js"></script>
 	<link href="style.css" rel="stylesheet" type="text/css">
 
+	<script src="node_modules/dialog-polyfill/dialog-polyfill.js"></script>
+	<link rel="stylesheet" type="text/css" href="node_modules/dialog-polyfill/dialog-polyfill.css" />
+
 
 </head>
 <body>
@@ -47,12 +50,12 @@
 			<div class="page-content"><!-- Content-->
 
 				<div class="mdl-typography--text-center font-wendy intro mdl-shadow--2dp" id="home">
-					<div class="mdl-cell--4-col" id="chip-cell">
+<!-- 					<div class="mdl-cell--4-col" id="chip-cell">
 						<span class="mdl-chip" style="background-color: #546E7A;color:white; padding:5px;">
 							<span class="mdl-chip__text">My website is not supported on other browsers except Chrome. But don't fret, that will change very soon.. In the meantime, check it out using chrome! <i class="fa fa-smile-o" aria-hidden="true"></i></span>
 							<button type="button" class="mdl-chip__action" id="chip" style="color:white"><i class="material-icons">cancel</i></button>
 						</span>
-					</div>
+					</div> -->
 					<div class="mdl-grid center-content">
 						<div class="mdl-cell--10-col">
 							<h1 class="font-wendy">Chester<i class="fa fa-superpowers" aria-hidden="true"></i><span id="lastname">Hoang</span></h1>
@@ -70,7 +73,7 @@
 						<div class="mdl-cell--6-col mdl-shadow--4dp" id="about-text-cell"> 	
 							<p id="about-text">
 								<br>
-								I am a front-end engineer who specializes in web development and UI/UX design. I always approach a problem through methodical research, statistical forecasting, and with uttermost curiosity. Coming from an Economics background, I understand the importance of data analysis and the ability to reveal trends. Currently, I have been augmenting my design knowledge while perpetuating my overall mastery in engineering. 
+								I am a front-end engineer who specializes in web engineering and UI/UX development. I always approach a problem with systematic research, data forecasting, and a keen intuition. Coming from an Economics background, I understand the importance of data analysis and the ability to reveal trends. Currently, I have been expanding my front-end abilities while perpetuating my overall mastery in engineering. A core value of mine is the belief that true personal growth occurs outside our comfort zones.
 							</p>					
 						</div>
 						<div class="mdl-cell--12-col">
@@ -211,49 +214,12 @@
 						<!-- Card for Project Two -->
 						<div class="mdl-card mdl-shadow--6dp mdl-cell--6-col project-cards mdl-card__actions" id="project-two">
 							<div class="mdl-card__title mdl-card--expand portfolio-trigger"></div>
-							<div class="mdl-card__title" style="color:black">
-								
-							</div>
+							<div class="mdl-card__title" style="color:black"></div>
 						</div>
-						<!-- Dialog for Project Two -->
-						<dialog class="mdl-dialog portfolio-dialog" id="dialog-two">
-							<h4 class="mdl-dialog__title font-wendy">Case Database</h4>
-							<div class="mdl-dialog__content">
-								<img src="assets/img/DatabaseFront.jpg" class="dialog-pictures">
-								<p>
-									The state Departments are not a fan of elaborate design, but rather love efficiency and clarity. I engineered the UI and UX of this Application to be as systematic as possible. Created with SQL and Visual Basic, this database is still used today to track important applications and simplify querying for the internal RDBMS.
-									<br>
-									<br>
-									<strong>Tech Stack:</strong> SQL, Visual Basic, Microsoft Access
-								</p>
-							</div>
-							<div class="mdl-dialog__actions--full-width">
-								<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored close">Close</button>
-							</div>
-						</dialog>
 						<!-- Card for Project Three -->
 						<div class="mdl-card mdl-shadow--6dp mdl-cell--4-col project-cards mdl-card__actions" id="project-three">
 							<div class="mdl-card__title mdl-card--expand"></div>
 						</div>
-						<!-- Dialog for Project Three -->
-						<dialog class="mdl-dialog portfolio-dialog" id="dialog-three">
-							<h4 class="mdl-dialog__title font-wendy">dotChomp</h4>
-							<div class="mdl-dialog__content">
-								<img src="assets/img/chompPlay.png" class="dialog-pictures">
-								<p>
-									During our time at Dev Bootcamp, each student was to build a project that was meaningful to them. This was my personal project... a HTML5 web-browser game that utilizes a MVC framework to run the game and track all players' scores. This web-browser game was deployed on Heroku where it generated a ton of hilarious entertainment.
-									<br>
-									<br>
-									<a href="https://github.com/ChesterHub/devbootcamp.CHOMP" class="mdl-button mdl-js-button mdl-button--icon"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
-									<br>
-									<br>
-									<strong>Tech Stack:</strong> JavaScript, Ruby, Sinatra, Heroku, Phaser.io 
-								</p>
-							</div>
-							<div class="mdl-dialog__actions--full-width">
-								<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored close">Close</button>
-							</div>
-						</dialog>
 						<!-- Card for Project Four -->
 						<div class="mdl-card mdl-shadow--6dp mdl-cell--4-col project-cards mdl-card__actions" id="project-four">
 							<div class="mdl-card__title mdl-card--expand"></div>
@@ -261,24 +227,6 @@
 								Personal Portfolio
 							</div>
 						</div>
-						<!-- Dialog for Project Four -->
-						<dialog class="mdl-dialog portfolio-dialog" id="dialog-four">
-							<h4 class="mdl-dialog__title font-wendy">Material Design Portfolio</h4>
-							<div class="mdl-dialog__content">
-								<p>
-									This portfolio you are currently looking at! This Website is constantly being reiterated as my knowledge of technologies expand. 
-									<br>
-									<br>
-									<a href="https://github.com/ChesterHub/Chesterhub.github.io" class="mdl-button mdl-js-button mdl-button--icon"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
-									<br>
-									<br>
-									<strong>Tech Stack:</strong> HTML5, CSS3, JavaScript, Material Design 
-								</p>
-							</div>
-							<div class="mdl-dialog__actions--full-width">
-								<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored close">Close</button>
-							</div>
-						</dialog>
 						<!-- Card for Project Five -->
 						<div class="mdl-card mdl-shadow--6dp mdl-cell--4-col project-cards mdl-card__actions" id="project-five">
 							<div class="mdl-card__title mdl-card--expand"></div>
@@ -286,23 +234,6 @@
 								Fast Ball
 							</div>
 						</div>
-						<!-- Dialog for Project Five -->
-						<dialog class="mdl-dialog portfolio-dialog" id="dialog-five">
-							<h4 class="mdl-dialog__title font-wendy">FastBall</h4>
-							<div class="mdl-dialog__content">
-								<img src="assets/img/FastBallMockup.jpg" class="dialog-pictures">
-								<p>
-									An Android game that utilizes mobile accelerometers to tilt the ball in a direction to either dodge obstacles or obtain items. Note: This project is in early development.
-									<br>
-									<br>
-
-									<strong>Tech Stack:</strong> C#, Unity 5, Android SDK 
-								</p>
-							</div>
-							<div class="mdl-dialog__actions--full-width">
-								<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored close">Close</button>
-							</div>
-						</dialog>
 					</div>
 				</div>
 			</div>
@@ -343,6 +274,7 @@
 
 	</main>
 </div>
+<!-- ********************************** DIALOG SECTION ************************************** -->
 
 <!-- Dialog for Project One -->
 <dialog class="mdl-dialog portfolio-dialog" id="dialog-one">
@@ -357,6 +289,76 @@
 			<br>
 			<br>
 			<strong>Tech Stack:</strong> Python, Node.js, Electron.js, Amazon Alexa, Raspberry Pi, AWS
+		</p>
+	</div>
+	<div class="mdl-dialog__actions--full-width">
+		<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored close">Close</button>
+	</div>
+</dialog>
+<!-- Dialog for Project Two -->
+<dialog class="mdl-dialog portfolio-dialog" id="dialog-two">
+	<h4 class="mdl-dialog__title font-wendy">Case Database</h4>
+	<div class="mdl-dialog__content">
+		<img src="assets/img/DatabaseFront.jpg" class="dialog-pictures">
+		<p>
+			The state Departments are not a fan of elaborate design, but rather love efficiency and clarity. I engineered the UI and UX of this Application to be as systematic as possible. Created with SQL and Visual Basic, this database is still used today to track important applications and simplify querying for the internal RDBMS.
+			<br>
+			<br>
+			<strong>Tech Stack:</strong> SQL, Visual Basic, Microsoft Access
+		</p>
+	</div>
+	<div class="mdl-dialog__actions--full-width">
+		<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored close">Close</button>
+	</div>
+</dialog>
+<!-- Dialog for Project Three -->
+<dialog class="mdl-dialog portfolio-dialog" id="dialog-three">
+	<h4 class="mdl-dialog__title font-wendy">dotChomp</h4>
+	<div class="mdl-dialog__content">
+		<img src="assets/img/chompPlay.png" class="dialog-pictures">
+		<p>
+			During our time at Dev Bootcamp, each student was to build a project that was meaningful to them. This was my personal project... a HTML5 web-browser game that utilizes a MVC framework to run the game and track all players' scores. This web-browser game was deployed on Heroku where it generated a ton of hilarious entertainment.
+			<br>
+			<br>
+			<a href="https://github.com/ChesterHub/devbootcamp.CHOMP" class="mdl-button mdl-js-button mdl-button--icon"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+			<br>
+			<br>
+			<strong>Tech Stack:</strong> JavaScript, Ruby, Sinatra, Heroku, Phaser.io 
+		</p>
+	</div>
+	<div class="mdl-dialog__actions--full-width">
+		<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored close">Close</button>
+	</div>
+</dialog>
+<!-- Dialog for Project Four -->
+<dialog class="mdl-dialog portfolio-dialog" id="dialog-four">
+	<h4 class="mdl-dialog__title font-wendy">Material Design Portfolio</h4>
+	<div class="mdl-dialog__content">
+		<p>
+			This portfolio you are currently looking at! This Website is constantly being reiterated as my knowledge of technologies expand. 
+			<br>
+			<br>
+			<a href="https://github.com/ChesterHub/Chesterhub.github.io" class="mdl-button mdl-js-button mdl-button--icon"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+			<br>
+			<br>
+			<strong>Tech Stack:</strong> HTML5, CSS3, JavaScript, Material Design 
+		</p>
+	</div>
+	<div class="mdl-dialog__actions--full-width">
+		<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored close">Close</button>
+	</div>
+</dialog>
+<!-- Dialog for Project Five -->
+<dialog class="mdl-dialog portfolio-dialog" id="dialog-five">
+	<h4 class="mdl-dialog__title font-wendy">FastBall</h4>
+	<div class="mdl-dialog__content">
+		<img src="assets/img/FastBallMockup.jpg" class="dialog-pictures">
+		<p>
+			An Android game that utilizes mobile accelerometers to tilt the ball in a direction to either dodge obstacles or obtain items. Note: This project is in early development.
+			<br>
+			<br>
+
+			<strong>Tech Stack:</strong> C#, Unity 5, Android SDK 
 		</p>
 	</div>
 	<div class="mdl-dialog__actions--full-width">
