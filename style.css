@@ -1,3 +1,8 @@
+@-ms-viewport{
+  width: device-width;
+}
+@-o-viewport { width: device-width; }
+
 .center-content {
 	justify-content: center;
 	position: relative;
@@ -324,11 +329,6 @@ h1 {
 .footer {
   background-color: black;
   opacity: .97; 
-}
-
-
-@-ms-viewport{
-  width: device-width;
 }
 
 
