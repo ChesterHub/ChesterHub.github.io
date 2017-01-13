@@ -133,7 +133,7 @@ function moveAll() {
 		moveBar(barEleven, 81);
 
 		barTwelve = document.querySelector("#bar12");
-		moveBar(barTwelve, 57);
+		moveBar(barTwelve, 61);
 
 		barsMoved = true;
 	}
@@ -142,7 +142,7 @@ function moveAll() {
 function moveBar(bar, percentage) {
 	var elem = bar;   
 	var width = 40;
-	var id = setInterval(frame, 32);
+	var id = setInterval(frame, 20);
 	function frame() {
 		if (width >= percentage) {
 			clearInterval(id);
