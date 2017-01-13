@@ -25,7 +25,6 @@ p {
 a.mdl-js-ripple-effect { position: relative; }
 
 .header-color {
-  /*	background: url("assets/img/blue-background.jpg") center ;*/
   background-color: #212121;
   color: white;
 }
@@ -71,45 +70,50 @@ h1 {
 }
 
 .about-me {
-	position: relative;
-	/*background-color: #EEEEEE;*/
-  background:     linear-gradient(
-    rgba(0, 0, 0, 0.1), 
-    rgba(0, 0, 0, 0.1)
-    );
+  position: relative;
+  background-color: #546E7A;
+/* background: rgba(84, 110, 122, .8);*/
+/* background:     linear-gradient(
+   rgba(0, 0, 0, 0.8), 
+   rgba(0, 0, 0, 0.8)
+   );*/
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   padding-bottom: 80px;
+   color: #EEEEEE;
+  }
+
+#about-text {
+  font-size: 150%;
+  font-family: 'Open Sans', sans-serif;
+  color: #EEEEEE;
+  padding-bottom: 15px;
+ }
+
+.icon-section {
+   position: relative;
+   background-color: #EEEEEE;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   padding-bottom: 100px;
-}
+  }
 
-.about-me:hover {
-}
+  .about-me:hover {
+  }
 
-#profile-picture {
-	width: 15%;
-	height: 15%;
-	padding-top: 40px;
-}
+  #profile-picture {
+   width: 15%;
+   height: 15%;
+   padding-top: 40px;
+ }
 
-.img-circle { border-radius: 50% }
+ .img-circle { border-radius: 50% }
 
-#about-text {
-	font-size: 150%;
-	font-family: 'Open Sans', sans-serif;
-	color: black;
-  font-weight: bold;
-  padding-bottom: 15px;
-}
-
-#about-text-cell {
-  background: rgba(84, 110, 122, .2);
-  padding: 10px;
-  border-radius: 40px;
-}
-
-.icon-cell {
+ .icon-cell {
   padding-top: 25px;
 }
 
@@ -136,6 +140,10 @@ h1 {
 
 .tech {
   background-color: #212121;
+  background:     linear-gradient(
+    rgba(0, 0, 0, 0.9), 
+    rgba(0, 0, 0, 0.9)
+    );
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 80px;
@@ -154,15 +162,15 @@ h1 {
 .tech-meter {
 	padding-left: 5px;
   padding-right: 5px;
-  padding-bottom: 15px;
-  padding-top: 15px;
-  font-size: 140%;
-  font-weight: bold;
+  padding-bottom: 6px;
+  padding-top: 6px;
+  font-size: 160%;
 }
 
 .portfolio {
   position: relative;
-  background: rgba(84, 110, 122, .5);
+  background-color: #EEEEEE;
+  /*  background: rgba(84, 110, 122, .2);*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -172,8 +180,9 @@ h1 {
 }
 
 #portfolio-title {
-  font-size: 300%;
-  padding-bottom: 13px;
+  font-size: 275%;
+  padding-bottom: 20px;
+  color: #212121;
 }
 
 .project-cards {
@@ -182,9 +191,9 @@ h1 {
   max-width: 100%;
   max-height: 100%;
   font-size: 200%;
-  margin: 10px;
+  margin: 5px;
   cursor: pointer;
-  border-radius: 20px;
+  border-radius: 5px;
 }
 
 
@@ -212,26 +221,26 @@ h1 {
 }
 */
 .project-cards {
-  -webkit-transition: all .75s ease; /* Safari and Chrome */
-  -moz-transition: all .75s ease; /* Firefox */
-  -ms-transition: all .75s ease; /* IE 9 */
-  -o-transition: all .75s ease; /* Opera */
-  transition: all .75s ease;
+  -webkit-transition: all .4s ease; /* Safari and Chrome */
+  -moz-transition: all .4s ease; /* Firefox */
+  -ms-transition: all .4s ease; /* IE 9 */
+  -o-transition: all .4s ease; /* Opera */
+  transition: all .4s ease;
 }
 
 .project-cards:hover {
-  -webkit-transform:scale(1.05); /* Safari and Chrome */
-  -moz-transform:scale(1.05); /* Firefox */
-  -ms-transform:scale(1.05); /* IE 9 */
-  -o-transform:scale(1.05); /* Opera */
-  transform:scale(1.05);
+  -webkit-transform:scale(1.04); /* Safari and Chrome */
+  -moz-transform:scale(1.04); /* Firefox */
+  -ms-transform:scale(1.04); /* IE 9 */
+  -o-transform:scale(1.04); /* Opera */
+  transform:scale(1.04);
 }
 
 dialog {
   position: fixed;
   top: 50%;
   transform: translate(0, -50%);
-    justify-content: center;
+  justify-content: center;
 
 }
 
@@ -300,6 +309,10 @@ dialog {
   -o-background-size: cover;
   background-size: cover;
   background-color: #212121;
+  background:     linear-gradient(
+    rgba(0, 0, 0, 0.9), 
+    rgba(0, 0, 0, 0.9)
+    );
   padding-bottom: 120px;
 }
 
@@ -335,7 +348,6 @@ dialog {
 
 .footer {
   background-color: black;
-  opacity: .97; 
 }
 
 
@@ -372,7 +384,7 @@ dialog {
   overflow: hidden;
 }
 
-/*.meter > span:after, .animate > span > span {
+.meter > span:after, .animate > span > span {
   content: "";
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
@@ -387,8 +399,8 @@ dialog {
     transparent
     );
   z-index: 1;
-  background-size: 50px 50px;
-  animation: move 3s linear infinite;
+  background-size: 30px 30px;
+  animation: move 2s linear infinite;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
   border-top-left-radius: 20px;
@@ -405,20 +417,16 @@ dialog {
     background-position: 0 0;
   }
   100% {
-    background-position: 50px 50px;
+    background-position: 30px 30px;
   }
-  }*/
+}
 
-/*.meter > span:after, .animate > span > span {
-  animation: move 3s linear infinite;
-  }*/
+.meter > span:after, .animate > span > span {
+  animation: move 2s linear infinite;
+}
 
-/*@keyframes expandWidth {
- 0% { width: 0; }
- { width: auto; }
- }*/
 
- .green > span {
+.green > span {
   background-color: #4CAF50;
   background-image: linear-gradient(to bottom, #A5D6A7, #388E3C);
 }
