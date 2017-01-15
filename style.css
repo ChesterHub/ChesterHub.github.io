@@ -281,12 +281,6 @@ dialog {
   background-position: center center;  
 }
 
-.modal-body {
-  max-height: calc(100vh - 210px);
-  max-width: calc(100vh - 210px);
-  overflow-y: auto;
-}
-
 .portfolio-dialog {
   width: -moz-fit-content;
   width: -webkit-fit-content;
