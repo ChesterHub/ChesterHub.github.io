@@ -69,10 +69,11 @@ h1 {
 	height: 100px;
 }
 
+
 .about-me {
   position: relative;
   background-color: #546E7A;
-/* background: rgba(84, 110, 122, .8);*/
+  /* background: rgba(84, 110, 122, .8);*/
 /* background:     linear-gradient(
    rgba(0, 0, 0, 0.8), 
    rgba(0, 0, 0, 0.8)
@@ -83,37 +84,37 @@ h1 {
    background-size: cover;
    padding-bottom: 80px;
    color: #EEEEEE;
-  }
+ }
 
-#about-text {
+ #about-text {
   font-size: 150%;
   font-family: 'Open Sans', sans-serif;
   color: #EEEEEE;
   padding-bottom: 15px;
- }
+}
 
 .icon-section {
-   position: relative;
-   background-color: #EEEEEE;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  padding-bottom: 100px;
-  }
+ position: relative;
+ background-color: #EEEEEE;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+ padding-bottom: 100px;
+}
 
-  .about-me:hover {
-  }
+.about-me:hover {
+}
 
-  #profile-picture {
-   width: 15%;
-   height: 15%;
-   padding-top: 40px;
- }
+#profile-picture {
+ width: 15%;
+ height: 15%;
+ padding-top: 40px;
+}
 
- .img-circle { border-radius: 50% }
+.img-circle { border-radius: 50% }
 
- .icon-cell {
+.icon-cell {
   padding-top: 25px;
 }
 
@@ -280,9 +281,22 @@ dialog {
   background-position: center center;  
 }
 
+.modal-body {
+  max-height: calc(100vh - 210px);
+  max-width: calc(100vh - 210px);
+  overflow-y: auto;
+}
+
 .portfolio-dialog {
-  height: 90vh;
-  width: 90vh;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: -webkit-fit-content;
+  height: fit-content;
+  max-height: calc(100vh - 50px);
+  max-width: calc(100vh - 50px);
+  overflow-y: auto;
   background-color: #212121;
   color: white;
   opacity: .98;
@@ -298,7 +312,7 @@ dialog {
 .dialog-pictures {
   max-width: 80%;
   max-height: 80%;
-/*  padding: 20px;*/
+  /*  padding: 20px;*/
 }
 
 .contact-info {
@@ -450,5 +464,4 @@ dialog {
   background-color: #f0a3a3;
   background-image: linear-gradient(to bottom, #f0a3a3, #f42323);
 }
-
 
