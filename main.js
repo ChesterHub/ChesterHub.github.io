@@ -10,6 +10,13 @@ init();
 // 	chip.style.display = 'none'
 // });
 
+
+//  ---------------CLOSE DRAWER ON CLICK-------------
+document.querySelector('.mdl-layout__drawer').addEventListener('click', function () {
+  document.querySelector('.mdl-layout__obfuscator').classList.remove('is-visible');
+  this.classList.remove('is-visible');
+}, false);
+
 //--------- PROJECT PORTFOLIO EVENT LISTENERS --------------
 var projectOne = document.querySelector('#project-one');
 var dialogOne = document.querySelector('#dialog-one');
