@@ -40,13 +40,13 @@ a.mdl-js-ripple-effect { position: relative; }
 
 .intro{
 	position: relative;
-  	background: url("assets/img/sky.jpeg") bottom center no-repeat;
-  /*    background-color: #8C9EFF;*/
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 100vh;
+ background: url("assets/img/sky.jpeg") bottom center no-repeat;
+ /*    background-color: #8C9EFF;*/
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+ height: 100vh;
 }
 
 
@@ -216,7 +216,7 @@ h1 {
   font-size:300%;
   margin: 10px;
   cursor: pointer;
-}*/
+  }*/
 
 /*.project-cards:hover {
   background-color:rgba(0, 0, 0, 0.8);
