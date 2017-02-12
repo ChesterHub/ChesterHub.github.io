@@ -124,7 +124,7 @@ h1 {
 
 
 .big-icon {
-	font-size: 2000%;
+	font-size: 1700%;
 	color: #546E7A;
 	padding-bottom: 30px;
   padding-top: 30px;
@@ -145,7 +145,7 @@ h1 {
     rgba(0, 0, 0, 0.3), 
     rgba(0, 0, 0, 0.3)
     );*/
-    background: rgba(84, 110, 122, .3);
+    background: rgba(84, 110, 122, .1);
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 80px;
@@ -196,11 +196,11 @@ h1 {
   margin: 3px;
   cursor: pointer;
   border-radius: 5px;
-  -webkit-transition: all .4s ease; /* Safari and Chrome */
-  -moz-transition: all .4s ease; /* Firefox */
-  -ms-transition: all .4s ease; /* IE 9 */
-  -o-transition: all .4s ease; /* Opera */
-  transition: all .4s ease;
+  -webkit-transition: all .3s ease; /* Safari and Chrome */
+  -moz-transition: all .3s ease; /* Firefox */
+  -ms-transition: all .3s ease; /* IE 9 */
+  -o-transition: all .3s ease; /* Opera */
+  transition: all .3s ease;
 }
 
 
@@ -229,11 +229,11 @@ h1 {
 */
 
 .project-cards:hover {
-  -webkit-transform:scale(1.04); /* Safari and Chrome */
-  -moz-transform:scale(1.04); /* Firefox */
-  -ms-transform:scale(1.04); /* IE 9 */
-  -o-transform:scale(1.04); /* Opera */
-  transform:scale(1.04);
+  -webkit-transform:scale(1.03); /* Safari and Chrome */
+  -moz-transform:scale(1.03); /* Firefox */
+  -ms-transform:scale(1.03); /* IE 9 */
+  -o-transform:scale(1.03); /* Opera */
+  transform:scale(1.03);
 }
 
 dialog {
@@ -362,7 +362,7 @@ dialog {
 .meter { 
   height: 22px;
   position: relative;
-  background: rgba(50, 50, 50, .5);
+  background: rgba(50, 50, 50, .7);
   -moz-border-radius: 15px;
   -webkit-border-radius: 15px;
   border-radius: 15px;
@@ -390,7 +390,7 @@ dialog {
   overflow: hidden;
 }
 
-/*.meter > span:after, .animate > span > span {
+.meter > span:after, .animate > span > span {
   content: "";
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
@@ -412,13 +412,13 @@ dialog {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   overflow: hidden;
-  }*/
+  }
 
-/*.animate > span:after {
+.animate > span:after {
   display: none;
-  }*/
+  }
 
-/*@keyframes move {
+@keyframes move {
   0% {
     background-position: 0 0;
   }
@@ -430,7 +430,7 @@ dialog {
 .meter > span:after, .animate > span > span {
   animation: move 2s linear infinite;
 }
-*/
+
 
 .green > span {
   background-color: #4CAF50;
