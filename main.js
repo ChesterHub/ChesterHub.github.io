@@ -42,17 +42,17 @@ dialogTwo.querySelector('.close').addEventListener('click', function() {
 	dialogTwo.close();
 });
 
-var projectThree = document.querySelector('#project-three');
-var dialogThree = document.querySelector('#dialog-three');
-if (! dialogThree.showModal) {
-	dialogPolyfill.registerDialog(dialogThree);
-}
-projectThree.addEventListener('click', function() {
-	dialogThree.showModal();
-});
-dialogThree.querySelector('.close').addEventListener('click', function() {
-	dialogThree.close();
-});
+// var projectThree = document.querySelector('#project-three');
+// var dialogThree = document.querySelector('#dialog-three');
+// if (! dialogThree.showModal) {
+// 	dialogPolyfill.registerDialog(dialogThree);
+// }
+// projectThree.addEventListener('click', function() {
+// 	dialogThree.showModal();
+// });
+// dialogThree.querySelector('.close').addEventListener('click', function() {
+// 	dialogThree.close();
+// });
 
 var projectFour = document.querySelector('#project-four');
 var dialogFour = document.querySelector('#dialog-four');
