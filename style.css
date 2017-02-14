@@ -100,7 +100,7 @@ h1 {
  -moz-background-size: cover;
  -o-background-size: cover;
  background-size: cover;
- padding-bottom: 100px;
+ padding-bottom: 80px;
 }
 
 .about-me:hover {
@@ -125,7 +125,7 @@ h1 {
 
 .big-icon {
 	font-size: 1700%;
-	color: #546E7A;
+	color: #212121;
 	padding-bottom: 30px;
   padding-top: 30px;
 
@@ -193,9 +193,9 @@ h1 {
   max-width: 100%;
   max-height: 100%;
   font-size: 200%;
-  margin: 3px;
+  margin: 4px;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 8px;
   -webkit-transition: all .3s ease; /* Safari and Chrome */
   -moz-transition: all .3s ease; /* Firefox */
   -ms-transition: all .3s ease; /* IE 9 */
@@ -245,15 +245,17 @@ dialog {
 
 
 #project-one {
-  background: url('assets/img/RFLCT.JPG');
-  background-size: cover;
+  background: url('assets/img/Logo.JPG');
+  background-color: white;
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: center bottom;  
+  background-position: center;  
 }
 
 #project-two {
-  background: url('assets/img/DatabaseCDRW.jpg');
-  background-size: cover;
+  background: url('assets/img/hcsb.jpg');
+  background-color: white;
+  background-size: contain;
   background-repeat:   no-repeat;
   background-position: center;  
 }
@@ -266,15 +268,15 @@ dialog {
 }
 
 #project-four {
-  background: url('assets/img/epic.JPG');
+  background: url('assets/img/Homepage.jpg');
   background-size: cover;
   background-repeat:   no-repeat;
-  background-position: center center;
+  background-position: bottom;
   color: red;  
 }
 
 #project-five {
-  background: url('assets/img/FastBall1.jpg');
+  background: url('assets/img/FastBallMockup.jpg');
   background-size: cover;
   background-repeat:   no-repeat;
   background-position: center center;  
@@ -292,7 +294,7 @@ dialog {
   overflow-y: auto;
   background-color: #212121;
   color: white;
-  opacity: .98;
+/*  opacity: .98;*/
   text-align: center;
 }
 
@@ -323,7 +325,7 @@ dialog {
 }
 
 #info-title {
-  font-size: 300%;
+  font-size: 275%;
   color: #EEEEEE;
   padding-bottom: 16px;
 }
@@ -339,15 +341,15 @@ dialog {
 }
 
 .info-button {
-  font-size: 2.5em;
+  font-size: 2.3em;
   height: 100%;
   width: 100%;
-  color: #EEEEEE;
+  color: #546E7A;
 }
 
 .info-cell > p {
-  font-size: 16pt;
-  color: #EEEEEE;
+  font-size: 15pt;
+  color: #546E7A;
   font-weight: bold;
 }
 
