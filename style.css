@@ -245,7 +245,7 @@ dialog {
 
 
 #project-one {
-  background: url('assets/img/Logo.JPG');
+  background: url('assets/img/Logo.jpg');
   background-color: white;
   background-size: contain;
   background-repeat: no-repeat;
@@ -318,15 +318,15 @@ dialog {
   background-size: cover;
   background-color: #212121;
   background:     linear-gradient(
-    rgba(0, 0, 0, 0.9), 
-    rgba(0, 0, 0, 0.9)
+    rgba(0, 0, 0, 0.92), 
+    rgba(0, 0, 0, 0.92)
     );
   padding-bottom: 120px;
 }
 
 #info-title {
   font-size: 275%;
-  color: #EEEEEE;
+  color: #546E7A;
   padding-bottom: 16px;
 }
 
