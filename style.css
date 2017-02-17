@@ -40,13 +40,18 @@ a.mdl-js-ripple-effect { position: relative; }
 
 .intro{
 	position: relative;
- background: url("assets/img/sky.jpeg") bottom center no-repeat;
+  background: url("assets/img/sky.jpeg");
  /*    background-color: #8C9EFF;*/
  -webkit-background-size: cover;
  -moz-background-size: cover;
  -o-background-size: cover;
  background-size: cover;
  height: 100vh;
+ background-attachment: fixed;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+
 }
 
 
@@ -83,6 +88,7 @@ h1 {
    -o-background-size: cover;
    background-size: cover;
    padding-bottom: 80px;
+   padding-top: 65px;
    color: #EEEEEE;
  }
 
@@ -95,12 +101,13 @@ h1 {
 
 .icon-section {
  position: relative;
- background-color: #EEEEEE;
+ background-color: #fafafa;
  -webkit-background-size: cover;
  -moz-background-size: cover;
  -o-background-size: cover;
  background-size: cover;
- padding-bottom: 80px;
+ padding-bottom: 100px;
+ padding-top: 65px;
 }
 
 .about-me:hover {
@@ -149,7 +156,7 @@ h1 {
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 80px;
-    padding-top: 30px;
+    padding-top: 45px;
   }
 
   #tech-box {
@@ -171,13 +178,14 @@ h1 {
 
 .portfolio {
   position: relative;
-  background-color: #EEEEEE;
+  background-color: #fafafa;
   /*  background: rgba(84, 110, 122, .2);*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding: 30px;
+  padding-top: 65px;
+  padding-bottom: 130px;
 
 }
 
@@ -294,7 +302,7 @@ dialog {
   overflow-y: auto;
   background-color: #212121;
   color: white;
-/*  opacity: .98;*/
+  /*  opacity: .98;*/
   text-align: center;
 }
 
@@ -414,11 +422,11 @@ dialog {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   overflow: hidden;
-  }
+}
 
 .animate > span:after {
   display: none;
-  }
+}
 
 @keyframes move {
   0% {
