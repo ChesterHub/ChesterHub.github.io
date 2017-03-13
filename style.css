@@ -51,6 +51,7 @@ a.mdl-js-ripple-effect { position: relative; }
  -o-background-size: cover;
  background-size: cover;
  height: 100vh;
+ width: 100vw;
  background-attachment: fixed;
  background-position: center;
  background-repeat: no-repeat;
