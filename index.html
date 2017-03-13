@@ -35,7 +35,9 @@
 	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
 		<header class="mdl-layout__header mdl-shadow--8dp header-color">
 			<div class="mdl-layout__header-row">
-				<span class="mdl-layout-title font-wendy">Chester<i class="fa fa-superpowers fa-lg" aria-hidden="true"></i><span id="lastname-header">Hoang</span></span>
+					<span class="mdl-layout-title font-wendy">Chester<i class="fa fa-superpowers fa-lg" aria-hidden="true"></i>
+						<span id="lastname-header">Hoang</span>
+					</span>
 				<div class="mdl-layout-spacer"></div>
 				<!-- Header Navigtaion. Disappears in smaller screens -->
 				<nav class="mdl-navigation mdl-layout--large-screen-only font-wendy">
@@ -67,27 +69,30 @@
 					</div> -->
 					<div class="mdl-grid center-content">
 						<div class="mdl-cell--10-col">
-							<h1 class="font-wendy">Chester<i class="fa fa-superpowers" aria-hidden="true"></i><span id="lastname">Hoang</span></h1>
+							<h1 class="font-wendy">Chester
+								<span id="circle"><i class="fa fa-superpowers" aria-hidden="true"></i></span>
+								<span id="lastname">Hoang</span>
+							</h1>
 							<!-- 							<p class="font-open" style="font-size:20pt">Full-Stack Web Developer</p> -->
-							<button class="mdl-button mdl-js-button" id="down-arrow"><i class="material-icons" style="font-size:48px;">keyboard_arrow_down</i></button>
+<!-- 							<button class="mdl-button mdl-js-button" id="down-arrow"><i class="material-icons" style="font-size:48px;">keyboard_arrow_down</i></button> -->
 						</div>
 					</div>
-				</div>
+			</div>
 				<div class="mdl-typography--text-center about-me font-wendy mdl-shadow--4dp" id="about">
 					<div class="mdl-grid center-content">
 						<div class="mdl-cell--10-col">
 							
 						</div>
 						<div class="mdl-cell--7-col" id="about-text-cell"> 	
-							<h3 class="font-wendy">About Me</h3>
+							<h3 class="font-wendy">-About Me-</h3>
 							<p id="about-text">
-								A passionate full-stack engineer. I always approach new technologies with a keen intuition and focus. I love working with people and have always excelled in teams. Having a Economics background and previously working with SQL, I understand the importance of big data and the ability to reveal patterns.
+								Full-Stack Engineer with experience in Ruby on Rails, JavaScript, React, and SQL. Also proficient with standard web development, Test ­Driven development (TDD), and Git Version Control. Self-motivated worker with a strong management background and ability to build purposeful applications. Consistently excelled in teams and have lead to the success of various industry projects.
 							</p>					 
 						</div>
 					</div>
 				</div>
 
-				<div class="mdl-typography--text-center icon-section font-wendy mdl-shadow--4dp">
+<!-- 				<div class="mdl-typography--text-center icon-section font-wendy mdl-shadow--4dp">
 					<div class="mdl-grid center-content">
 						<div class="mdl-cell mdl-cell--4-col icon-cell">
 							<i class="fa fa-linode big-icon" aria-hidden="true"></i>
@@ -95,23 +100,23 @@
 						</div>
 						<div class="mdl-cell mdl-cell--4-col icon-cell">
 							<i class="fa fa-id-badge  big-icon" aria-hidden="true"></i>
-							<p class="icon-text font-open mdl-shadow--4dp ">Web Dev</p>
+							<p class="icon-text font-open mdl-shadow--4dp ">Web Development</p>
 						</div>
 						<div class="mdl-cell mdl-cell--4-col icon-cell">
 							<i class="fa fa-area-chart big-icon" aria-hidden="true"></i>
-							<p class="icon-text font-open mdl-shadow--4dp ">SQL Ninja</p>
+							<p class="icon-text font-open mdl-shadow--4dp ">Dev Ops</p>
 						</div>
 					</div>
-				</div>
+				</div> -->
 
-				<div onmouseover="moveAll()" class="mdl-typography--text-center font-wendy tech mdl-shadow--4dp">
+				<div class="mdl-typography--text-center font-wendy tech mdl-shadow--4dp">
 					<div class="mdl-grid center-content" id="tech-box">
 						<div class="mdl-cell--11-col">
-							<h3 class="font-wendy" id="tech-title">Proficiencies</h3>
+							<h3 class="font-wendy" id="tech-title">-Proficiencies-</h3>
 						</div>
 						<div class="mdl-cell--5-col tech-meter mdl-cell--order-0">	
 							<div class="meter animate green">
-								<span id="bar1" style="width: 40%">Ruby on Rails<span></span></span>
+								<span id="bar1" style="width: 97%">Ruby on Rails<span></span></span>
 							</div>
 							<div class="mdl-tooltip mdl-tooltip--large mdl-tooltip--right font-open" data-mdl-for="bar1">
 								97%
@@ -119,7 +124,7 @@
 						</div>
 						<div class="mdl-cell--5-col tech-meter mdl-cell--order-8">	
 							<div class="meter animate green ">
-								<span id="bar2" style="width: 40%">Version Control (Git)<span></span></span>
+								<span id="bar2" style="width: 90%">Version Control (Git)<span></span></span>
 							</div>
 							<div class="mdl-tooltip mdl-tooltip--large mdl-tooltip--right font-open" data-mdl-for="bar2">
 								90%
@@ -127,7 +132,7 @@
 						</div>
 						<div class="mdl-cell--5-col tech-meter mdl-cell--order-5">	
 							<div class="meter animate yellow">
-								<span id="bar3" style="width: 40%">Python<span></span></span>
+								<span id="bar3" style="width: 78%">Passenger + Nginx<span></span></span>
 							</div>
 							<div class="mdl-tooltip mdl-tooltip--large mdl-tooltip--right font-open" data-mdl-for="bar3">
 								78%
@@ -135,7 +140,7 @@
 						</div>
 						<div class="mdl-cell--5-col tech-meter mdl-cell--order-2">	
 							<div class="meter animate green ">
-								<span id="bar4" style="width: 40%">MySQL<span></span></span>
+								<span id="bar4" style="width: 94%">MySQL<span></span></span>
 							</div>
 							<div class="mdl-tooltip mdl-tooltip--large mdl-tooltip--right font-open" data-mdl-for="bar4">
 								94%
@@ -151,7 +156,7 @@
 						</div> -->
 						<div class="mdl-cell--5-col tech-meter mdl-cell--order-7">	
 							<div class="meter animate  yellow">
-								<span id="bar6" style="width: 40%">Pokemon Go<span></span></span>
+								<span id="bar6" style="width: 71%">Python<span></span></span>
 							</div>
 							<div class="mdl-tooltip mdl-tooltip--large mdl-tooltip--right font-open" data-mdl-for="bar6">
 								71%
@@ -159,7 +164,7 @@
 						</div>
 						<div class="mdl-cell--5-col tech-meter mdl-cell--order-4">	
 							<div class="meter animate green">
-								<span id="bar7" style="width: 40%">JavaScript<span></span></span>
+								<span id="bar7" style="width: 92%">JavaScript<span></span></span>
 							</div>
 							<div class="mdl-tooltip mdl-tooltip--large mdl-tooltip--right font-open" data-mdl-for="bar7">
 								92%
@@ -167,7 +172,7 @@
 						</div>
 						<div class="mdl-cell--5-col tech-meter mdl-cell--order-1">	
 							<div class="meter animate  light-green">
-								<span id="bar8" style="width: 40%">React + Webpack + Redux<span></span></span>
+								<span id="bar8" style="width: 85%">React + Webpack + Redux<span></span></span>
 							</div>
 							<div class="mdl-tooltip mdl-tooltip--large mdl-tooltip--right font-open" data-mdl-for="bar8">
 								85%
@@ -175,7 +180,7 @@
 						</div>
 						<div class="mdl-cell--5-col tech-meter mdl-cell--order-9">	
 							<div class="meter animate orange">
-								<span id="bar9" style="width: 40%">C#<span></span></span>
+								<span id="bar9" style="width: 67%">C#<span></span></span>
 							</div>
 							<div class="mdl-tooltip mdl-tooltip--large mdl-tooltip--right font-open" data-mdl-for="bar9">
 								67%
@@ -183,7 +188,7 @@
 						</div>
 						<div class="mdl-cell--5-col tech-meter mdl-cell--order-6">	
 							<div class="meter animate green ">
-								<span id="bar10" style="width: 40%">HTML & CSS<span></span></span>
+								<span id="bar10" style="width: 90%">HTML & CSS<span></span></span>
 							</div>
 							<div class="mdl-tooltip mdl-tooltip--large mdl-tooltip--right font-open" data-mdl-for="bar10">
 								90%
@@ -191,7 +196,7 @@
 						</div>
 						<div class="mdl-cell--5-col tech-meter mdl-cell--order-3">	
 							<div class="meter animate  light-green">
-								<span id="bar11" style="width: 40%">Amazon Web Services<span></span></span>
+								<span id="bar11" style="width: 81%">Amazon EC2, RDS, EB<span></span></span>
 							</div>
 							<div class="mdl-tooltip mdl-tooltip--large mdl-tooltip--right font-open" data-mdl-for="bar11">
 								81%
@@ -212,7 +217,7 @@
 				<div class="mdl-typography--text-center font-wendy portfolio mdl-shadow--2dp" id="portfolio">
 					<div class="mdl-grid center-content">
 						<div class="mdl-cell--12-col">
-							<h3 class="font-wendy" id="portfolio-title">Recent Projects<br></h3>					
+							<h3 class="font-wendy" id="portfolio-title">-Portfolio-<br></h3>					
 						</div>
 						<!-- Card for Project One -->
 						<div class="mdl-card mdl-shadow--6dp mdl-cell--4-col project-cards mdl-card__actions" id="project-one">
@@ -221,21 +226,35 @@
 								RFLCT
 							</div> -->
 						</div>
+						<!-- Card for Project Six-->
+						<div class="mdl-card mdl-shadow--6dp mdl-cell--4-col project-cards mdl-card__actions" id="project-six">
+							<div class="mdl-card__title mdl-card--expand"></div>
+<!-- 							<div class="mdl-card__title">
+								Fast Ball
+							</div> -->
+						</div>
 						<!-- Card for Project Two -->
 						<div class="mdl-card mdl-shadow--6dp mdl-cell--4-col project-cards mdl-card__actions" id="project-two">
 							<div class="mdl-card__title mdl-card--expand portfolio-trigger"></div>
 							<div class="mdl-card__title" style="color:black"></div>
 						</div>
 						<!-- Card for Project Three -->
-<!-- 						<div class="mdl-card mdl-shadow--6dp mdl-cell--4-col project-cards mdl-card__actions" id="project-three">
+						<div class="mdl-card mdl-shadow--6dp mdl-cell--4-col project-cards mdl-card__actions" id="project-three">
 							<div class="mdl-card__title mdl-card--expand"></div>
-						</div> -->
+						</div>
 						<!-- Card for Project Five -->
 						<div class="mdl-card mdl-shadow--6dp mdl-cell--4-col project-cards mdl-card__actions" id="project-five">
 							<div class="mdl-card__title mdl-card--expand"></div>
-							<div class="mdl-card__title">
+<!-- 							<div class="mdl-card__title">
 								Fast Ball
-							</div>
+							</div> -->
+						</div>
+						<!-- Card for Project Seven-->
+						<div class="mdl-card mdl-shadow--6dp mdl-cell--4-col project-cards mdl-card__actions" id="project-seven">
+							<div class="mdl-card__title mdl-card--expand"></div>
+<!-- 							<div class="mdl-card__title">
+								Fast Ball
+							</div> -->
 						</div>
 						<!-- Card for Project Four -->
 						<div class="mdl-card mdl-shadow--6dp mdl-cell--4-col project-cards mdl-card__actions" id="project-four">
@@ -271,7 +290,6 @@
 					</div>
 				</div>
 			</div>
-			<!-- </i><a href="Resume_2017.pdf" download> -->
 			<footer class="mdl-mini-footer footer">
 				<div class="mdl-mini-footer__left-section">
 					<div class="mdl-logo">Chester Hoang <i class="fa fa-handshake-o" aria-hidden="true"></i> 2017</div>
@@ -285,32 +303,33 @@
 </div>
 <!-- ********************************** DIALOG SECTION ************************************** -->
 
-<!-- Dialog for Project One -->
+<!-- Dialog One -->
 <dialog class="mdl-dialog portfolio-dialog" id="dialog-one">
 	<h4 class="mdl-dialog__title font-wendy">RFLCT - Smart Mirror</h4>
 	<div class="mdl-dialog__content">
 		<img src="assets/img/RFLCT.JPG" class="dialog-pictures">
 		<p>
-			A smart mirror utilizing voice detection and facial recognition. Displays real-time information on command. Your personal profile will have weather, news feeds from any website, a personal calendar, and Amazon's Alexa.
+			RFLCT is a smart mirror utilizing the Amazon Alexa API, voice recognition and face detection. RFLCT is voice activated and will provide current news from websites such as USA Today, Reddit, and CNN. Our team developed the application and built a mirror within a span of 9 days.
 			<br>
 			<br>
+			<a href="https://drive.google.com/file/d/0ByJWiiwdYyl4RlUyNDE4OGQ2RE0/view" class="mdl-button mdl-js-button" style="color:#546E7A;">View Demo</a>
 			<a href="https://github.com/seanyboy49/RFLCTT" class="mdl-button mdl-js-button mdl-button--icon"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
 			<br>
 			<br>
-			<strong>Tech Stack:</strong> Python, Node.js, Electron.js, Amazon Alexa, Raspberry Pi, AWS
+			<strong>Tech Stack:</strong> JavaScript, Node, Electron, Snowboy API, Kairos API, Amazon Alexa API + Lambda, Python, Raspberry Pi
 		</p>
 	</div>
 	<div class="mdl-dialog__actions--full-width">
 		<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored close">Close</button>
 	</div>
 </dialog>
-<!-- Dialog for Project Two -->
+<!-- Dialog Two -->
 <dialog class="mdl-dialog portfolio-dialog" id="dialog-two">
-	<h4 class="mdl-dialog__title font-wendy">Case Database</h4>
+	<h4 class="mdl-dialog__title font-wendy">HCO Track</h4>
 	<div class="mdl-dialog__content">
 		<img src="assets/img/DatabaseFront.jpg" class="dialog-pictures">
 		<p>
-			Clear and efficient... perfect for the state! Created with SQL and Visual Basic, this database is still used today to track important applications and simplify querying for the internal RDBMS.
+			HCO Track is an in-house application that helps track Home Care Organization applications and assist them in abiding by the Home Care Services Consumer Protection Act. I engineered the UI/UX to allow colleagues to efficiently track HCO cases and query specific statistics. Using SQL and Visual Basic, this application maximized productivity and efficient querying for thousands of important applications.
 			<br>
 			<br>
 			<strong>Tech Stack:</strong> SQL, Visual Basic, Microsoft Access
@@ -320,15 +339,16 @@
 		<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored close">Close</button>
 	</div>
 </dialog>
-<!-- Dialog for Project Three -->
-<!-- <dialog class="mdl-dialog portfolio-dialog" id="dialog-three">
+<!-- Dialog Three -->
+<dialog class="mdl-dialog portfolio-dialog" id="dialog-three">
 	<h4 class="mdl-dialog__title font-wendy">dotChomp</h4>
 	<div class="mdl-dialog__content">
 		<img src="assets/img/chompPlay.png" class="dialog-pictures">
 		<p>
-			HTML5 web-browser game that utilizes a MVC framework to run the game and track all players' scores. This web-browser game was originally deployed on Heroku.
+			dotChomp is an endless runner mini-game built for Web browsers. Utilizing Phaser and vanilla Javascript, this application tracks all scores where the top 30 will be projected on the main page.
 			<br>
 			<br>
+			<a href="https://dotchomp.herokuapp.com/users" class="mdl-button mdl-js-button" style="color:#546E7A;">Play Now</a>
 			<a href="https://github.com/ChesterHub/devbootcamp.CHOMP" class="mdl-button mdl-js-button mdl-button--icon"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
 			<br>
 			<br>
@@ -338,33 +358,33 @@
 	<div class="mdl-dialog__actions--full-width">
 		<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored close">Close</button>
 	</div>
-</dialog> -->
-<!-- Dialog for Project Four -->
+</dialog>
+<!-- Dialog Four -->
 <dialog class="mdl-dialog portfolio-dialog" id="dialog-four">
 	<h4 class="mdl-dialog__title font-wendy">Homepage</h4>
 	<div class="mdl-dialog__content">
 		<img src="assets/img/Pier7.jpg" class="dialog-pictures">
 		<p>
-			This portfolio is constantly being reiterated as my knowledge of technologies expand. 
+			Building this portfolio using basic web development; without the use of Bootstrap and jQuery. It is using Material Design only for the cards but can easily be switched to Flex, given some time. This portfolio is constantly being reiterated as my knowledge of technologies expand. 
 			<br>
 			<br>
 			<a href="https://github.com/ChesterHub/Chesterhub.github.io" class="mdl-button mdl-js-button mdl-button--icon"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
 			<br>
 			<br>
-			<strong>Tech Stack:</strong> HTML5, CSS3, JavaScript, Material Design, React (coming soon)
+			<strong>Tech Stack:</strong> HTML5, CSS3, JavaScript
 		</p>
 	</div>
 	<div class="mdl-dialog__actions--full-width">
 		<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored close">Close</button>
 	</div>
 </dialog>
-<!-- Dialog for Project Five -->
+<!-- Dialog Five -->
 <dialog class="mdl-dialog portfolio-dialog" id="dialog-five">
 	<h4 class="mdl-dialog__title font-wendy">FastBall</h4>
 	<div class="mdl-dialog__content">
 		<img src="assets/img/FastBall1.jpg" class="dialog-pictures">
 		<p>
-			An Android game that utilizes mobile accelerometers to tilt the ball in a direction to either dodge obstacles or obtain items. Note: This project is in early development.
+			An Android game that utilizes mobile accelerometers to tilt the ball in a direction to either dodge obstacles or obtain items. This project is in early development.
 			<br>
 			<br>
 
@@ -375,7 +395,47 @@
 		<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored close">Close</button>
 	</div>
 </dialog>
-
+<!-- Dialog Six -->
+<dialog class="mdl-dialog portfolio-dialog" id="dialog-six">
+	<h4 class="mdl-dialog__title font-wendy">PoE Currency Exchange</h4>
+	<div class="mdl-dialog__content">
+		<img src="assets/img/PoE2.png" class="dialog-pictures">
+		<p>
+			PoE Currency Exchange is a web application that tracks and converts in-game currency from an online RPG with over 1.5 million total users. This application stack utilizes React, Redis, Amazon Web Services, and Bootstrap to display averages of 200,000+ unique records a month. Note: For security reasons, Github only has a small portion of this project.
+			<br>
+			<br>
+			<a href="http://poeexchange.com" class="mdl-button mdl-js-button" style="color:#546E7A;">View Website</a>
+			<a href="https://github.com/ChesterHub/sauce" class="mdl-button mdl-js-button mdl-button--icon"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+			<br>
+			<br>
+			<strong>Tech Stack:</strong> Ruby On Rails, React, Redis, Amazon EC2 + RDS, Bootstrap, Passenger + Nginx
+		</p>
+	</div>
+	<div class="mdl-dialog__actions--full-width">
+		<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored close">Close</button>
+	</div>
+</dialog>
+<!-- Dialog Seven -->
+<dialog class="mdl-dialog portfolio-dialog" id="dialog-seven">
+	<h4 class="mdl-dialog__title font-wendy">LabTrakk</h4>
+	<div class="mdl-dialog__content">
+		<img src="assets/img/LabTrakk2.png" class="dialog-pictures">
+		<p>
+			LabTrakk is a Ruby on Rails application that permits users to propose lab experiments utilizing the scientific method. Users can vote and leave comments on their favorite lab experiments. The top proposals will be at the top of the list where others can test the experiment.
+			<br>
+			<br>
+			<a href="http://labtrakk.herokuapp.com/" class="mdl-button mdl-js-button" style="color:#546E7A;">View Website</a>
+			<a href="https://github.com/ChesterHub/LabTrak" class="mdl-button mdl-js-button mdl-button--icon"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+			<br>
+			<br>
+			<strong>Tech Stack:</strong> Ruby, JavaScript, Sinatra, Heroku
+		</p>
+	</div>
+	<div class="mdl-dialog__actions--full-width">
+		<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored close">Close</button>
+	</div>
+</dialog>
+<script src="skrollr.min.js"></script>
 <script src="main.js"></script>
 </body>
 </html>

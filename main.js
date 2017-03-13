@@ -3,6 +3,7 @@ function init() {
 }
 
 init();
+var s = skrollr.init();
 // QUICK CHIP
 // var chip = document.querySelector('#chip-cell');
 // document.querySelector('#chip').addEventListener('click', function() {
@@ -42,17 +43,17 @@ dialogTwo.querySelector('.close').addEventListener('click', function() {
 	dialogTwo.close();
 });
 
-// var projectThree = document.querySelector('#project-three');
-// var dialogThree = document.querySelector('#dialog-three');
-// if (! dialogThree.showModal) {
-// 	dialogPolyfill.registerDialog(dialogThree);
-// }
-// projectThree.addEventListener('click', function() {
-// 	dialogThree.showModal();
-// });
-// dialogThree.querySelector('.close').addEventListener('click', function() {
-// 	dialogThree.close();
-// });
+var projectThree = document.querySelector('#project-three');
+var dialogThree = document.querySelector('#dialog-three');
+if (! dialogThree.showModal) {
+	dialogPolyfill.registerDialog(dialogThree);
+}
+projectThree.addEventListener('click', function() {
+	dialogThree.showModal();
+});
+dialogThree.querySelector('.close').addEventListener('click', function() {
+	dialogThree.close();
+});
 
 var projectFour = document.querySelector('#project-four');
 var dialogFour = document.querySelector('#dialog-four');
@@ -76,6 +77,30 @@ projectFive.addEventListener('click', function() {
 });
 dialogFive.querySelector('.close').addEventListener('click', function() {
 	dialogFive.close();
+});
+
+var projectSix = document.querySelector('#project-six');
+var dialogSix = document.querySelector('#dialog-six');
+if (! dialogSix.showModal) {
+	dialogPolyfill.registerDialog(dialogSix);
+}
+projectSix.addEventListener('click', function() {
+	dialogSix.showModal();
+});
+dialogSix.querySelector('.close').addEventListener('click', function() {
+	dialogSix.close();
+});
+
+var projectSeven = document.querySelector('#project-seven');
+var dialogSeven = document.querySelector('#dialog-seven');
+if (! dialogSeven.showModal) {
+	dialogPolyfill.registerDialog(dialogSeven);
+}
+projectSeven.addEventListener('click', function() {
+	dialogSeven.showModal();
+});
+dialogSeven.querySelector('.close').addEventListener('click', function() {
+	dialogSeven.close();
 });
 
 // ----- Buttons -----
@@ -103,62 +128,62 @@ document.querySelector("#resume").onclick = function () {
 
 
 // -------- Make bars move ----------
-barsMoved = false;
-function moveAll() {
-	if (barsMoved === false) {
-		barOne = document.querySelector("#bar1");
-		moveBar(barOne, 97);
+// barsMoved = false;
+// function moveAll() {
+// 	if (barsMoved === false) {
+// 		barOne = document.querySelector("#bar1");
+// 		moveBar(barOne, 97);
 
-		barTwo = document.querySelector("#bar2");
-		moveBar(barTwo, 90);
+// 		barTwo = document.querySelector("#bar2");
+// 		moveBar(barTwo, 90);
 
-		barThree = document.querySelector("#bar3");
-		moveBar(barThree, 78);
+// 		barThree = document.querySelector("#bar3");
+// 		moveBar(barThree, 78);
 
-		barFour = document.querySelector("#bar4");
-		moveBar(barFour, 94);
+// 		barFour = document.querySelector("#bar4");
+// 		moveBar(barFour, 94);
 
-		barFive = document.querySelector("#bar5");
-		moveBar(barFive, 89);
+// 		barFive = document.querySelector("#bar5");
+// 		moveBar(barFive, 89);
 
-		barSix = document.querySelector("#bar6");
-		moveBar(barSix, 71);
+// 		barSix = document.querySelector("#bar6");
+// 		moveBar(barSix, 71);
 
-		barSeven = document.querySelector("#bar7");
-		moveBar(barSeven, 92);
+// 		barSeven = document.querySelector("#bar7");
+// 		moveBar(barSeven, 92);
 
-		barEight = document.querySelector("#bar8");
-		moveBar(barEight, 85);
+// 		barEight = document.querySelector("#bar8");
+// 		moveBar(barEight, 85);
 
-		barNine = document.querySelector("#bar9");
-		moveBar(barNine, 67);
+// 		barNine = document.querySelector("#bar9");
+// 		moveBar(barNine, 67);
 
-		barTen = document.querySelector("#bar10");
-		moveBar(barTen, 90);
+// 		barTen = document.querySelector("#bar10");
+// 		moveBar(barTen, 90);
 
-		barEleven = document.querySelector("#bar11");
-		moveBar(barEleven, 81);
+// 		barEleven = document.querySelector("#bar11");
+// 		moveBar(barEleven, 81);
 
-		barTwelve = document.querySelector("#bar12");
-		moveBar(barTwelve, 61);
+// 		barTwelve = document.querySelector("#bar12");
+// 		moveBar(barTwelve, 61);
 
-		barsMoved = true;
-	}
+// 		barsMoved = true;
+// 	}
 
-}
-function moveBar(bar, percentage) {
-	var elem = bar;   
-	var width = 40;
-	var id = setInterval(frame, 20);
-	function frame() {
-		if (width >= percentage) {
-			clearInterval(id);
-		} else {
-			width++; 
-			elem.style.width = width + '%'; 
-		}
-	}
-}
+// }
+// function moveBar(bar, percentage) {
+// 	var elem = bar;   
+// 	var width = 40;
+// 	var id = setInterval(frame, 20);
+// 	function frame() {
+// 		if (width >= percentage) {
+// 			clearInterval(id);
+// 		} else {
+// 			width++; 
+// 			elem.style.width = width + '%'; 
+// 		}
+// 	}
+// }
 
 
 
