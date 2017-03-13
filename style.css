@@ -66,7 +66,7 @@ h1 {
 }
 
 #lastname-header {
-  color: #7835f9;
+  color: #4f06db;
 }
 
 #circle {
@@ -97,7 +97,7 @@ h1 {
    background-size: cover;
    padding-bottom: 80px;
    padding-top: 65px;
-   color: #7835f9;
+   color: #4f06db;
  }
 
  #about-text {
@@ -200,7 +200,7 @@ h1 {
 #portfolio-title {
   font-size: 275%;
   padding-bottom: 20px;
-  color: #7835f9;
+  color: #4f06db;
 }
 
 .project-cards {
@@ -362,7 +362,7 @@ dialog {
 
 #feedback-sentence {
   font-size: 13pt;
-  color: #7835f9;
+  color: #4f06db;
 }
 
 .info-cell {

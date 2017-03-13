@@ -3,6 +3,7 @@ function init() {
 }
 
 init();
+var s = skrollr.init();
 // QUICK CHIP
 // var chip = document.querySelector('#chip-cell');
 // document.querySelector('#chip').addEventListener('click', function() {
