@@ -104,11 +104,11 @@ dialogSeven.querySelector('.close').addEventListener('click', function() {
 });
 
 // ----- Buttons -----
-document.querySelector("#down-arrow").onclick = function () {
-	document.querySelector('#about').scrollIntoView({ 
-		behavior: 'smooth' 
-	});
-};
+// document.querySelector("#down-arrow").onclick = function () {
+// 	document.querySelector('#about').scrollIntoView({ 
+// 		behavior: 'smooth' 
+// 	});
+// };
 
 document.querySelector("#linkedin").onclick = function () {
 	location.href = "https://www.linkedin.com/in/chesterlhoang";
