@@ -45,17 +45,17 @@ a.mdl-js-ripple-effect { position: relative; }
 .intro{
 	position: relative;
   background: url("assets/img/sunset.jpg");
- /*    background-color: #8C9EFF;*/
- -webkit-background-size: cover;
- -moz-background-size: cover;
- -o-background-size: cover;
- background-size: cover;
- height: 100vh;
- width: 100vw;
- background-attachment: fixed;
- background-position: center;
- background-repeat: no-repeat;
- background-size: cover;
+  /*    background-color: #8C9EFF;*/
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
 }
 
@@ -96,8 +96,8 @@ h1 {
    -moz-background-size: cover;
    -o-background-size: cover;
    background-size: cover;
-   padding-bottom: 80px;
-   padding-top: 65px;
+   padding-bottom: 110px;
+   padding-top: 95px;
    color: #4f06db;
  }
 
@@ -156,25 +156,29 @@ h1 {
 }
 
 .tech {
-    background-color: white;
-/*  background:     linear-gradient(
-    rgba(0, 0, 0, 0.3), 
-    rgba(0, 0, 0, 0.3)
-    );*/
-/*    background: rgba(84, 110, 122, .1);*/
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 80px;
-    padding-top: 40px;
-  }
+  background-color: white;
+  background: url("assets/img/wow.jpg") top center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 80px;
+  padding-top: 40px;
+}
 
-  #tech-box {
-   padding-bottom: 33px;
-   padding-top: 5px;
- }
+#tech-box {
+ padding-bottom: 33px;
+ padding-top: 5px;
+}
 
- #tech-title {
-  color: #212121;
+#tech-title {
+  color: white;
 }
 
 .tech-meter {
@@ -188,7 +192,7 @@ h1 {
 .portfolio {
   position: relative;
   background-color: #212121;
-/*    background: rgba(84, 110, 122, .2);*/
+  /*    background: rgba(84, 110, 122, .2);*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -343,16 +347,17 @@ dialog {
 
 .contact-info {
   position: relative;
+  background: url("assets/img/usnight.jpg") top center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-color: #212121;
-  background:     linear-gradient(
-    rgba(0, 0, 0, 0.92), 
-    rgba(0, 0, 0, 0.92)
-    );
-  padding-bottom: 120px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 40px;
+  padding-bottom: 180px;
 }
 
 #info-title {
@@ -363,7 +368,8 @@ dialog {
 
 #feedback-sentence {
   font-size: 13pt;
-  color: #4f06db;
+  color: white;
+  font-style: italic;
 }
 
 .info-cell {
@@ -375,7 +381,7 @@ dialog {
   font-size: 1.7em;
   height: 100%;
   width: 100%;
-  color: white;
+  color: #4d00e1;
 }
 
 .info-cell > p {
@@ -400,7 +406,7 @@ dialog {
   -webkit-border-radius: 15px;
   border-radius: 15px;
   padding: 7px;
-  box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+  box-shadow: inset 0 -1px 1px rgba(255,255,255,0.5);
 }
 
 .meter > span {
@@ -489,5 +495,100 @@ dialog {
 .red > span {
   background-color: #f0a3a3;
   background-image: linear-gradient(to bottom, #f0a3a3, #f42323);
+}
+
+
+.fadeinfast {
+    animation: fadeinfast 2s;
+    -moz-animation: fadeinfast 2s; /* Firefox */
+    -webkit-animation: fadeinfast 2s; /* Safari and Chrome */
+    -o-animation: fadeinfast 2s; /* Opera */
+}
+@keyframes fadeinfast {
+    from {
+        opacity:0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@-moz-keyframes fadeinfast { /* Firefox */
+    from {
+        opacity:0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@-webkit-keyframes fadeinfast { /* Safari and Chrome */
+    from {
+        opacity:0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@-o-keyframes fadeinfast { /* Opera */
+    from {
+        opacity:0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.fadeinslow {
+    animation: fadeinslow 3.5s;
+    -moz-animation: fadeinslow 3.5s; /* Firefox */
+    -webkit-animation: fadeinslow 3.5s; /* Safari and Chrome */
+    -o-animation: fadeinslow 3.5s; /* Opera */
+}
+@keyframes fadeinslow {
+    from {
+        opacity:0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@-moz-keyframes fadeinslow { /* Firefox */
+    from {
+        opacity:0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@-webkit-keyframes fadeinslow { /* Safari and Chrome */
+    from {
+        opacity:0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@-o-keyframes fadeinslow { /* Opera */
+    from {
+        opacity:0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
 
