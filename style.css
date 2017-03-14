@@ -8,14 +8,14 @@
 	position: relative;
 }
 
-body  { background-color: #212121; }
+body  { background-color: #121212; }
 
 .font-open { font-family: 'Libre Franklin', sans-serif; }
 .font-wendy {	font-family: 'Oswald', sans-serif, Helvetica, Arial, sans-serif; }
 
 p { 
   font-family: 'Open Sans', sans-serif, Helvetica, Arial, sans-serif;
-  color: #212121;
+  color: #121212;
 }
 
 .navigation-link {
@@ -25,7 +25,7 @@ p {
 a.mdl-js-ripple-effect { position: relative; }
 
 .header-color {
-  background-color: #212121;
+  background-color: #121212;
   background:     linear-gradient(
     rgba(0, 0, 0, 0.9), 
     rgba(0, 0, 0, 0.9)
@@ -62,12 +62,12 @@ a.mdl-js-ripple-effect { position: relative; }
 
 h1 {
 	padding-top: 14%;
-	color: #212121;
+	color: #121212;
 	font-size: 700%;
 }
 
 #lastname-header {
-  color: gray;
+  color: #A9A9A9;
 }
 
 #firstname {
@@ -75,11 +75,11 @@ h1 {
 }
 
 #circle {
-  color: #212121;
+  color: #121212;
 }
 
 #lastname {
-  color: gray;
+  color: #A9A9A9;
 }
 
 #down-arrow {
@@ -90,7 +90,7 @@ h1 {
 
 .about-me {
   position: relative;
-  /*background-color: #212121;*/
+  /*background-color: #121212;*/
   /*background: url("assets/img/usnight.jpg");*/
   /* background: rgba(84, 110, 122, .8);*/
 /* background:     linear-gradient(
@@ -105,9 +105,9 @@ h1 {
    -moz-background-size: cover;
    -o-background-size: cover;
    background-size: cover;
-   padding-bottom: 110px;
+/*   padding-bottom: 110px;*/
    padding-top: 95px;
-   color: gray;
+   color: #A9A9A9;
  }
 
  #about-text {
@@ -150,7 +150,7 @@ h1 {
 
 .big-icon {
 	font-size: 1700%;
-	color: #212121;
+	color: #121212;
 	padding-bottom: 30px;
   padding-top: 30px;
 
@@ -165,7 +165,8 @@ h1 {
 }
 
 .tech {
-  background: url("assets/img/earthview.jpg") top center;
+  position: relative;
+  /*background: url("assets/img/earthview.jpg") top center;*/
   /*background: rgba(0, 0, 0, .2);*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -177,17 +178,18 @@ h1 {
   background-size: cover;
   padding-left: 30px;
   padding-right: 30px;
-  padding-bottom: 80px;
-  padding-top: 40px;
+  padding-bottom: 170px;
+  color: black;
+/*  padding-top: 40px;*/
 }
 
-#tech-box {
+/*#tech-box {
  padding-bottom: 33px;
  padding-top: 5px;
-}
+}*/
 
 #tech-title {
-  color: white;
+  color: #A9A9A9;
 }
 
 .tech-meter {
@@ -200,7 +202,7 @@ h1 {
 
 .portfolio {
   position: relative;
-  background-color: #212121;
+  background-color: #121212;
   /*background: url("assets/img/wow.jpg") top center;*/
   /*    background: rgba(84, 110, 122, .2);*/
   -webkit-background-size: cover;
@@ -223,8 +225,8 @@ h1 {
 }
 
 .project-cards {
-  width: 400px;
-  height: 400px; 
+  width: 460px;
+  height: 300px; 
   max-width: 100%;
   max-height: 100%;
   font-size: 200%;
@@ -341,7 +343,7 @@ dialog {
   max-height: calc(100vh - 5vh);
   max-width: calc(100vh - 5vh);
   overflow-y: auto;
-  background-color: #212121;
+  background-color: #121212;
   color: white;
   /*  opacity: .98;*/
   text-align: center;
@@ -381,8 +383,9 @@ dialog {
 }
 
 #feedback-sentence {
-  font-size: 13pt;
-  color: white;
+  font-size: 12pt;
+  color: #A9A9A9;
+  font-weight: normal;
   font-style: italic;
 }
 
@@ -474,9 +477,11 @@ dialog {
 @keyframes move {
   0% {
     background-position: 0 0;
+
   }
   100% {
-    background-position: 30px 30px;
+    background-position: -30px -30px;
+
   }
 }
 
@@ -560,10 +565,10 @@ dialog {
 }
 
 .fadeinslow {
-    animation: fadeinslow 6s;
-    -moz-animation: fadeinslow 6s; /* Firefox */
-    -webkit-animation: fadeinslow 6s; /* Safari and Chrome */
-    -o-animation: fadeinslow 6s; /* Opera */
+    animation: fadeinslow 5s;
+    -moz-animation: fadeinslow 5s; /* Firefox */
+    -webkit-animation: fadeinslow 5s; /* Safari and Chrome */
+    -o-animation: fadeinslow 5s; /* Opera */
 }
 @keyframes fadeinslow {
     from {
@@ -613,8 +618,8 @@ dialog {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
   z-index: 100;
-  -webkit-animation-name: STAR-SLOW;
-  -webkit-animation-duration: 50s;
+  -webkit-animation-name: US;
+  -webkit-animation-duration: 60s;
   -webkit-animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
   z-index: -1;
@@ -622,23 +627,55 @@ dialog {
   background-position: center;
 }
 
-@-webkit-keyframes STAR-SLOW {
+@-webkit-keyframes US {
   from {
     background-position: 0% 0%
   }
+  50% {
+    background-position: 900% 0%
+  }
   to { 
-    background-position: 140% 105%
+    background-position: 0% 0%
+  }
+}
+
+#techbackground {
+  background: black url(assets/img/SpaceEarth.png) 5% 5%;
+  background-size: cover;
+  background-position: bottom;
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  -webkit-animation-name: TECHS;
+  -webkit-animation-duration: 120s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  z-index: -1;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+@-webkit-keyframes TECHS {
+  from {
+    background-position: 0% 0%;
+    opacity: .6;
+  }
+  50% { 
+    background-position: 80% 100%;
+    opacity: .3;
+  }
+  to {
+    background-position: 0% 0%;
+    opacity: .6;
   }
 }
 
 #background {
   background: black url(assets/img/background.png) 5% 5%;
-  background-position: top;
   position: absolute;
+  background-position: top;
   top: 0; left: 0; right: 0; bottom: 0;
-  z-index: 100;
   -webkit-animation-name: STAR-MOVE;
-  -webkit-animation-duration: 50s;
+  -webkit-animation-duration: 80s;
   -webkit-animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
   z-index: -1;
@@ -681,7 +718,7 @@ dialog {
     background-position: 5% 5%
   }
   to { 
-    background-position: 900% 1800%
+    background-position: 400% 300%
   }
 }
 
