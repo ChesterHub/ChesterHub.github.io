@@ -10,8 +10,8 @@
 
 body  { background-color: #212121; }
 
-.font-open { font-family: 'Open Sans', sans-serif, Helvetica, Arial, sans-serif; }
-.font-wendy {	font-family: 'Wendy One', sans-serif, Helvetica, Arial, sans-serif; }
+.font-open { font-family: 'Libre Franklin', sans-serif; }
+.font-wendy {	font-family: 'Oswald', sans-serif, Helvetica, Arial, sans-serif; }
 
 p { 
   font-family: 'Open Sans', sans-serif, Helvetica, Arial, sans-serif;
@@ -67,7 +67,7 @@ h1 {
 }
 
 #lastname-header {
-  color: #4f06db;
+  color: gray;
 }
 
 #firstname {
@@ -79,7 +79,7 @@ h1 {
 }
 
 #lastname {
-  color: #4f06db;
+  color: gray;
 }
 
 #down-arrow {
@@ -90,19 +90,24 @@ h1 {
 
 .about-me {
   position: relative;
-  background-color: #212121;
+  /*background-color: #212121;*/
+  /*background: url("assets/img/usnight.jpg");*/
   /* background: rgba(84, 110, 122, .8);*/
 /* background:     linear-gradient(
    rgba(0, 0, 0, 0.8), 
    rgba(0, 0, 0, 0.8)
    );*/
+   background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
    -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
    background-size: cover;
    padding-bottom: 110px;
    padding-top: 95px;
-   color: #4f06db;
+   color: gray;
  }
 
  #about-text {
@@ -160,7 +165,8 @@ h1 {
 }
 
 .tech {
-  background: url("assets/img/wow.jpg") top center;
+  background: url("assets/img/earthview.jpg") top center;
+  /*background: rgba(0, 0, 0, .2);*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -194,11 +200,16 @@ h1 {
 
 .portfolio {
   position: relative;
-  background-color: white;
+  background-color: #212121;
+  /*background: url("assets/img/wow.jpg") top center;*/
   /*    background: rgba(84, 110, 122, .2);*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   padding-top: 65px;
   padding-bottom: 130px;
@@ -208,11 +219,11 @@ h1 {
 #portfolio-title {
   font-size: 275%;
   padding-bottom: 20px;
-  color: #4f06db;
+  color: white;
 }
 
 .project-cards {
-  width: 475px;
+  width: 400px;
   height: 400px; 
   max-width: 100%;
   max-height: 100%;
@@ -350,7 +361,7 @@ dialog {
 
 .contact-info {
   position: relative;
-  background: url("assets/img/usnight.jpg") top center;
+  /*background: url("assets/img/usnight.jpg") top center;*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -384,7 +395,7 @@ dialog {
   font-size: 1.7em;
   height: 100%;
   width: 100%;
-  color: #4d00e1;
+  color: white;
 }
 
 .info-cell > p {
@@ -549,10 +560,10 @@ dialog {
 }
 
 .fadeinslow {
-    animation: fadeinslow 7s;
-    -moz-animation: fadeinslow 7s; /* Firefox */
-    -webkit-animation: fadeinslow 7s; /* Safari and Chrome */
-    -o-animation: fadeinslow 7s; /* Opera */
+    animation: fadeinslow 6s;
+    -moz-animation: fadeinslow 6s; /* Firefox */
+    -webkit-animation: fadeinslow 6s; /* Safari and Chrome */
+    -o-animation: fadeinslow 6s; /* Opera */
 }
 @keyframes fadeinslow {
     from {
@@ -596,14 +607,38 @@ dialog {
 }
 
 
-#background {
-  background: black url(assets/img/background.png) repeat 5% 5%;
+#usbackground {
+  background: black url(assets/img/usnight.jpg) 5% 5%;
+  background-position: top;
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
   z-index: 100;
-  
+  -webkit-animation-name: STAR-SLOW;
+  -webkit-animation-duration: 50s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  z-index: -1;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+@-webkit-keyframes STAR-SLOW {
+  from {
+    background-position: 0% 0%
+  }
+  to { 
+    background-position: 140% 105%
+  }
+}
+
+#background {
+  background: black url(assets/img/background.png) 5% 5%;
+  background-position: top;
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 100;
   -webkit-animation-name: STAR-MOVE;
-  -webkit-animation-duration: 200s;
+  -webkit-animation-duration: 50s;
   -webkit-animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
   z-index: -1;
@@ -646,7 +681,7 @@ dialog {
     background-position: 5% 5%
   }
   to { 
-    background-position: -900% -1800%
+    background-position: 900% 1800%
   }
 }
 
@@ -686,7 +721,7 @@ dialog {
     margin: 20px 0 0 0
 }
 .view p {
-    font-family: Georgia, serif;
+    font-family: 'Libre Franklin', sans-serif;
     font-style: italic;
     font-size: 16px;
     position: relative;
@@ -709,15 +744,16 @@ dialog {
 
 .view-card .mask {
     opacity: 0;
-    background-color: rgba(100,150,100, 0.7); 
+    background-color: rgba(100,100,100, 0.8); 
     transition: all 0.4s ease-in-out;
 }
 .view-card h2 {
+    font-family: 'Oswald', sans-serif, Helvetica, Arial, sans-serif;
     transform: translateY(-100px);
     opacity: 0;
     transition: all 0.2s ease-in-out;
 }
-.view-card p { 
+.view-card p {  
     transform: translateY(100px);
     opacity: 0;
   transition: all 0.2s linear;
