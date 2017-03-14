@@ -44,7 +44,7 @@ a.mdl-js-ripple-effect { position: relative; }
 
 .intro{
 	position: relative;
-  background: url("assets/img/sunset.jpg");
+/*  background: url("assets/img/sunset.jpg");*/
   /*    background-color: #8C9EFF;*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -68,6 +68,10 @@ h1 {
 
 #lastname-header {
   color: #4f06db;
+}
+
+#firstname {
+  color:white;
 }
 
 #circle {
@@ -190,7 +194,7 @@ h1 {
 
 .portfolio {
   position: relative;
-  background-color: #212121;
+  background-color: white;
   /*    background: rgba(84, 110, 122, .2);*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -545,49 +549,106 @@ dialog {
 }
 
 .fadeinslow {
-    animation: fadeinslow 3.5s;
-    -moz-animation: fadeinslow 3.5s; /* Firefox */
-    -webkit-animation: fadeinslow 3.5s; /* Safari and Chrome */
-    -o-animation: fadeinslow 3.5s; /* Opera */
+    animation: fadeinslow 7s;
+    -moz-animation: fadeinslow 7s; /* Firefox */
+    -webkit-animation: fadeinslow 7s; /* Safari and Chrome */
+    -o-animation: fadeinslow 7s; /* Opera */
 }
 @keyframes fadeinslow {
     from {
         opacity:0;
-        transform: translateX(-30px);
+        transform: translateY(100px);
     }
     to {
         opacity: 1;
-        transform: translateX(0px);
+        transform: translateY(0px);
     }
 }
 @-moz-keyframes fadeinslow { /* Firefox */
     from {
         opacity:0;
-        transform: translateX(-30px);
+        transform: translateY(100px);
     }
     to {
         opacity: 1;
-        transform: translateX(0px);
+        transform: translateY(0px);
     }
 }
 @-webkit-keyframes fadeinslow { /* Safari and Chrome */
     from {
         opacity:0;
-        transform: translateX(-30px);
+        transform: translateY(100px);
     }
     to {
         opacity: 1;
-        transform: translateX(0px);
+        transform: translateY(0px);
     }
 }
 @-o-keyframes fadeinslow { /* Opera */
     from {
         opacity:0;
-        transform: translateX(-30px);
+        transform: translateY(100px);
     }
     to {
         opacity: 1;
-        transform: translateX(0px);
+        transform: translateY(0px);
     }
 }
+
+
+#background {
+  background: black url(assets/img/background.png) repeat 5% 5%;
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 100;
+  
+  -webkit-animation-name: STAR-MOVE;
+  -webkit-animation-duration: 200s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  z-index: -1;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+#midground {
+  background: url(assets/img/midground.png) repeat 20% 20%;
+  opacity: 0.5;
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 200;
+  -webkit-animation-name: STAR-MOVE;
+  -webkit-animation-duration: 150s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  z-index: -1;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+#foreground {
+  background: url(assets/img/foreground.png) repeat 5% 5%;
+  opacity: 0.5;
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 300;
+  -webkit-animation-name: STAR-MOVE;
+  -webkit-animation-duration: 100s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  z-index: -1;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+@-webkit-keyframes STAR-MOVE {
+  from {
+    background-position: 5% 5%
+  }
+  to { 
+    background-position: -900% -1800%
+  }
+}
+
+
 
