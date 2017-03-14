@@ -619,7 +619,7 @@ dialog {
   top: 0; left: 0; right: 0; bottom: 0;
   z-index: 100;
   -webkit-animation-name: US;
-  -webkit-animation-duration: 60s;
+  -webkit-animation-duration: 120s;
   -webkit-animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
   z-index: -1;
