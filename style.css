@@ -61,9 +61,9 @@ a.mdl-js-ripple-effect { position: relative; }
 
 
 h1 {
-	padding-top: 14%;
+	padding-top: 17vh;
 	color: #121212;
-	font-size: 700%;
+	font-size: 6.5vw;
 }
 
 #lastname-header {
@@ -111,7 +111,7 @@ h1 {
  }
 
  #about-text {
-  font-size: 150%;
+  font-size: 1vw;
   font-family: 'Open Sans', sans-serif;
   color: white;
   padding-bottom: 15px;
@@ -178,7 +178,7 @@ h1 {
   background-size: cover;
   padding-left: 30px;
   padding-right: 30px;
-  padding-bottom: 230px;
+  padding-bottom: 20vh;
   color: black;
 /*  padding-top: 40px;*/
 }
@@ -193,11 +193,11 @@ h1 {
 }
 
 .tech-meter {
-	padding-left: 5px;
-  padding-right: 5px;
-  padding-bottom: 6px;
-  padding-top: 6px;
-  font-size: 160%;
+	padding-left: 4px;
+  padding-right: 4px;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  font-size: 1vw;
 }
 
 .portfolio {
@@ -225,10 +225,10 @@ h1 {
 }
 
 .project-cards {
-  width: 460px;
-  height: 300px; 
-  max-width: 100%;
-  max-height: 100%;
+  width: 25vw;
+  height: 30vh; 
+  /*max-width: 100%;*/
+  /*max-height: 100%;*/
   font-size: 200%;
   margin: 10px;
   cursor: pointer;
@@ -395,16 +395,16 @@ dialog {
 }
 
 .info-button {
-  font-size: 1.7em;
+  font-size: 1.5em;
   height: 100%;
   width: 100%;
   color: white;
 }
 
 .info-cell > p {
-  font-size: 12pt;
+  font-size: 1vw;
   color: white;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 
@@ -416,7 +416,7 @@ dialog {
 
 /*------------------METER PROGRESS BARS-------------------------*/
 .meter { 
-  height: 22px;
+  height: 2.3vh;
   position: relative;
   background: rgba(50, 50, 50, .7);
   -moz-border-radius: 15px;
@@ -615,6 +615,7 @@ dialog {
 #usbackground {
   background: black url(assets/img/usnight.jpg) 5% 5%;
   background-position: top;
+  background-size: cover;
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
   z-index: 100;
@@ -632,7 +633,7 @@ dialog {
     background-position: 0% 0%
   }
   50% {
-    background-position: 900% 0%
+    background-position: 700% 0%
   }
   to { 
     background-position: 0% 0%
@@ -646,7 +647,7 @@ dialog {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
   -webkit-animation-name: TECHS;
-  -webkit-animation-duration: 120s;
+  -webkit-animation-duration: 80s;
   -webkit-animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
   z-index: -1;
@@ -657,15 +658,15 @@ dialog {
 @-webkit-keyframes TECHS {
   from {
     background-position: 0% 0%;
-    opacity: .6;
+    opacity: .7;
   }
   50% { 
     background-position: 80% 100%;
-    opacity: .3;
+    opacity: .5;
   }
   to {
     background-position: 0% 0%;
-    opacity: .6;
+    opacity: .7;
   }
 }
 
@@ -718,7 +719,7 @@ dialog {
     background-position: 5% 5%
   }
   to { 
-    background-position: 400% 300%
+    background-position: 200% -150%
   }
 }
 
@@ -752,7 +753,7 @@ dialog {
     color: #fff;
     text-align: center;
     position: relative;
-    font-size: 25px;
+    font-size: 1.5vw;
     padding: 10px;
     background: rgba(0, 0, 0, 0.8);
     margin: 20px 0 0 0
@@ -760,7 +761,7 @@ dialog {
 .view p {
     font-family: 'Libre Franklin', sans-serif;
     font-style: italic;
-    font-size: 16px;
+    font-size: .9vw;
     position: relative;
     color: #fff;
     padding: 20px 20px 20px;
