@@ -111,7 +111,7 @@ h1 {
  }
 
  #about-text {
-  font-size: 11pt;
+  font-size: 10pt;
   font-weight: normal;
   font-family: 'Libre Franklin', sans-serif;
   color: white;
@@ -396,14 +396,14 @@ dialog {
 }
 
 .info-button {
-  font-size: 1.3em;
+  font-size: 1.4em;
   height: 100%;
   width: 100%;
   color: white;
 }
 
 .info-cell > p {
-  font-size: .9;
+  font-size: 10pt;
   color: white;
   font-family: 'Libre Franklin', sans-serif;
   font-weight: normal;
@@ -693,7 +693,7 @@ dialog {
   top: 0; left: 0; right: 0; bottom: 0;
   z-index: 200;
   -webkit-animation-name: STAR-MOVE;
-  -webkit-animation-duration: 150s;
+  -webkit-animation-duration: 80s;
   -webkit-animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
   z-index: -1;
@@ -708,7 +708,7 @@ dialog {
   top: 0; left: 0; right: 0; bottom: 0;
   z-index: 300;
   -webkit-animation-name: STAR-MOVE;
-  -webkit-animation-duration: 100s;
+  -webkit-animation-duration: 80s;
   -webkit-animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
   z-index: -1;
@@ -720,8 +720,11 @@ dialog {
   from {
     background-position: 5% 5%
   }
+  50% {
+    background-position: 100% -75%
+  }
   to { 
-    background-position: 200% -150%
+    background-position: 5% 5%
   }
 }
 
