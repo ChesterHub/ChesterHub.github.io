@@ -111,8 +111,9 @@ h1 {
  }
 
  #about-text {
-  font-size: 1vw;
-  font-family: 'Open Sans', sans-serif;
+  font-size: 11pt;
+  font-weight: normal;
+  font-family: 'Libre Franklin', sans-serif;
   color: white;
   padding-bottom: 15px;
 }
@@ -395,15 +396,16 @@ dialog {
 }
 
 .info-button {
-  font-size: 1.5em;
+  font-size: 1.3em;
   height: 100%;
   width: 100%;
   color: white;
 }
 
 .info-cell > p {
-  font-size: 1vw;
+  font-size: .9;
   color: white;
+  font-family: 'Libre Franklin', sans-serif;
   font-weight: normal;
 }
 
