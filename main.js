@@ -3,14 +3,15 @@ function init() {
 }
 
 init();
-// var s = skrollr.init();
-// QUICK CHIP
-// var chip = document.querySelector('#chip-cell');
-// document.querySelector('#chip').addEventListener('click', function() {
-// 	chip.style.display = 'block'; 
-// 	chip.style.display = 'none'
-// });
 
+window.addEventListener("load", function(){
+	setTimeout(remove, 1500);
+});
+
+function remove(){
+	var load_screen = document.getElementById("load-screen");
+	document.body.removeChild(load_screen);
+}
 
 //  ---------------CLOSE DRAWER ON CLICK-------------
 document.querySelector('.mdl-layout__drawer').addEventListener('click', function () {
