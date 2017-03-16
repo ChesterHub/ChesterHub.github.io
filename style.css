@@ -89,6 +89,8 @@ h1 {
 
 
 .about-me {
+  height: 100vh;
+  width: 100vw;
   position: relative;
   /*background-color: #121212;*/
   /*background: url("assets/img/usnight.jpg");*/
@@ -98,9 +100,9 @@ h1 {
    rgba(0, 0, 0, 0.8)
    );*/
    background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
    -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
@@ -196,7 +198,7 @@ h1 {
 .tech-meter {
 	padding-left: 4px;
   padding-right: 4px;
-  padding-bottom: 4px;
+  padding-bottom: 10px;
   padding-top: 4px;
   font-size: 1vw;
 }
@@ -214,8 +216,8 @@ h1 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 65px;
-  padding-bottom: 130px;
+  padding-top: 25px;
+  padding-bottom: 90px;
 
 }
 
@@ -616,7 +618,6 @@ dialog {
 
 #usbackground {
   background: black url(assets/img/usnight.jpg) 5% 5%;
-  background-position: top;
   background-size: cover;
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
@@ -627,18 +628,21 @@ dialog {
   -webkit-animation-iteration-count: infinite;
   z-index: -1;
   background-attachment: fixed;
-  background-position: center;
+  background-position: bottom;
 }
 
 @-webkit-keyframes US {
   from {
-    background-position: 0% 0%
+    background-position: 0% 0%;
+    filter:hue-rotate(0deg)
   }
   50% {
-    background-position: 700% 0%
+    background-position: 700% 0%;
+    filter:hue-rotate(-50deg)
   }
   to { 
-    background-position: 0% 0%
+    background-position: 0% 0%;
+    filter:hue-rotate(0deg)
   }
 }
 
@@ -659,16 +663,16 @@ dialog {
 
 @-webkit-keyframes TECHS {
   from {
-    background-position: 0% 0%;
-    opacity: .7;
+    background-position: 80% 100%;
+    opacity: .8;
   }
   50% { 
-    background-position: 80% 100%;
+    background-position: 0% 0%;
     opacity: .5;
   }
   to {
-    background-position: 0% 0%;
-    opacity: .7;
+    background-position: 80% 100%;
+    opacity: .8;
   }
 }
 
@@ -718,13 +722,16 @@ dialog {
 
 @-webkit-keyframes STAR-MOVE {
   from {
-    background-position: 5% 5%
+    background-position: 5% 5%;
+    filter:hue-rotate(0deg)
   }
   50% {
-    background-position: -100% 75%
+    background-position: 100% -75%;
+    filter:hue-rotate(360deg)
   }
   to { 
-    background-position: 5% 5%
+    background-position: 5% 5%;
+    filter:hue-rotate(0deg)
   }
 }
 
@@ -787,7 +794,7 @@ dialog {
 
 .view-card .mask {
     opacity: 0;
-    background-color: rgba(100,100,100, 0.8); 
+    background-color: rgba(31,31,31, 0.8); 
     transition: all 0.4s ease-in-out;
 }
 .view-card h2 {
