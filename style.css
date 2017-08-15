@@ -668,8 +668,8 @@ dialog {
     filter:hue-rotate(0deg)
   }
   50% {
-    background-position: 700% 0%;
-    filter:hue-rotate(-50deg)
+    background-position: -1000px 0px;
+    filter:hue-rotate(-30deg)
   }
   to { 
     background-position: 0% 0%;
