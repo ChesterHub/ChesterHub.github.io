@@ -1,17 +1,26 @@
-function init() {
-  // initialisation stuff here
-}
-
-init();
+// initialisation stuff here
+var mainDiv = $('.main-div');
+var headerNav = $(".header-nav");
 
 window.addEventListener("load", function(){
 	setTimeout(remove, 1500);
 });
 
 function remove(){
-	var load_screen = document.getElementById("load-screen");
-	document.body.removeChild(load_screen);
+	var loadScreen = $("#load-screen");
+  	var mainDiv = $('.main-div');
+
+	loadScreen.css('display', 'none');
 }
+
+// show/hide header depending on scroll
+// mainDiv.on("scroll", function(){
+// 	if (mainDiv.scrollTop() > 400) {
+// 		headerNav.css('display', 'inherit');
+// 	} else {
+// 		headerNav.css('display', 'none');
+// 	}
+// });
 
 //  ---------------CLOSE DRAWER ON CLICK-------------
 document.querySelector('.mdl-layout__drawer').addEventListener('click', function () {
