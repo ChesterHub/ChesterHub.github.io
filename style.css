@@ -59,7 +59,9 @@ a.mdl-js-ripple-effect { position: relative; }
 	font-size: 175%;
 }
 
-
+.header-name {
+	display: none;
+}
 .intro{
 	position: relative;
 /*  background: url("assets/img/sunset.jpg");*/
@@ -542,16 +544,16 @@ dialog {
 
 
 .fadeinfast {
-		animation: fadeinfast 5s;
-		-moz-animation: fadeinfast 5s; /* Firefox */
-		-webkit-animation: fadeinfast 5s; /* Safari and Chrome */
-		-o-animation: fadeinfast 5s; /* Opera */
+		animation: fadeinfast 3s;
+		-moz-animation: fadeinfast 3s; /* Firefox */
+		-webkit-animation: fadeinfast 3s; /* Safari and Chrome */
+		-o-animation: fadeinfast 3s; /* Opera */
 }
 @keyframes fadeinfast {
 		from {
 				opacity:0;
 				/*transform: translateX(25px);*/
-				filter: contrast(500%);
+				filter: contrast(400%);
 		}
 		to {
 				opacity: 1;
@@ -563,7 +565,7 @@ dialog {
 		from {
 				opacity:0;
 				/*transform: translateX(25px);*/
-				filter: contrast(500%);
+				filter: contrast(400%);
 		}
 		to {
 				opacity: 1;
@@ -575,7 +577,7 @@ dialog {
 		from {
 				opacity:0;
 				/*transform: translateX(25px);*/
-				filter: contrast(500%);
+				filter: contrast(400%);
 		}
 		to {
 				opacity: 1;
@@ -587,7 +589,7 @@ dialog {
 		from {
 				opacity:0;
 				/*transform: translateX(25px);*/
-				filter: contrast(500%);
+				filter: contrast(400%);
 		}
 		to {
 				opacity: 1;
@@ -597,10 +599,10 @@ dialog {
 }
 
 .fadeinslow {
-		animation: fadeinslow 8s;
-		-moz-animation: fadeinslow 8s; /* Firefox */
-		-webkit-animation: fadeinslow 8s; /* Safari and Chrome */
-		-o-animation: fadeinslow 8s; /* Opera */
+		animation: fadeinslow 5s;
+		-moz-animation: fadeinslow 5s; /* Firefox */
+		-webkit-animation: fadeinslow 5s; /* Safari and Chrome */
+		-o-animation: fadeinslow 5s; /* Opera */
 }
 @keyframes fadeinslow {
 		from {

@@ -1,6 +1,7 @@
 // initialisation stuff here
 var mainDiv = $('.main-div');
-var headerNav = $(".header-nav");
+var mainBody = $('.main-body')
+var headerName = $(".header-name");
 
 window.addEventListener("load", function(){
 	setTimeout(remove, 1500);
@@ -8,19 +9,21 @@ window.addEventListener("load", function(){
 
 function remove(){
 	var loadScreen = $("#load-screen");
-  	var mainDiv = $('.main-div');
 
 	loadScreen.css('display', 'none');
 }
 
-// show/hide header depending on scroll
-// mainDiv.on("scroll", function(){
-// 	if (mainDiv.scrollTop() > 400) {
-// 		headerNav.css('display', 'inherit');
-// 	} else {
-// 		headerNav.css('display', 'none');
-// 	}
-// });
+// ---show/hide header depending on scroll
+function scrollcheckHeaderName(){
+	if (mainBody.scrollTop() > 400) {
+		headerName.css('display', 'initial');
+	} else {
+		headerName.css('display', 'none');
+	}
+}
+var scrollCheckName = _.debounce(scrollcheckHeaderName, 50);
+
+mainBody.on("scroll", scrollCheckName);
 
 //  ---------------CLOSE DRAWER ON CLICK-------------
 document.querySelector('.mdl-layout__drawer').addEventListener('click', function () {
