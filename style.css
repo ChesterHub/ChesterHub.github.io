@@ -59,7 +59,9 @@ a.mdl-js-ripple-effect { position: relative; }
 	font-size: 175%;
 }
 
-
+.header-name {
+	display: none;
+}
 .intro{
 	position: relative;
 /*  background: url("assets/img/sunset.jpg");*/
@@ -364,7 +366,7 @@ dialog {
 	height: fit-content;
 	max-height: 80vh;
 	max-width: 80vw;
-	overflow-y: scroll;
+	overflow-y: auto;
 	background-color: #121212;
 	color: #a9a9a9;
 	/*  opacity: .98;*/
@@ -542,16 +544,16 @@ dialog {
 
 
 .fadeinfast {
-		animation: fadeinfast 5s;
-		-moz-animation: fadeinfast 5s; /* Firefox */
-		-webkit-animation: fadeinfast 5s; /* Safari and Chrome */
-		-o-animation: fadeinfast 5s; /* Opera */
+		animation: fadeinfast 3s;
+		-moz-animation: fadeinfast 3s; /* Firefox */
+		-webkit-animation: fadeinfast 3s; /* Safari and Chrome */
+		-o-animation: fadeinfast 3s; /* Opera */
 }
 @keyframes fadeinfast {
 		from {
 				opacity:0;
 				/*transform: translateX(25px);*/
-				filter: contrast(500%);
+				filter: contrast(400%);
 		}
 		to {
 				opacity: 1;
@@ -563,7 +565,7 @@ dialog {
 		from {
 				opacity:0;
 				/*transform: translateX(25px);*/
-				filter: contrast(500%);
+				filter: contrast(400%);
 		}
 		to {
 				opacity: 1;
@@ -575,7 +577,7 @@ dialog {
 		from {
 				opacity:0;
 				/*transform: translateX(25px);*/
-				filter: contrast(500%);
+				filter: contrast(400%);
 		}
 		to {
 				opacity: 1;
@@ -587,7 +589,7 @@ dialog {
 		from {
 				opacity:0;
 				/*transform: translateX(25px);*/
-				filter: contrast(500%);
+				filter: contrast(400%);
 		}
 		to {
 				opacity: 1;
@@ -597,10 +599,10 @@ dialog {
 }
 
 .fadeinslow {
-		animation: fadeinslow 8s;
-		-moz-animation: fadeinslow 8s; /* Firefox */
-		-webkit-animation: fadeinslow 8s; /* Safari and Chrome */
-		-o-animation: fadeinslow 8s; /* Opera */
+		animation: fadeinslow 5s;
+		-moz-animation: fadeinslow 5s; /* Firefox */
+		-webkit-animation: fadeinslow 5s; /* Safari and Chrome */
+		-o-animation: fadeinslow 5s; /* Opera */
 }
 @keyframes fadeinslow {
 		from {
@@ -661,7 +663,7 @@ dialog {
 
 @-webkit-keyframes US {
 	from {
-		background-position: 0% 0%;
+		background-position: 10% 0%;
 		filter:hue-rotate(0deg)
 	}
 	50% {
@@ -669,7 +671,7 @@ dialog {
 		filter:hue-rotate(-30deg)
 	}
 	to { 
-		background-position: 0% 0%;
+		background-position: 10% 0%;
 		filter:hue-rotate(0deg)
 	}
 }
@@ -793,7 +795,7 @@ dialog {
 		color: #fff;
 		text-align: center;
 		position: relative;
-		font-size: 1.5vw;
+		font-size: 17px;
 		padding: 10px;
 		background: rgba(0, 0, 0, 0.8);
 		margin: 20px 0 0 0
@@ -801,7 +803,7 @@ dialog {
 .view p {
 		font-family: 'Libre Franklin', sans-serif;
 		font-style: italic;
-		font-size: .9vw;
+		font-size: 14px;
 		position: relative;
 		color: #fff;
 		padding: 20px 20px 20px;
@@ -879,6 +881,21 @@ dialog {
 		max-width: 70vw;
 		padding: 5px;
 	}
+
+	@-webkit-keyframes US {
+		from {
+			background-position: 25% 0%;
+			filter:hue-rotate(0deg)
+		}
+		50% {
+			background-position: -1300px 0px;
+			filter:hue-rotate(-30deg)
+		}
+		to { 
+			background-position: 25% 0%;
+			filter:hue-rotate(0deg)
+		}
+	}`
 }
 @media(max-width: 400px) {
 	.name-text {
@@ -887,5 +904,22 @@ dialog {
 	.dialog-pictures {
 		max-width: 60vw;
 		padding: 3px;
+	}
+	.view .info {
+		display: none;
+	}
+	@-webkit-keyframes US {
+		from {
+			background-position: 33% 0%;
+			filter:hue-rotate(0deg)
+		}
+		50% {
+			background-position: -1500px 0px;
+			filter:hue-rotate(-30deg)
+		}
+		to { 
+			background-position: 33% 0%;
+			filter:hue-rotate(0deg)
+		}
 	}
 }
