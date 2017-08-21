@@ -109,7 +109,7 @@ a.mdl-js-ripple-effect { position: relative; }
 
 
 .about-me {
-	height:93vh;
+	min-height:100vh;
 	width: 100vw;
 	position: relative;
 	/*background-color: #121212;*/
@@ -128,9 +128,13 @@ a.mdl-js-ripple-effect { position: relative; }
 	 -o-background-size: cover;
 	 background-size: cover;
 /*   padding-bottom: 110px;*/
-	 padding-top: 10%;
+	 padding-top: 4%;
+	 padding-bottom: 4%;
 	 color: #A9A9A9;
  }
+#about-text-cell {
+  max-width: 700px;
+}
 
  #about-text {
 	font-size: 10pt;
@@ -139,6 +143,32 @@ a.mdl-js-ripple-effect { position: relative; }
 	color: white;
 	padding-bottom: 15px;
 }
+
+.tech-section {
+	display: block;
+}
+.tech-section p {
+	color: white;
+}
+
+.tech-icons-row {
+	display: block;
+}
+
+.tech-icons {
+	display: inline-block;
+	padding: 15px 20px 15px 20px;
+}
+
+.tech-images {
+	display: block;
+	width: 100px;
+	filter:drop-shadow(8px 8px 10px #212121);
+}
+
+/*.tech-images:hover {
+	filter: grayscale(0%);
+}*/
 
 .icon-section {
  position: relative;
