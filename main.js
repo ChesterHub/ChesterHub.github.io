@@ -7,6 +7,13 @@ window.addEventListener("load", function(){
 	setTimeout(remove, 1000);
 });
 
+
+$(document).ready(function() {
+	changeTrollOccupationText();
+	setInterval(changeTrollOccupationText, 6000);
+	setInterval(changeRealOccupationText, 15000);
+});
+
 function remove(){
 	var loadScreen = $("#load-screen");
 
@@ -24,6 +31,78 @@ function scrollcheckHeaderName(){
 var scrollCheckName = _.debounce(scrollcheckHeaderName, 50);
 
 mainBody.on("scroll", scrollCheckName);
+
+// --- Front text occupation changer
+var trollOccupations = [
+	"Iron Chef",
+	"Dovahkiin",
+	"Bee Keeper",
+	"Weightlifter",
+	"Astronomer",
+	"Pro Gamer",
+	"Ghostbuster",
+	"Pokemaster",
+	"Superhero",
+	"Poker Pro",
+	"Wine Taster",
+	"Commander Shepard",
+	"Cheddar",
+	"Samurai",
+	"Mixed Martial Artist",
+	"Baker",
+	"Audiophile",
+	"Rapper",
+	"YouTuber",
+	"Rabble Rouser",
+	"Screenplay Writer",
+	"Astronaut",
+	"Level 99 Wizard",
+	"Jeff Bridges",
+	"Powerlifter",
+	"Warriors Mascot",
+	"Speedracer",
+	"Cowboy",
+	"Alchemist",
+	"Pirate",
+	"Sith Lord",
+	"Starship Commander",
+	"Rocketeer"
+];
+
+var realOccupations = [
+	"Software Engineer",
+	"Web Developer",
+	"UI/UX Designer",
+	"JavaScript Guru",
+	"Rails Engineer",
+	"Data Analyst",
+	"SQL Programmer",
+	"Data Engineer",
+	"Software Developer",
+	"Web Engineer",
+	"React Developer"
+];
+var occupationTextOne = $("#occ-one");
+var occupationTextTwo = $("#occ-two");
+
+function changeTrollOccupationText(){
+	var trollOcc = trollOccupations[Math.floor(Math.random() * trollOccupations.length)];
+	if (occupationTextTwo.text() !== trollOcc) {
+		occupationTextTwo.fadeOut("swing", function(){
+			occupationTextTwo.text(trollOcc + ".");
+			occupationTextTwo.fadeIn();
+		});
+	}
+}
+function changeRealOccupationText(){
+	var realOcc = realOccupations[Math.floor(Math.random() * realOccupations.length)];
+	if (occupationTextOne.text() !== realOcc) {
+		occupationTextOne.fadeOut("swing", function(){
+			occupationTextOne.text(realOcc);
+			occupationTextOne.fadeIn();
+		});
+	}
+}
 
 //  ---------------CLOSE DRAWER ON CLICK-------------
 document.querySelector('.mdl-layout__drawer').addEventListener('click', function () {
