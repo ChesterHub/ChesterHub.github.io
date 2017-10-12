@@ -4,7 +4,7 @@ var mainBody = $('.main-body')
 var headerName = $(".header-name");
 
 window.addEventListener("load", function(){
-	setTimeout(remove, 1500);
+	setTimeout(remove, 1000);
 });
 
 function remove(){
