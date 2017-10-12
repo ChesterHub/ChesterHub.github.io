@@ -87,9 +87,14 @@ a.mdl-js-ripple-effect { position: relative; }
 	margin-bottom: 1px;
 }
 
-.name-text-body {
+.occupation-text {
 	font-size:21px;
 	color:#A9A9A9;
+	display:inline;
+}
+
+#occ-two {
+ color:white;
 }
 
 #lastname-header {
@@ -497,10 +502,10 @@ dialog {
 }
 
 .fadeinextraslow {
-		animation: fadeinextraslow 10s;
-		-moz-animation: fadeinextraslow 10s; /* Firefox */
-		-webkit-animation: fadeinextraslow 10s; /* Safari and Chrome */
-		-o-animation: fadeinextraslow 10s; /* Opera */
+		animation: fadeinextraslow 4s;
+		-moz-animation: fadeinextraslow 4s; /* Firefox */
+		-webkit-animation: fadeinextraslow 4s; /* Safari and Chrome */
+		-o-animation: fadeinextraslow 4s; /* Opera */
 }
 @keyframes fadeinextraslow {
 		from {
@@ -771,7 +776,7 @@ dialog {
 	.name-text {
 		font-size: 80px;
 	}
-	.name-text-body {
+	.occupation-text {
 		font-size: 18px;
 	}
 	.project-cards {
@@ -802,7 +807,7 @@ dialog {
 	.name-text {
 		font-size: 55px;
 	}
-	.name-text-body {
+	.occupation-text {
 		font-size: 15px;
 	}
 	#about-text {
