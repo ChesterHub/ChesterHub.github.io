@@ -458,7 +458,7 @@ dialog {
 @keyframes fadeinslow {
 		from {
 				opacity:0;
-				transform: translateY(80px);
+				transform: translateY(30px);
 		}
 		to {
 				opacity: 1;
@@ -468,7 +468,7 @@ dialog {
 @-moz-keyframes fadeinslow { /* Firefox */
 		from {
 				opacity:0;
-				transform: translateY(80px);
+				transform: translateY(30px);
 		}
 		to {
 				opacity: 1;
@@ -478,7 +478,7 @@ dialog {
 @-webkit-keyframes fadeinslow { /* Safari and Chrome */
 		from {
 				opacity:0;
-				transform: translateY(80px);
+				transform: translateY(30px);
 		}
 		to {
 				opacity: 1;
@@ -488,7 +488,7 @@ dialog {
 @-o-keyframes fadeinslow { /* Opera */
 		from {
 				opacity:0;
-				transform: translateY(80px);
+				transform: translateY(30px);
 		}
 		to {
 				opacity: 1;
