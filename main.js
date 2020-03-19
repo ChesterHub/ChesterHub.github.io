@@ -6,7 +6,7 @@ var headerName = $(".header-name");
 $(document).ready(function() {
 	changeTrollOccupationText();
 	setInterval(changeTrollOccupationText, 5000);
-	setInterval(changeRealOccupationText, 20000);
+	setInterval(changeRealOccupationText, 22000);
 });
 
 // ---show/hide header depending on scroll
