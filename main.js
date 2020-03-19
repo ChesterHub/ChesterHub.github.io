@@ -168,21 +168,16 @@ dialogSeven.querySelector('.close').addEventListener('click', function() {
 // };
 
 document.querySelector("#linkedin").onclick = function () {
-	location.href = "https://www.linkedin.com/in/chesterlhoang";
+	window.open("https://www.linkedin.com/in/chesterlhoang")
 };
 
 document.querySelector("#github").onclick = function () {
-	location.href = "https://www.github.com/chesterhub";
+	window.open("https://www.github.com/chesterhub")
 };
 
 document.querySelector("#email").onclick = function () {
-	location.href = "mailto:ChesterLHoang@gmail.com";
+	window.open("mailto:ChesterLHoang@gmail.com")
 };
-
-document.querySelector("#resume").onclick = function () {
-	alert("Please email me for my Résumé at ChesterLHoang@gmail.com")
-};
-
 
 // -------- Make bars move ----------
 // barsMoved = false;
