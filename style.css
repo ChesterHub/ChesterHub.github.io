@@ -14,13 +14,6 @@ html {
 	justify-content: center;
 }
 
-#loader {
-	top: 40%;
-	left: 46%;
-	width: 100px;
-	height: 100px;
-}
-
 .center-content {
 	justify-content: center;
 	position: relative;
@@ -408,49 +401,33 @@ dialog {
 @keyframes fadeinfast {
 		from {
 				opacity:0;
-				/*transform: translateX(25px);*/
-				filter: contrast(0%);
 		}
 		to {
 				opacity: 1;
-				/*transform: translateX(0px);*/
-				filter: contrast(100%);
 		}
 }
 @-moz-keyframes fadeinfast { /* Firefox */
 		from {
 				opacity:0;
-				/*transform: translateX(25px);*/
-				filter: contrast(0%);
 		}
 		to {
 				opacity: 1;
-				/*transform: translateX(0px);*/
-				filter: contrast(100%);
 		}
 }
 @-webkit-keyframes fadeinfast { /* Safari and Chrome */
 		from {
 				opacity:0;
-				/*transform: translateX(25px);*/
-				filter: contrast(0%);
 		}
 		to {
 				opacity: 1;
-				/*transform: translateX(0px);*/
-				filter: contrast(100%);
 		}
 }
 @-o-keyframes fadeinfast { /* Opera */
 		from {
 				opacity:0;
-				/*transform: translateX(25px);*/
-				filter: contrast(0%);
 		}
 		to {
 				opacity: 1;
-				/*transform: translateX(0px);*/
-				filter: contrast(100%);
 		}
 }
 
