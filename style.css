@@ -14,13 +14,6 @@ html {
 	justify-content: center;
 }
 
-#loader {
-	top: 40%;
-	left: 46%;
-	width: 100px;
-	height: 100px;
-}
-
 .center-content {
 	justify-content: center;
 	position: relative;
@@ -137,7 +130,7 @@ a.mdl-js-ripple-effect { position: relative; }
 }
 
 #portfolio-title {
-	font-size: 275%;
+	font-size: 34px;
 	padding-bottom: 20px;
 	color: white;
 }
@@ -354,8 +347,8 @@ dialog {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding-top: 40px;
-	padding-bottom: 180px;
+	padding-top: 30px;
+	padding-bottom: 70px;
 }
 
 #info-title {
@@ -378,7 +371,7 @@ dialog {
 }
 
 .info-button {
-	font-size: 1.4em;
+	font-size: 1.2em;
 	height: 100%;
 	width: 100%;
 	color: white;
@@ -408,49 +401,33 @@ dialog {
 @keyframes fadeinfast {
 		from {
 				opacity:0;
-				/*transform: translateX(25px);*/
-				filter: contrast(0%);
 		}
 		to {
 				opacity: 1;
-				/*transform: translateX(0px);*/
-				filter: contrast(100%);
 		}
 }
 @-moz-keyframes fadeinfast { /* Firefox */
 		from {
 				opacity:0;
-				/*transform: translateX(25px);*/
-				filter: contrast(0%);
 		}
 		to {
 				opacity: 1;
-				/*transform: translateX(0px);*/
-				filter: contrast(100%);
 		}
 }
 @-webkit-keyframes fadeinfast { /* Safari and Chrome */
 		from {
 				opacity:0;
-				/*transform: translateX(25px);*/
-				filter: contrast(0%);
 		}
 		to {
 				opacity: 1;
-				/*transform: translateX(0px);*/
-				filter: contrast(100%);
 		}
 }
 @-o-keyframes fadeinfast { /* Opera */
 		from {
 				opacity:0;
-				/*transform: translateX(25px);*/
-				filter: contrast(0%);
 		}
 		to {
 				opacity: 1;
-				/*transform: translateX(0px);*/
-				filter: contrast(100%);
 		}
 }
 
@@ -586,7 +563,7 @@ dialog {
 	position: absolute;
 	top: 0; left: 0; right: 0; bottom: 0;
 	-webkit-animation-name: TECHS;
-	-webkit-animation-duration: 70s;
+	-webkit-animation-duration: 40s;
 	-webkit-animation-timing-function: linear;
 	-webkit-animation-iteration-count: infinite;
 	z-index: -1;
@@ -608,67 +585,6 @@ dialog {
 		/*opacity: .5;*/
 	}
 }
-
-#background {
-	background: black url(assets/img/background.png) 5% 5%;
-	position: absolute;
-	background-position: top;
-	top: 0; left: 0; right: 0; bottom: 0;
-	-webkit-animation-name: STAR-MOVE;
-	-webkit-animation-duration: 100s;
-	-webkit-animation-timing-function: linear;
-	-webkit-animation-iteration-count: infinite;
-	z-index: -1;
-	background-attachment: fixed;
-	background-position: center;
-}
-
-#midground {
-	background: url(assets/img/midground.png) repeat 20% 20%;
-	opacity: 0.5;
-	position: absolute;
-	top: 0; left: 0; right: 0; bottom: 0;
-	z-index: 200;
-	-webkit-animation-name: STAR-MOVE;
-	-webkit-animation-duration: 100s;
-	-webkit-animation-timing-function: linear;
-	-webkit-animation-iteration-count: infinite;
-	z-index: -1;
-	background-attachment: fixed;
-	background-position: center;
-}
-
-#foreground {
-	background: url(assets/img/foreground.png) repeat 5% 5%;
-	opacity: 0.5;
-	position: absolute;
-	top: 0; left: 0; right: 0; bottom: 0;
-	z-index: 300;
-	-webkit-animation-name: STAR-MOVE;
-	-webkit-animation-duration: 100s;
-	-webkit-animation-timing-function: linear;
-	-webkit-animation-iteration-count: infinite;
-	z-index: -1;
-	background-attachment: fixed;
-	background-position: center;
-}
-
-@-webkit-keyframes STAR-MOVE {
-	from {
-		background-position: 5% 5%;
-		filter:hue-rotate(0deg)
-	}
-	50% {
-		background-position: 100% -75%;
-		filter:hue-rotate(-360deg)
-	}
-	to { 
-		background-position: 5% 5%;
-		filter:hue-rotate(0deg)
-	}
-}
-
-
 
 /*.view {
 		width: 300px;

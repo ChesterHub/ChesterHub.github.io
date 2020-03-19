@@ -3,22 +3,11 @@ var mainDiv = $('.main-div');
 var mainBody = $('.main-body')
 var headerName = $(".header-name");
 
-window.addEventListener("load", function(){
-	setTimeout(remove, 1000);
-});
-
-
 $(document).ready(function() {
 	changeTrollOccupationText();
-	setInterval(changeTrollOccupationText, 6000);
-	setInterval(changeRealOccupationText, 15000);
+	setInterval(changeTrollOccupationText, 5000);
+	setInterval(changeRealOccupationText, 22000);
 });
-
-function remove(){
-	var loadScreen = $("#load-screen");
-
-	loadScreen.css('display', 'none');
-}
 
 // ---show/hide header depending on scroll
 function scrollcheckHeaderName(){
@@ -36,51 +25,27 @@ mainBody.on("scroll", scrollCheckName);
 var trollOccupations = [
 	"Iron Chef",
 	"Dovahkiin",
-	"Bee Keeper",
-	"Weightlifter",
 	"Astronomer",
-	"Pro Gamer",
+	"ProGamer",
 	"Ghostbuster",
 	"Pokemaster",
-	"Superhero",
-	"Poker Pro",
-	"Wine Taster",
-	"Commander Shepard",
-	"Cheddar",
-	"Samurai",
-	"Mixed Martial Artist",
-	"Baker",
-	"Audiophile",
-	"Rapper",
-	"YouTuber",
-	"Rabble Rouser",
-	"Screenplay Writer",
+	"Wine Connoisseur",
+	"Light Heavyweight Champion",
+	"Platinum Rapper",
 	"Astronaut",
-	"Level 99 Wizard",
-	"Jeff Bridges",
-	"Powerlifter",
-	"Warriors Mascot",
-	"Speedracer",
-	"Cowboy",
-	"Alchemist",
+	"Level 59 Rogue",
+	"Space Cowboy",
 	"Pirate",
 	"Sith Lord",
 	"Starship Commander",
-	"Rocketeer"
 ];
 
 var realOccupations = [
 	"Software Engineer",
+	"Software Engineer XCVII",
 	"Web Developer",
-	"UI/UX Designer",
-	"JavaScript Guru",
-	"Rails Engineer",
-	"Data Analyst",
-	"SQL Programmer",
-	"Data Engineer",
+	"MERN SDE",
 	"Software Developer",
-	"Web Engineer",
-	"React Developer"
 ];
 var occupationTextOne = $("#occ-one");
 var occupationTextTwo = $("#occ-two");
@@ -203,21 +168,16 @@ dialogSeven.querySelector('.close').addEventListener('click', function() {
 // };
 
 document.querySelector("#linkedin").onclick = function () {
-	location.href = "https://www.linkedin.com/in/chesterlhoang";
+	window.open("https://www.linkedin.com/in/chesterlhoang")
 };
 
 document.querySelector("#github").onclick = function () {
-	location.href = "https://www.github.com/chesterhub";
+	window.open("https://www.github.com/chesterhub")
 };
 
 document.querySelector("#email").onclick = function () {
-	location.href = "mailto:ChesterLHoang@gmail.com";
+	window.open("mailto:ChesterLHoang@gmail.com")
 };
-
-document.querySelector("#resume").onclick = function () {
-	location.href = "https://drive.google.com/uc?export=download&id=0B80U73I4ZN1YakYxdHpJa3VyTTg";
-};
-
 
 // -------- Make bars move ----------
 // barsMoved = false;
