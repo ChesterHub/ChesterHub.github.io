@@ -6,7 +6,7 @@ var headerName = $(".header-name");
 $(document).ready(function() {
 	changeTrollOccupationText();
 	setInterval(changeTrollOccupationText, 5000);
-	setInterval(changeRealOccupationText, 22000);
+	setInterval(changeRealOccupationText, 33000);
 });
 
 // ---show/hide header depending on scroll
@@ -43,8 +43,8 @@ var trollOccupations = [
 var realOccupations = [
 	"Software Engineer",
 	"Software Engineer XCVII",
+	"SWE",
 	"Web Developer",
-	"MERN SDE",
 	"Software Developer",
 ];
 var occupationTextOne = $("#occ-one");
@@ -146,18 +146,6 @@ projectSix.addEventListener('click', function() {
 });
 dialogSix.querySelector('.close').addEventListener('click', function() {
 	dialogSix.close();
-});
-
-var projectSeven = document.querySelector('#project-seven');
-var dialogSeven = document.querySelector('#dialog-seven');
-if (! dialogSeven.showModal) {
-	dialogPolyfill.registerDialog(dialogSeven);
-}
-projectSeven.addEventListener('click', function() {
-	dialogSeven.showModal();
-});
-dialogSeven.querySelector('.close').addEventListener('click', function() {
-	dialogSeven.close();
 });
 
 // ----- Buttons -----
