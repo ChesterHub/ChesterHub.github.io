@@ -6,7 +6,7 @@ var headerName = $(".header-name");
 $(document).ready(function() {
 	changeTrollOccupationText();
 	setInterval(changeTrollOccupationText, 5000);
-	setInterval(changeRealOccupationText, 33000);
+	setInterval(changeRealOccupationText, 60000);
 });
 
 // ---show/hide header depending on scroll
@@ -166,83 +166,3 @@ document.querySelector("#github").onclick = function () {
 document.querySelector("#email").onclick = function () {
 	window.open("mailto:ChesterLHoang@gmail.com")
 };
-
-// -------- Make bars move ----------
-// barsMoved = false;
-// function moveAll() {
-// 	if (barsMoved === false) {
-// 		barOne = document.querySelector("#bar1");
-// 		moveBar(barOne, 97);
-
-// 		barTwo = document.querySelector("#bar2");
-// 		moveBar(barTwo, 90);
-
-// 		barThree = document.querySelector("#bar3");
-// 		moveBar(barThree, 78);
-
-// 		barFour = document.querySelector("#bar4");
-// 		moveBar(barFour, 94);
-
-// 		barFive = document.querySelector("#bar5");
-// 		moveBar(barFive, 89);
-
-// 		barSix = document.querySelector("#bar6");
-// 		moveBar(barSix, 71);
-
-// 		barSeven = document.querySelector("#bar7");
-// 		moveBar(barSeven, 92);
-
-// 		barEight = document.querySelector("#bar8");
-// 		moveBar(barEight, 85);
-
-// 		barNine = document.querySelector("#bar9");
-// 		moveBar(barNine, 67);
-
-// 		barTen = document.querySelector("#bar10");
-// 		moveBar(barTen, 90);
-
-// 		barEleven = document.querySelector("#bar11");
-// 		moveBar(barEleven, 81);
-
-// 		barTwelve = document.querySelector("#bar12");
-// 		moveBar(barTwelve, 61);
-
-// 		barsMoved = true;
-// 	}
-
-// }
-// function moveBar(bar, percentage) {
-// 	var elem = bar;   
-// 	var width = 40;
-// 	var id = setInterval(frame, 20);
-// 	function frame() {
-// 		if (width >= percentage) {
-// 			clearInterval(id);
-// 		} else {
-// 			width++; 
-// 			elem.style.width = width + '%'; 
-// 		}
-// 	}
-// }
-// (function(){
-
-//   var parallax = document.querySelectorAll(".tech"),
-//       speed = 0.5;
-
-//   window.onscroll = function(){
-//     [].slice.call(parallax).forEach(function(el,i){
-
-//       var windowYOffset = window.pageYOffset,
-//           elBackgrounPos = "50% " + (windowYOffset * speed) + "px";
-
-//       el.style.backgroundPosition = elBackgrounPos;
-
-//     });
-//   };
-
-// })();
-
-
-
-
-

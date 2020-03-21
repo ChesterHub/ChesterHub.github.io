@@ -8,18 +8,12 @@ html {
 	overflow-y: hidden;
 }
 
-#load-screen {
-	background-color: black;
-	height: 100vh;
-	justify-content: center;
-}
-
 .center-content {
 	justify-content: center;
 	position: relative;
 }
 
-body  { background-color: #121212; }
+body  { background-color: #ffffff; }
 
 .font-open { font-family: 'Libre Franklin', sans-serif; }
 .font-wendy {	font-family: 'Oswald', sans-serif, Helvetica, Arial, sans-serif; }
@@ -29,6 +23,11 @@ p {
 	color: #121212;
 }
 
+h3 {
+	color: #22313f;
+	margin-bottom: 30px;
+}
+
 .navigation-link {
 	color: red;
 }
@@ -36,10 +35,9 @@ p {
 a.mdl-js-ripple-effect { position: relative; }
 
 .header-color {
-	background-color: #121212;
 	background:     linear-gradient(
-		rgba(0, 0, 0, 0.9), 
-		rgba(0, 0, 0, 0.9)
+		rgba(34, 49, 63, 1), 
+		rgba(34, 49, 63, 1)
 		);
 	color: white;
 }
@@ -82,7 +80,7 @@ a.mdl-js-ripple-effect { position: relative; }
 
 .occupation-text {
 	font-size:21px;
-	color:#A9A9A9;
+	color: #22313f;
 	display:inline;
 }
 
@@ -91,7 +89,7 @@ a.mdl-js-ripple-effect { position: relative; }
 }
 
 #lastname-header {
-	color: #A9A9A9;
+	color: #999999;
 }
 
 #firstname {
@@ -103,7 +101,7 @@ a.mdl-js-ripple-effect { position: relative; }
 }
 
 #lastname {
-	color: #A9A9A9;
+	color: #22313f;
 }
 
 #down-arrow {
@@ -112,10 +110,9 @@ a.mdl-js-ripple-effect { position: relative; }
 }
 
 .portfolio {
+	min-height: calc(100vh - 64px);
 	position: relative;
-	/*background-color: #121212;*/
-	/*background: url("assets/img/wow.jpg") top center;*/
-	/*    background: rgba(84, 110, 122, .2);*/
+	background: url(assets/img/sanFran.png);
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -127,12 +124,6 @@ a.mdl-js-ripple-effect { position: relative; }
 	padding-top: 25px;
 	padding-bottom: 90px;
 
-}
-
-#portfolio-title {
-	font-size: 34px;
-	padding-bottom: 20px;
-	color: white;
 }
 
 .project-cards {
@@ -232,7 +223,7 @@ dialog {
 }
 
 #project-six {
-	background: url('assets/img/PoE.png');
+	background: url('assets/img/poe-mac.png');
 	background-size: cover;
 	background-repeat:   no-repeat;
 	background-position: center center;  
@@ -255,20 +246,23 @@ dialog {
 	max-height: 80vh;
 	max-width: 80vw;
 	overflow-y: auto;
-	background-color: #121212;
+	background-color: #22313f;
 	color: #a9a9a9;
-	/*  opacity: .98;*/
 	text-align: center;
 	border-style: groove;
 	border-color: #696969;
 }
 
 .mdl-dialog__content > p {
-	color: white;
+	color: #999999;
 	font-family: 'Open Sans', sans-serif, Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	padding: 10px 10px 0 10px;
 	max-width: 800px;
+}
+
+a.mdl-button.mdl-js-button {
+	color:rgba(228, 241, 254, 1);
 }
 
 .dialog-pictures {
@@ -278,7 +272,7 @@ dialog {
 
 
 .about-me {
-	min-height:100vh;
+	min-height: calc(100vh - 64px);
 	width: 100vw;
 	position: relative;
 	background-attachment: fixed;
@@ -298,10 +292,10 @@ dialog {
 }
 
  #about-text {
-	font-size: 10pt;
+	font-size: 12pt;
 	font-weight: normal;
 	font-family: 'Libre Franklin', sans-serif;
-	color: white;
+	color: #999999;
 	padding: 0 10px 15px 10px;
 }
 
@@ -309,7 +303,7 @@ dialog {
 	display: block;
 }
 .tech-section p {
-	color: white;
+	color: #22313f;
 }
 
 .tech-icons-row {
@@ -349,17 +343,11 @@ dialog {
 	background-size: cover;
 	padding-top: 30px;
 	padding-bottom: 70px;
-}
-
-#info-title {
-	font-size: 275%;
-	color: white;
-	padding-bottom: 16px;
+	color: #22313f;
 }
 
 #feedback-sentence {
 	font-size: 12pt;
-	color: #A9A9A9;
 	font-weight: normal;
 	font-style: italic;
 }
@@ -374,19 +362,22 @@ dialog {
 	font-size: 1.2em;
 	height: 100%;
 	width: 100%;
-	color: white;
+	color: #999999;;
+}
+.info-button:hover {
+	color: #22313f;
+	background: none;
 }
 
 .info-cell > p {
 	font-size: 10pt;
-	color: white;
 	font-family: 'Libre Franklin', sans-serif;
 	font-weight: normal;
 }
 
 
 .footer {
-	background-color: black;
+	background-color: #22313f;
 	padding: 8px 15px;
 }
 
@@ -487,53 +478,45 @@ dialog {
 @keyframes fadeinextraslow {
 		from {
 				opacity:0;
-/*				transform: translateY(100px);*/
 		}
 		to {
 				opacity: 1;
-/*				transform: translateY(0px);*/
 		}
 }
 @-moz-keyframes fadeinextraslow { /* Firefox */
 		from {
 				opacity:0;
-/*				transform: translateY(100px);*/
 		}
 		to {
 				opacity: 1;
-/*				transform: translateY(0px);*/
 		}
 }
 @-webkit-keyframes fadeinextraslow { /* Safari and Chrome */
 		from {
 				opacity:0;
-/*				transform: translateY(100px);*/
 		}
 		to {
 				opacity: 1;
-/*				transform: translateY(0px);*/
 		}
 }
 @-o-keyframes fadeinextraslow { /* Opera */
 		from {
 				opacity:0;
-/*				transform: translateY(100px);*/
 		}
 		to {
 				opacity: 1;
-/*				transform: translateY(0px);*/
 		}
 }
 
 
-#usbackground {
-	background: black url(assets/img/usnight.jpg) 5% 5%;
+#infiniteBackground {
+	background: black url(assets/img/parallaxClouds.png) 5% 5%;
 	background-size: cover;
 	position: absolute;
 	top: 0; left: 0; right: 0; bottom: 0;
 	z-index: 100;
-	-webkit-animation-name: US;
-	-webkit-animation-duration: 120s;
+	-webkit-animation-name: infiniteScroll;
+	-webkit-animation-duration: 100s;
 	-webkit-animation-timing-function: linear;
 	-webkit-animation-iteration-count: infinite;
 	z-index: -1;
@@ -541,64 +524,14 @@ dialog {
 	background-position: bottom;
 }
 
-@-webkit-keyframes US {
-	from {
-		background-position: 10% 0%;
-		filter:hue-rotate(0deg)
+@-webkit-keyframes infiniteScroll {
+	0% {
+		background-position: 3000px 0px;
 	}
-	50% {
-		background-position: -1000px 0px;
-		filter:hue-rotate(-30deg)
-	}
-	to { 
-		background-position: 10% 0%;
-		filter:hue-rotate(0deg)
+	100% { 
+		background-position: 0px 0%;
 	}
 }
-
-#techbackground {
-	background: black url(assets/img/SpaceEarth.png) 5% 5%;
-	background-size: cover;
-	background-position: bottom;
-	position: absolute;
-	top: 0; left: 0; right: 0; bottom: 0;
-	-webkit-animation-name: TECHS;
-	-webkit-animation-duration: 40s;
-	-webkit-animation-timing-function: linear;
-	-webkit-animation-iteration-count: infinite;
-	z-index: -1;
-	background-attachment: fixed;
-	background-position: center;
-}
-
-@-webkit-keyframes TECHS {
-	from {
-		background-position: 80% 100%;
-/*		opacity: .5;*/
-	}
-	50% { 
-		background-position: 0% 0%;
-		/*opacity: .8;*/
-	}
-	to {
-		background-position: 80% 100%;
-		/*opacity: .5;*/
-	}
-}
-
-/*.view {
-		width: 300px;
-		height: 200px;
-		margin: 10px;
-		float: left;
-		border: 10px solid #fff;
-		overflow: hidden;
-		position: relative;
-		text-align: center;
-		box-shadow: 1px 1px 2px #e6e6e6;
-		cursor: default;
-		background: #fff url(../images/bgimg.jpg) no-repeat center center
-}*/
 .view .mask, .view .content {
 		background-size: cover;
 		height: 100%;
