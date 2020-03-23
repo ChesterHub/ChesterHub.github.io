@@ -54,7 +54,7 @@ function changeTrollOccupationText(){
 	var trollOcc = trollOccupations[Math.floor(Math.random() * trollOccupations.length)];
 	if (occupationTextTwo.text() !== trollOcc) {
 		occupationTextTwo.fadeOut("swing", function(){
-			occupationTextTwo.text(trollOcc + ".");
+			occupationTextTwo.text(trollOcc);
 			occupationTextTwo.fadeIn();
 		});
 	}

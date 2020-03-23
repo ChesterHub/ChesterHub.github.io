@@ -13,7 +13,7 @@ html {
 	position: relative;
 }
 
-body  { background-color: #ffffff; }
+body  { background-color: #f6f6f6; }
 
 .font-open { font-family: 'Libre Franklin', sans-serif; }
 .font-wendy {	font-family: 'Oswald', sans-serif, Helvetica, Arial, sans-serif; }
@@ -26,6 +26,10 @@ p {
 h3 {
 	color: #22313f;
 	margin-bottom: 30px;
+}
+
+h3.h3-portfolio {
+	color: #f6f6f6;
 }
 
 .navigation-link {
@@ -85,7 +89,8 @@ a.mdl-js-ripple-effect { position: relative; }
 }
 
 #occ-two {
- color:white;
+	background: #22313f;
+ 	color:white;
 }
 
 #lastname-header {
@@ -111,31 +116,35 @@ a.mdl-js-ripple-effect { position: relative; }
 
 .portfolio {
 	min-height: calc(100vh - 64px);
+	background: url(assets/img/laptop.jpeg);
 	position: relative;
-	background: url(assets/img/sanFran.png);
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
-	background-repeat: no-repeat;
 	background-size: cover;
 	padding-top: 25px;
 	padding-bottom: 90px;
+}
 
+@-webkit-keyframes infiniteScroll {
+	0% {
+		background-position: 3000px 0px;
+	}
+	100% { 
+		background-position: 0px 0%;
+	}
 }
 
 .project-cards {
 	width: 25vw;
 	max-width: 500px;
 	height: 30vh; 
-	/*max-width: 100%;*/
-	/*max-height: 100%;*/
 	font-size: 200%;
 	margin: 10px;
 	cursor: pointer;
-	/*border-radius: 8px;*/
 	-webkit-transition: all .3s ease; /* Safari and Chrome */
 	-moz-transition: all .3s ease; /* Firefox */
 	-ms-transition: all .3s ease; /* IE 9 */
@@ -325,14 +334,13 @@ a.mdl-button.mdl-js-button {
 
 .tech-images {
 	display: block;
-	width: 100px;
-	filter:drop-shadow(8px 8px 10px #212121);
+	width: 75px;
+	filter:drop-shadow(5px 5px 8px #212121);
 }
 
 
 .contact-info {
 	position: relative;
-	/*background: url("assets/img/usnight.jpg") top center;*/
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -510,13 +518,13 @@ a.mdl-button.mdl-js-button {
 
 
 #infiniteBackground {
-	background: black url(assets/img/parallaxClouds.png) 5% 5%;
+	background: black url(assets/img/sanFran.png) 5% 5%;
 	background-size: cover;
 	position: absolute;
 	top: 0; left: 0; right: 0; bottom: 0;
 	z-index: 100;
-	-webkit-animation-name: infiniteScroll;
-	-webkit-animation-duration: 100s;
+	-webkit-animation-name: onePassScroll;
+	-webkit-animation-duration: 70s;
 	-webkit-animation-timing-function: linear;
 	-webkit-animation-iteration-count: infinite;
 	z-index: -1;
@@ -524,12 +532,20 @@ a.mdl-button.mdl-js-button {
 	background-position: bottom;
 }
 
-@-webkit-keyframes infiniteScroll {
+@-webkit-keyframes onePassScroll {
 	0% {
-		background-position: 3000px 0px;
+		opacity: 0;
+		background-position: 0 0px;
+	}
+	1% {
+		opacity: 1;
+	}
+	99% {
+		opacity: 1;
 	}
 	100% { 
-		background-position: 0px 0%;
+		opacity: 0;
+		background-position: 100% 0%;
 	}
 }
 .view .mask, .view .content {
