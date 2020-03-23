@@ -109,11 +109,6 @@ a.mdl-js-ripple-effect { position: relative; }
 	color: #22313f;
 }
 
-#down-arrow {
-	width: 130px;
-	height: 100px;
-}
-
 .portfolio {
 	min-height: calc(100vh - 64px);
 	background: url(assets/img/laptop.jpeg);
@@ -126,7 +121,6 @@ a.mdl-js-ripple-effect { position: relative; }
 	background-position: center;
 	background-size: cover;
 	padding-top: 25px;
-	padding-bottom: 90px;
 }
 
 @-webkit-keyframes infiniteScroll {
@@ -292,8 +286,8 @@ a.mdl-button.mdl-js-button {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	padding-top: 4%;
-	padding-bottom: 4%;
+	padding-top: 3%;
+	padding-bottom: 2%;
 	color: #A9A9A9;
  }
 #about-text-cell {
@@ -321,7 +315,7 @@ a.mdl-button.mdl-js-button {
 
 .tech-icons {
 	display: inline-block;
-	padding: 15px 20px 15px 20px;
+	padding: 15px 20px;
 }
 
 .tech-icons:hover {
@@ -477,47 +471,7 @@ a.mdl-button.mdl-js-button {
 		}
 }
 
-.fadeinextraslow {
-		animation: fadeinextraslow 4s;
-		-moz-animation: fadeinextraslow 4s; /* Firefox */
-		-webkit-animation: fadeinextraslow 4s; /* Safari and Chrome */
-		-o-animation: fadeinextraslow 4s; /* Opera */
-}
-@keyframes fadeinextraslow {
-		from {
-				opacity:0;
-		}
-		to {
-				opacity: 1;
-		}
-}
-@-moz-keyframes fadeinextraslow { /* Firefox */
-		from {
-				opacity:0;
-		}
-		to {
-				opacity: 1;
-		}
-}
-@-webkit-keyframes fadeinextraslow { /* Safari and Chrome */
-		from {
-				opacity:0;
-		}
-		to {
-				opacity: 1;
-		}
-}
-@-o-keyframes fadeinextraslow { /* Opera */
-		from {
-				opacity:0;
-		}
-		to {
-				opacity: 1;
-		}
-}
-
-
-#infiniteBackground {
+#mainBackground {
 	background: black url(assets/img/SanFran.png) 5% 5%;
 	background-size: cover;
 	position: absolute;
@@ -667,6 +621,14 @@ a.mdl-button.mdl-js-button {
 			filter:hue-rotate(0deg)
 		}
 	}`
+}
+@media(max-width: 470px) {
+	.tech-images {
+		width: 50px;
+	}
+	.tech-icons {
+		padding: 10px 10px;
+	}
 }
 @media(max-width: 400px) {
 	.name-text {
