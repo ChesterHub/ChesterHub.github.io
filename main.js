@@ -5,7 +5,7 @@ var headerName = $(".header-name");
 
 $(document).ready(function() {
 	changeTrollOccupationText();
-	setInterval(changeTrollOccupationText, 6000);
+	setInterval(changeTrollOccupationText, 7000);
 });
 
 // ---show/hide header depending on scroll
@@ -23,8 +23,8 @@ mainBody.on("scroll", scrollCheckName);
 // --- Front text occupation changer
 var trollOccupations = [
 	"Iron Chef",
-	"Dovahkiin",
-	"Pro Gamer",
+	"Dragon Born",
+	"MI6 Secret Agent",
 	"Ghostbuster",
 	"Pokémaster",
 	"Wine Connoisseur",
@@ -45,7 +45,7 @@ function changeTrollOccupationText(){
 	var trollOcc = trollOccupations[Math.floor(Math.random() * trollOccupations.length)];
 	if (occupationText.text() !== trollOcc) {
 		occupationText.fadeOut("swing", function(){
-			occupationText.text(trollOcc + ".");
+			occupationText.text(trollOcc);
 			occupationText.fadeIn();
 		});
 	}
