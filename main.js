@@ -5,8 +5,7 @@ var headerName = $(".header-name");
 
 $(document).ready(function() {
 	changeTrollOccupationText();
-	setInterval(changeTrollOccupationText, 5000);
-	setInterval(changeRealOccupationText, 60000);
+	setInterval(changeTrollOccupationText, 6000);
 });
 
 // ---show/hide header depending on scroll
@@ -25,46 +24,29 @@ mainBody.on("scroll", scrollCheckName);
 var trollOccupations = [
 	"Iron Chef",
 	"Dovahkiin",
-	"Astronomer",
-	"ProGamer",
+	"Pro Gamer",
 	"Ghostbuster",
-	"Pokemaster",
+	"Pokémaster",
 	"Wine Connoisseur",
 	"Light Heavyweight Champion",
-	"Platinum Rapper",
-	"Astronaut",
+	"Multi-Platinum Rapper",
 	"Level 59 Rogue",
 	"Space Cowboy",
-	"Pirate",
+	"Caribbean Pirate",
 	"Sith Lord",
 	"Starship Commander",
+	"Ultimate Werewolf",
+	"Oil Driller Astronaut",
+	"Guardian of the Galaxy"
 ];
-
-var realOccupations = [
-	"Software Engineer",
-	"Software Engineer XCVII",
-	"SWE",
-	"Web Developer",
-	"Software Developer",
-];
-var occupationTextOne = $("#occ-one");
-var occupationTextTwo = $("#occ-two");
+var occupationText = $("#occ");
 
 function changeTrollOccupationText(){
 	var trollOcc = trollOccupations[Math.floor(Math.random() * trollOccupations.length)];
-	if (occupationTextTwo.text() !== trollOcc) {
-		occupationTextTwo.fadeOut("swing", function(){
-			occupationTextTwo.text(trollOcc);
-			occupationTextTwo.fadeIn();
-		});
-	}
-}
-function changeRealOccupationText(){
-	var realOcc = realOccupations[Math.floor(Math.random() * realOccupations.length)];
-	if (occupationTextOne.text() !== realOcc) {
-		occupationTextOne.fadeOut("swing", function(){
-			occupationTextOne.text(realOcc);
-			occupationTextOne.fadeIn();
+	if (occupationText.text() !== trollOcc) {
+		occupationText.fadeOut("swing", function(){
+			occupationText.text(trollOcc + ".");
+			occupationText.fadeIn();
 		});
 	}
 }
